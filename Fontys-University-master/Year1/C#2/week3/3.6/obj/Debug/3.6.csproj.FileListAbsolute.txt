@@ -1,0 +1,9 @@
+D:\Fontys\C#2\week3\3.6\bin\Debug\3.6.exe.config
+D:\Fontys\C#2\week3\3.6\bin\Debug\3.6.exe
+D:\Fontys\C#2\week3\3.6\bin\Debug\3.6.pdb
+D:\Fontys\C#2\week3\3.6\obj\Debug\3.6.csprojResolveAssemblyReference.cache
+D:\Fontys\C#2\week3\3.6\obj\Debug\_3._6.CarApp.resources
+D:\Fontys\C#2\week3\3.6\obj\Debug\_3._6.Properties.Resources.resources
+D:\Fontys\C#2\week3\3.6\obj\Debug\3.6.csproj.GenerateResource.Cache
+D:\Fontys\C#2\week3\3.6\obj\Debug\3.6.exe
+D:\Fontys\C#2\week3\3.6\obj\Debug\3.6.pdb

@@ -1,0 +1,8 @@
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\bin\Debug\About_Events.exe
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\bin\Debug\About_Events.pdb
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\obj\x86\Debug\About_Events.csprojResolveAssemblyReference.cache
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\obj\x86\Debug\About_Events.Form1.resources
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\obj\x86\Debug\About_Events.Properties.Resources.resources
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\obj\x86\Debug\About_Events.csproj.GenerateResource.Cache
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\obj\x86\Debug\About_Events.exe
+C:\Bert\pcs4\week 1\week 1 About_Events FINAL\About_Events\obj\x86\Debug\About_Events.pdb

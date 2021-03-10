@@ -1,0 +1,7 @@
+D:\Fontys\C#1\week5\week5\StarSearch\bin\Debug\StarSearch.exe.config
+D:\Fontys\C#1\week5\week5\StarSearch\bin\Debug\StarSearch.exe
+D:\Fontys\C#1\week5\week5\StarSearch\bin\Debug\StarSearch.pdb
+D:\Fontys\C#1\week5\week5\StarSearch\obj\Debug\StarSearch.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week5\week5\StarSearch\obj\Debug\StarSearch.exe
+D:\Fontys\C#1\week5\week5\StarSearch\obj\Debug\StarSearch.pdb
+D:\Fontys\C#1\week5\week5\StarSearch\obj\Debug\StarSearch.csproj.CoreCompileInputs.cache

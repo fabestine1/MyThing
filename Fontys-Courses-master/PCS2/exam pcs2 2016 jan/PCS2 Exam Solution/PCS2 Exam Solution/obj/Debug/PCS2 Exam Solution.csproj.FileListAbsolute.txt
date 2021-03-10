@@ -1,0 +1,9 @@
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\bin\Debug\PCS2 Exam Solution.exe.config
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\bin\Debug\PCS2 Exam Solution.exe
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\bin\Debug\PCS2 Exam Solution.pdb
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\obj\Debug\PCS2_Exam_Solution.Form1.resources
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\obj\Debug\PCS2_Exam_Solution.Properties.Resources.resources
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\obj\Debug\PCS2 Exam Solution.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\obj\Debug\PCS2 Exam Solution.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\obj\Debug\PCS2 Exam Solution.exe
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Solution\PCS2 Exam Solution\obj\Debug\PCS2 Exam Solution.pdb

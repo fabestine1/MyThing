@@ -1,0 +1,27 @@
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\bin\Debug\SchoolDownCasting.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\bin\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\bin\Debug\SchoolDownCasting.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolPDownCasting.Properties.Resources.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolDownCasting.csproj.GenerateResource.Cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolDownCasting.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolPDownCasting.Form1.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolPDownCasting.FormCreate.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced\School\bin\Debug\SchoolDownCasting.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced\School\obj\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced\School\obj\Debug\SchoolDownCasting.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\bin\Debug\SchoolDownCasting.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\obj\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\obj\Debug\SchoolDownCasting.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\bin\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\bin\Debug\SchoolDownCasting.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\obj\Debug\SchoolDownCasting.csprojResolveAssemblyReference.cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\obj\Debug\SchoolPDownCasting.Properties.Resources.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\obj\Debug\SchoolDownCasting.csproj.GenerateResource.Cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCastingAdvanced - Copy\School\obj\Debug\SchoolPDownCasting.FormMyPerson.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismed - Copy\School\bin\Debug\SchoolDownCasting.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismed - Copy\School\obj\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismed - Copy\School\obj\Debug\SchoolDownCasting.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\bin\Debug\SchoolDownCasting.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolDownCasting.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolDownCasting.pdb

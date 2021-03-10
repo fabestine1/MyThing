@@ -1,0 +1,16 @@
+CREATE OR REPLACE TRIGGER ELECTION_VOTES_CHECK
+AFTER INSERT OR UPDATE OF VOTES ON ELECTION
+DECLARE
+    numberOfVotes NUMBER(4);
+BEGIN
+    SELECT MAX(SUM(VOTES)) INTO numberOfVotes
+    FROM ELECTION
+    WHERE ELECTION_YEAR = 2008
+    AND ELECTION_YEAR > 1960
+    GROUP BY ELECTION_YEAR;
+    
+    IF (numberOfVotes > 538) THEN
+        RAISE_APPLICATION_ERROR(-20002, 'The maximum number of votes for an election year should not exceed 538.');
+    END IF;
+END;
+/

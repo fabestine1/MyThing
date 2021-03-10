@@ -1,0 +1,10 @@
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\bin\Debug\TakeOutAdmin.exe.config
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\bin\Debug\TakeOutAdmin.exe
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\bin\Debug\TakeOutAdmin.pdb
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.csprojAssemblyReference.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.Properties.Resources.resources
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.AdminForm.resources
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.csproj.GenerateResource.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.csproj.CoreCompileInputs.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.exe
+F:\Downloads\CSAExamApril2018\FastFoodService\TakeOutAdmin\obj\Debug\TakeOutAdmin.pdb

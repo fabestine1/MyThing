@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week3\PiggyBankApp\PiggyBankApp\bin\Debug\PiggyBankApp.exe.config
+D:\Fontys\C#1\week3\PiggyBankApp\PiggyBankApp\bin\Debug\PiggyBankApp.exe
+D:\Fontys\C#1\week3\PiggyBankApp\PiggyBankApp\bin\Debug\PiggyBankApp.pdb
+D:\Fontys\C#1\week3\PiggyBankApp\PiggyBankApp\obj\Debug\PiggyBankApp.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week3\PiggyBankApp\PiggyBankApp\obj\Debug\PiggyBankApp.exe
+D:\Fontys\C#1\week3\PiggyBankApp\PiggyBankApp\obj\Debug\PiggyBankApp.pdb

@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\obj\Debug\service.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\bin\Debug\service.exe.config
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\bin\Debug\service.exe
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\bin\Debug\service.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\bin\Debug\contract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\bin\Debug\contract.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\obj\Debug\service.csproj.CopyComplete
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\obj\Debug\service.exe
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\obj\Debug\service.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\service\obj\Debug\service.csprojAssemblyReference.cache

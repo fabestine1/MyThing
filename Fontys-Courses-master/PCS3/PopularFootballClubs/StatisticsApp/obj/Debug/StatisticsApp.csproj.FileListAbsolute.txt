@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\bin\Debug\StatisticsApp.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\bin\Debug\StatisticsApp.exe
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\bin\Debug\StatisticsApp.pdb
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.exe
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\StatisticsApp\obj\Debug\StatisticsApp.pdb

@@ -1,0 +1,23 @@
+Console.Write("Please enter the name of your project: ");
+string projectName = Console.ReadLine();
+Console.Write("Please enter the amount of euros your project needs: ");
+double amountNeeded = Convert.ToDouble(Console.ReadLine());
+string keepd = "yes";
+double amountDonated;
+int numberOfDonations;
+while(keepd == "yes"){
+Console.WriteLine("---------------------------");
+Console.Write("Please enter the amount of euros donated: ");
+double eurosDonated = Convert.ToDouble(Console.ReadLine());
+amountDonated += eurosDonated;
+numberOfDonations++;
+Console.Write("Do you want to continue to add donations <yes, no>? ");
+keepd = Console.ReadLine();
+}
+if(eurosDonated >= amountNeeded){
+Console.WriteLine("The crowdfunding for PCS1 Course was successful.");
+}
+else {
+Console.WriteLine("The crowdfunding for PCS1 Course has failed.");
+}
+Console.WriteLine("The goal was {0} and you got {1} via {2} donation(s).", amountNeeded, amountDonated, numberOfDonations);

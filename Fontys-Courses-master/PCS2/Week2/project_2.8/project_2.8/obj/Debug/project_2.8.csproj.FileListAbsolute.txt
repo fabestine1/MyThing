@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\bin\Debug\project_2.8.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\bin\Debug\project_2.8.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\bin\Debug\project_2.8.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2.8.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2._8.lblText.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2._8.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2.8.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2.8.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2.8.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.8\project_2.8\obj\Debug\project_2.8.pdb

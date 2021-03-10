@@ -1,0 +1,7 @@
+D:\Fontys\C#1\week4\week4\HearthRate\bin\Debug\HearthRate.exe.config
+D:\Fontys\C#1\week4\week4\HearthRate\bin\Debug\HearthRate.exe
+D:\Fontys\C#1\week4\week4\HearthRate\bin\Debug\HearthRate.pdb
+D:\Fontys\C#1\week4\week4\HearthRate\obj\Debug\HeartRate.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week4\week4\HearthRate\obj\Debug\HeartRate.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week4\week4\HearthRate\obj\Debug\HearthRate.exe
+D:\Fontys\C#1\week4\week4\HearthRate\obj\Debug\HearthRate.pdb

@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace project_4._4
+{
+    class BankAccount
+    {
+        private int accountNumber;
+        private string firstName;
+        private string lastName;
+        private int bY;
+        private int bM;
+        private int bD;
+        private decimal balance;
+
+        public int AccountNumber
+        {
+            get { return accountNumber; }
+            private set {
+                Random id = new Random();
+                accountNumber = id.Next(1, 999999);
+                if (accountNumber >= 0)
+                {
+                    accountNumber = value;
+                }
+            }
+        }
+        public string FirstName
+        {
+            get { return firstName; }
+            set { firstName = value; }
+        }
+        public string LastName
+        {
+            get { return lastName; }
+            set { lastName = value; }
+        }
+        public int BY
+        {
+            get { return bY; }
+            set { bY = value; }
+        }
+        public int BM
+        {
+            get { return bM; }
+            set { bM = value; }
+        }
+        public int BD
+        {
+            get { return bD; }
+            set { bD = value; }
+        }
+        public decimal Balance
+        {
+            get { return balance; }
+            private set {
+                if (accountNumber >= 0)
+                {
+                    balance = value;
+                }
+            }
+        }
+        public void Deposit(decimal amount)
+        {
+            Balance += amount;
+        }
+        public void Withdraw(decimal amount)
+        {
+            Balance -= amount;
+        }
+    }
+}

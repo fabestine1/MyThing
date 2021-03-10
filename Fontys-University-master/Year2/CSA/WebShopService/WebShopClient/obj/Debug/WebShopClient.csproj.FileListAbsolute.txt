@@ -1,0 +1,10 @@
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\bin\Debug\WebShopClient.exe.config
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\bin\Debug\WebShopClient.exe
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\bin\Debug\WebShopClient.pdb
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.csprojAssemblyReference.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.Form1.resources
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.Properties.Resources.resources
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.csproj.GenerateResource.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.csproj.CoreCompileInputs.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.exe
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopClient\obj\Debug\WebShopClient.pdb

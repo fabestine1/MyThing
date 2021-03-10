@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="MyWebshopContract" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="MyWebshopContract" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="MyWebshopContract/Imports">
+      <xsd:import namespace="MyWebshopContract" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/MyWebshopContract" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWebshop_connect_InputMessage">
+    <wsdl:part name="parameters" element="tns:connect" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_GetWebshopName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebshopName" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_GetWebshopName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWebshopNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_GetProductsList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsList" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_GetProductsList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductsListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_GetProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_GetProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_BuyProduct_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuyProduct" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_newClientConnected_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:newClientConnected" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_productSold_OutputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:productSold" />
+  </wsdl:message>
+  <wsdl:message name="IWebshop_productSold_InputCallbackMessage">
+    <wsdl:part name="parameters" element="tns:productSoldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWebshop">
+    <wsdl:operation name="connect">
+      <wsdl:input wsaw:Action="MyWebshopContract/IWebshop/connect" message="tns:IWebshop_connect_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebshopName">
+      <wsdl:input wsaw:Action="MyWebshopContract/IWebshop/GetWebshopName" message="tns:IWebshop_GetWebshopName_InputMessage" />
+      <wsdl:output wsaw:Action="MyWebshopContract/IWebshop/GetWebshopNameResponse" message="tns:IWebshop_GetWebshopName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductsList">
+      <wsdl:input wsaw:Action="MyWebshopContract/IWebshop/GetProductsList" message="tns:IWebshop_GetProductsList_InputMessage" />
+      <wsdl:output wsaw:Action="MyWebshopContract/IWebshop/GetProductsListResponse" message="tns:IWebshop_GetProductsList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProductInfo">
+      <wsdl:input wsaw:Action="MyWebshopContract/IWebshop/GetProductInfo" message="tns:IWebshop_GetProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="MyWebshopContract/IWebshop/GetProductInfoResponse" message="tns:IWebshop_GetProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuyProduct">
+      <wsdl:input wsaw:Action="MyWebshopContract/IWebshop/BuyProduct" message="tns:IWebshop_BuyProduct_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="newClientConnected">
+      <wsdl:output wsaw:Action="MyWebshopContract/IWebshop/newClientConnected" message="tns:IWebshop_newClientConnected_OutputCallbackMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="productSold">
+      <wsdl:output wsaw:Action="MyWebshopContract/IWebshop/productSold" message="tns:IWebshop_productSold_OutputCallbackMessage" />
+      <wsdl:input wsaw:Action="MyWebshopContract/IWebshop/productSoldResponse" message="tns:IWebshop_productSold_InputCallbackMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

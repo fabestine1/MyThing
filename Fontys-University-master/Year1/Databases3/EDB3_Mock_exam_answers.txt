@@ -1,0 +1,97 @@
+/*
+  possible answers to the mock exam
+*/
+ex 1.
+select pg.year, pg.term, pg.projname, p.mark
+from participation p join projectgroup pg on p.projgroupnr=pg.projgroupnr
+where p.studnr=1234
+order by pg.year,pg.term;
+
+ex 2
+select t.name,p.projname
+from teacher t LEFT join project p on t.teachercode=p.responsibleteacher
+
+ex 3
+select t.name, count(*)
+from project p join  teacher t on p.responsibleteacher=t.teachercode
+group by t.teachercode, t.name 
+
+ex4
+select p.studnr, avg(p.mark)
+from participation p join student s on s.studnr=p.studnr
+where s.cohort=2006
+group by p.studnr
+having count(MARK)>=3  
+// having count(*)>=3  --> wrong because count(*) is the no of projects the student is participating in
+
+
+// with subquery:
+select p.studnr, avg(p.mark)
+from participation p 
+where p.studnr IN (select studnr
+                   from student
+                   where cohort = 2006)
+group by p.studnr
+having count(MARK)>=3  
+
+ex5
+select projname
+from project
+where projname NOT IN (select projname
+                       from course
+                       where ects<=3)
+
+// with exists
+select p.projname
+from project p
+where  NOT EXISTS (select 1
+                   from course c
+                   where c.projname=p.projname 
+                   and c.ects<=3)
+
+ex6
+select projname
+from project
+where projname NOT IN (select projname
+                       from course
+                       where previouscourse IS NOT NULL)
+
+ex 7
+select projname
+from course
+group by projname
+having count(*)=(select max(count(*))
+                 from course
+                 group by projname)					   
+
+ex 8
+
+1) FALSE
+
+2) TRUE
+
+3) FALSE
+
+4) FALSE
+
+5) TRUE
+
+6) TRUE
+
+7) TRUE
+
+8) TRUE
+
+9) TRUE
+
+10) TRUE
+
+11) TRUE
+
+12) FALSE
+
+13) FALSE
+
+14) TRUE
+
+15) FALSE				 

@@ -1,0 +1,9 @@
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\bin\Debug\TicTacToe1.exe.config
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\bin\Debug\TicTacToe1.exe
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\bin\Debug\TicTacToe1.pdb
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\obj\Debug\TicTacToe1.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\obj\Debug\TicTacToe1.Form1.resources
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\obj\Debug\TicTacToe1.Properties.Resources.resources
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\obj\Debug\TicTacToe1.csproj.GenerateResource.Cache
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\obj\Debug\TicTacToe1.exe
+C:\Users\lenovo\Desktop\TicTacToe1\TicTacToe1\obj\Debug\TicTacToe1.pdb

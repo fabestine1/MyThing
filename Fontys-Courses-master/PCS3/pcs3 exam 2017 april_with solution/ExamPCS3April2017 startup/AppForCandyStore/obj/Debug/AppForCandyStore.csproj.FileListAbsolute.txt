@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.FormForCandyStore.resources
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\bin\Debug\AppForCandyStore.exe.config
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\bin\Debug\AppForCandyStore.exe
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\bin\Debug\AppForCandyStore.pdb
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.exe
+C:\Users\flamestar\Downloads\pcs3 exam 2017 april_with solution\ExamPCS3April2017 startup\AppForCandyStore\obj\Debug\AppForCandyStore.pdb

@@ -1,0 +1,152 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace project_4._4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            BankAccount account = new BankAccount();
+            BankAccount account2 = new BankAccount();
+            BankAccount account3 = new BankAccount();
+            Console.Write("Choose an bank account number: 1 / 2 / 3 ");
+            int chooseid = Convert.ToInt32(Console.ReadLine());
+            string choice = "";
+            bool acc1 = false;
+            bool acc2 = false;
+            bool acc3 = false;
+            while (choice != "e" && (choice == "d" || choice == "w" || choice == "n") && chooseid != 0 || choice == "") {
+                if (chooseid == 1)
+                {
+                    if (acc1 != true)
+                    {
+                        Console.Write("Enter your first name: ");
+                        account.FirstName = Console.ReadLine();
+                        Console.Write("Enter your last name: ");
+                        account.LastName = Console.ReadLine();
+                        Console.Write("Enter year of birth: ");
+                        account.BY = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter month of birth: ");
+                        account.BM = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter day of birth: ");
+                        account.BD = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("\nYour details:\nAccount number: {0}\nFirst name: {1}\nLast name: {2}\nDate of birth: {3}/{4}/{5}\nBalance: {6}", account.AccountNumber, account.FirstName, account.LastName, account.BY, account.BM, account.BD, account.Balance);
+                        acc1 = true;
+                    }
+                    Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                    choice = Convert.ToString(Console.ReadLine());
+                    while (choice == "d")
+                    {
+                        Console.Write("\nEnter amount for deposit: ");
+                        account.Deposit(Convert.ToDecimal(Console.ReadLine()));
+                        Console.WriteLine("Balance: {0}", account.Balance);
+                        Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                        choice = Convert.ToString(Console.ReadLine());
+                    }
+                while (choice == "w")
+                {
+                    Console.Write("\nEnter amount for withdrawal: ");
+                    account.Withdraw(Convert.ToDecimal(Console.ReadLine()));
+                    Console.WriteLine("Balance: {0}", account.Balance);
+                    Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                    choice = Convert.ToString(Console.ReadLine());
+                }
+                while (choice == "n")
+                {
+                        Console.Write("Choose an bank account number: 1 / 2 / 3 ");
+                        chooseid = Convert.ToInt32(Console.ReadLine());
+                        break;
+                }
+            }
+                else if (chooseid == 2 && acc2 != true)
+                {
+                    if (acc2 != true)
+                    {
+                        Console.Write("Enter your first name: ");
+                        account2.FirstName = Console.ReadLine();
+                        Console.Write("Enter your last name: ");
+                        account2.LastName = Console.ReadLine();
+                        Console.Write("Enter year of birth: ");
+                        account2.BY = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter month of birth: ");
+                        account2.BM = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter day of birth: ");
+                        account2.BD = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("\nYour details:\nAccount number: {0}\nFirst name: {1}\nLast name: {2}\nDate of birth: {3}/{4}/{5}\nBalance: {6}", account2.AccountNumber, account2.FirstName, account2.LastName, account2.BY, account2.BM, account2.BD, account2.Balance);
+                        acc2 = true;
+                        Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                        choice = Convert.ToString(Console.ReadLine());
+                    }
+                    while (choice == "d")
+                    {
+                        Console.Write("\nEnter amount for deposit: ");
+                        account2.Deposit(Convert.ToDecimal(Console.ReadLine()));
+                        Console.WriteLine("Balance: {0}", account2.Balance);
+                        Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                        choice = Convert.ToString(Console.ReadLine());
+                    }
+                    while (choice == "w")
+                    {
+                        Console.Write("\nEnter amount for withdrawal: ");
+                        account2.Withdraw(Convert.ToDecimal(Console.ReadLine()));
+                        Console.WriteLine("Balance: {0}", account2.Balance);
+                        Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                        choice = Convert.ToString(Console.ReadLine());
+                    }
+                    while (choice == "n")
+                    {
+                        Console.Write("Choose an bank account number: 1 / 2 / 3 ");
+                        chooseid = Convert.ToInt32(Console.ReadLine());
+                        break;
+                    }
+                }
+                else if (chooseid == 3)
+                {
+                    if (acc3 != true)
+                    {
+                        Console.Write("Enter your first name: ");
+                        account3.FirstName = Console.ReadLine();
+                        Console.Write("Enter your last name: ");
+                        account3.LastName = Console.ReadLine();
+                        Console.Write("Enter year of birth: ");
+                        account3.BY = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter month of birth: ");
+                        account3.BM = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Enter day of birth: ");
+                        account3.BD = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("\nYour details:\nAccount number: {0}\nFirst name: {1}\nLast name: {2}\nDate of birth: {3}/{4}/{5}\nBalance: {6}", account3.AccountNumber, account3.FirstName, account3.LastName, account3.BY, account3.BM, account3.BD, account3.Balance);
+                        acc3 = true;
+                    }
+                        Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                        choice = Convert.ToString(Console.ReadLine());
+                        while (choice == "d")
+                        {
+                            Console.Write("\nEnter amount for deposit: ");
+                            account3.Deposit(Convert.ToDecimal(Console.ReadLine()));
+                            Console.WriteLine("Balance: {0}", account3.Balance);
+                            Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                            choice = Convert.ToString(Console.ReadLine());
+                        }
+                        while (choice == "w")
+                        {
+                            Console.Write("\nEnter amount for withdrawal: ");
+                            account3.Withdraw(Convert.ToDecimal(Console.ReadLine()));
+                            Console.WriteLine("Balance: {0}", account3.Balance);
+                            Console.Write("\nChoose an option: Deposit / Withdraw / Create new account / Exit [ d / w / n / e ] ");
+                            choice = Convert.ToString(Console.ReadLine());
+                        }
+                        while (choice == "n")
+                        {
+                            Console.Write("Choose an bank account number: 1 / 2 / 3 ");
+                            chooseid = Convert.ToInt32(Console.ReadLine());
+                            break;
+                        }
+                    }
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\bin\Debug\project_6.2.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\bin\Debug\project_6.2.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\bin\Debug\project_6.2.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6.2.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6._2.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6._2.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6.2.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6.2.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6.2.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_6.2\project_6.2\obj\Debug\project_6.2.pdb

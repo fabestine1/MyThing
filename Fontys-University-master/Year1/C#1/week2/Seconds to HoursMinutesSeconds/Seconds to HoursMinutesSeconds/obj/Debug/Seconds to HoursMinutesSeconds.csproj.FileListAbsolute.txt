@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\bin\Debug\Seconds to HoursMinutesSeconds.exe.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\bin\Debug\Seconds to HoursMinutesSeconds.exe
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\bin\Debug\Seconds to HoursMinutesSeconds.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\obj\Debug\Seconds to HoursMinutesSeconds.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\obj\Debug\Seconds to HoursMinutesSeconds.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\obj\Debug\Seconds to HoursMinutesSeconds.exe
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\Seconds to HoursMinutesSeconds\Seconds to HoursMinutesSeconds\obj\Debug\Seconds to HoursMinutesSeconds.pdb

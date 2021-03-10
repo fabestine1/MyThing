@@ -1,0 +1,118 @@
+--1a
+set serveroutput on;
+
+declare
+    cursor managers is
+        select distinct manager_id
+        from employees
+        order by manager_id asc;
+                
+    cursor employees is
+        select employee_id, manager_id, first_name, last_name
+        from employees
+        order by first_name, last_name asc;
+begin
+    for man in managers loop
+        pr(man.manager_id || ':');
+        
+            for emp in employees loop
+                if emp.manager_id = man.manager_id then
+                pr('   - '||emp.first_name || ' ' || emp.last_name);
+                end if;
+            end loop;
+    end loop;
+end;
+
+--1b
+set serveroutput on;
+
+declare
+    cursor managers is
+        select distinct manager_id
+        from employees
+        order by manager_id asc;
+                
+    cursor employees is
+        select employee_id, manager_id, first_name, last_name
+        from employees
+        order by first_name, last_name asc;
+        
+    counter number := 0;
+begin
+    for man in managers loop
+            for emp1 in employees loop
+                if man.manager_id = emp1.employee_id then
+                    pr(man.manager_id || ' ' || emp1.first_name || ' ' || emp1.last_name || ':');
+                end if;
+            end loop;
+            
+            for emp in employees loop
+                if emp.manager_id = man.manager_id then
+                counter := counter +1;
+                pr('   ' || counter || ': ' || emp.first_name || ' ' || emp.last_name);
+                end if;
+            end loop;
+        counter := 0;
+    end loop;
+end;
+
+--2
+set serveroutput on;
+
+create or replace function Dept_Emps(depid in departments.department_id%type)
+return number
+is 
+    people number;
+begin
+
+select COUNT(*)
+into people
+from employees
+where department_id = depid;
+   
+   RETURN people;
+end Dept_Emps;
+
+--3
+create or replace trigger salaryConstraint
+before insert or update of salary on employees
+for each row
+begin 
+    IF :NEW.salary > :OLD.salary *0.1 + :OLD.salary THEN
+            RAISE_APPLICATION_ERROR(-20000, 'The salary of an employee may never be increased by more than 10%. ');
+    END IF;
+    
+    IF :NEW.salary < :OLD.salary - :OLD.salary*0.1 THEN
+            RAISE_APPLICATION_ERROR(-20000, 'The salary of an employee may never be decreased by more than 10%. ');
+    END IF;
+end salaryConstraint;
+
+--4a
+create or replace PROCEDURE Emps_Per_City(
+p_city in locations.city%type,
+p_num_emps out number) is
+begin
+
+    select COUNT(*)
+    into p_num_emps
+    from employees e
+    JOIN departments d ON e.department_id=d.department_id
+    JOIN locations l ON l.location_id = d.location_id 
+    where l.city = initcap(p_city);
+
+    pr('The number of employees from this city are: ' || p_num_emps);
+    
+    exception
+        when no_data_found then
+            pr('There is no such country!');
+        when others then
+            pr('Something went wrong!');
+end Emps_Per_City;
+
+--4b
+declare 
+    numberEmp number;
+begin
+    Emps_Per_City('London',numberEmp);
+    pr(numberEmp);
+end;

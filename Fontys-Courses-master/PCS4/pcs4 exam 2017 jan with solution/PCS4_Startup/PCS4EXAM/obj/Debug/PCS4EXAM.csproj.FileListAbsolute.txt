@@ -1,0 +1,12 @@
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\bin\Debug\PCS4EXAM.exe.config
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\bin\Debug\PCS4EXAM.exe
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\bin\Debug\PCS4EXAM.pdb
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.FormCapitolStudio.resources
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.FormCrowdfunding.resources
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.FormRedFlat.resources
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.exe
+C:\Users\flamestar\Downloads\pcs4 exam 2017 jan with solution\PCS4_Startup\PCS4EXAM\obj\Debug\PCS4EXAM.pdb

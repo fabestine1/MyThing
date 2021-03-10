@@ -1,0 +1,29 @@
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\bin\Debug\PCS2ExamApp.exe
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\bin\Debug\PCS2ExamApp.pdb
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.Properties.Resources.resources
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.exe
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.pdb
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.Form1.resources
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.exe
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.pdb
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\bin\Debug\PCS2ExamApp.exe
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\bin\Debug\PCS2ExamApp.pdb
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.Form1.resources
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.Properties.Resources.resources
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\INDIRECTORY PCS2 exam June 2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.exe
+D:\2012-2013-kw4 - PCS2\PCS2 exam things\exam things 2013 june\INDIRECTORY PCS2 exam June 2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.pdb
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.exe
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.pdb
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.Form1.resources
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.Properties.Resources.resources
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.csproj.GenerateResource.Cache
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\bin\Debug\PCS2ExamApp.exe
+C:\Users\ismet\Downloads\Fontys\exam pcs2 2013 June (with solution)\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\bin\Debug\PCS2ExamApp.pdb
+C:\Users\ismet\Desktop\EXAM\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.exe
+C:\Users\ismet\Desktop\EXAM\PCS2ExamJune2013\PCS2ExamApp-START\PCS2ExamApp\obj\x86\Debug\PCS2ExamApp.pdb

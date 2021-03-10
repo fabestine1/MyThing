@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\bin\Debug\AppForAShop.exe.config
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\bin\Debug\AppForAShop.exe
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\bin\Debug\AppForAShop.pdb
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.Form1.resources
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.exe
+C:\Users\flamestar\Downloads\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.pdb

@@ -1,0 +1,12 @@
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\bin\Debug\FreakyGarage.exe.config
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\bin\Debug\FreakyGarage.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\bin\Debug\FreakyGarage.pdb
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.BudgetBobForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.FortuneFritzForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.FreakyGarageForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.csproj.GenerateResource.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\FreakyGarage_START\FreakyGarage\obj\Debug\FreakyGarage.pdb

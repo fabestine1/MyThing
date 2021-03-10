@@ -1,0 +1,111 @@
+Exam june 2017
+
+1st)
+set serveroutput on;
+declare 
+    cursor loc_cursor is
+        select country_id, location_id, city
+        from locations
+        order by country_id;
+        
+    cursor dep_cursor(loc_id locations.location_id%type) is
+        select department_name
+        from departments
+        where location_id = loc_id;
+begin
+    for loc in loc_cursor loop
+        print('---' || loc.country_id || ',' || loc.city || '- ' || loc.location_id);
+        
+        for dep in dep_cursor(loc.location_id) loop
+            print('   ' || dep.department_name);
+        end loop;
+    end loop;
+end;
+
+
+2a)
+
+
+
+create or replace procedure inserting_department(dep_id out departments.department_id%type, 
+    dep_name in departments.department_name%type,
+    man_id in departments.manager_id%type,
+    loc_id in departments.location_id%type)
+    is 
+    begin
+        select max(department_id)
+        into dep_id
+        from departments;
+        
+        dep_id := dep_id + 10;
+        
+        insert into departments(department_id, department_name, manager_id, location_id)
+        values(dep_id, initcap(dep_name), man_id, loc_id);
+        
+        print('The new department has been added with department id: ' || dep_id);
+        
+        exception
+            when no_data_found then
+                print('There is no such a manager id or location id!');
+            when others then
+                print('Something went wrong!');
+                
+end inserting_department;
+
+
+
+2b)
+
+declare 
+    dep_id departments.department_id%type;
+begin
+    inserting_department(dep_id, 'DATA', 100, 3100);
+    print(dep_id);
+end;
+
+
+
+3)
+
+create or replace trigger salary_constraint
+before insert or update of salary on employees
+for each row 
+declare
+    min_sal jobs.min_salary%type;
+    max_sal jobs.max_salary%type;
+begin 
+    print(:NEW.job_id);
+    
+    select min_salary, max_salary 
+    into min_sal, max_sal
+    from jobs
+    where job_id = :NEW.job_id;
+    
+    if :NEW.salary not between min_sal and max_sal then
+        raise_application_error(-20001, 'The salary is out of the range: ' || min_sal || ' and ' || max_sal);
+    end if;
+end salary_constraint;
+/
+update employees
+set salary = 17000
+where employee_id = 101;
+
+
+
+4)
+
+create or replace function get_country(c_id in countries.country_id%type)
+return countries.country_name%type
+is 
+    c_name countries.country_name%type;
+begin
+    select country_name
+    into c_name
+    from countries
+    where country_id = c_id;
+    
+    return c_name;
+end get_country;
+/
+SELECT city, country_id , get_country(country_id) as COUNTRY
+FROM locations;

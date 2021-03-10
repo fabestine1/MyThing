@@ -1,0 +1,6 @@
+D:\Fontys\C#2\week5\5.1\bin\Debug\5.1.exe.config
+D:\Fontys\C#2\week5\5.1\bin\Debug\5.1.exe
+D:\Fontys\C#2\week5\5.1\bin\Debug\5.1.pdb
+D:\Fontys\C#2\week5\5.1\obj\Debug\5.1.exe
+D:\Fontys\C#2\week5\5.1\obj\Debug\5.1.pdb
+D:\Fontys\C#2\week5\5.1\obj\Debug\5.1.csprojResolveAssemblyReference.cache

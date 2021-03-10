@@ -1,0 +1,6 @@
+SELECT FIRST_NAME || ' ' || LAST_NAME "Name", DECODE(JOB_ID, 'AD_PRES', 'A',
+'ST_MAN', 'B',
+'IT_PROG', 'C',
+'SA_REP', 'D',
+'ST_CLERK', 'E',
+0) GRADE FROM EMPLOYEES;

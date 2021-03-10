@@ -1,0 +1,170 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.results {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 18px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+
+.result {
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: Open Sans, sans-serif;
+
+    font-size: 7px;
+    height: 14px;
+    width: 14px;
+    margin-right: 1px;
+
+    font-weight: 400;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-align: right;
+    vertical-align: top;
+}
+
+.result--W {
+    background-color: #59ba3a;
+
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.result--D {
+    background-color: #979797;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.result--L {
+    background-color: #e30613;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    font-family: Open Sans, sans-serif;
+    font-weight: 400;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+
+.top-buffer {
+    margin-top: 20px;
+}

@@ -1,0 +1,10 @@
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\bin\Debug\AppAboutZebras.exe.config
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\bin\Debug\AppAboutZebras.exe
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\bin\Debug\AppAboutZebras.pdb
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.Form1.resources
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.csproj.GenerateResource.Cache
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.exe
+C:\Users\flamestar\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.pdb

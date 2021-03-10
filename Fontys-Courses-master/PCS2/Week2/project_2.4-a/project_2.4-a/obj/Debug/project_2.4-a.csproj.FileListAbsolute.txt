@@ -1,0 +1,7 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\bin\Debug\project_2.4-a.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\bin\Debug\project_2.4-a.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\bin\Debug\project_2.4-a.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\obj\Debug\project_2.4-a.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\obj\Debug\project_2.4-a.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\obj\Debug\project_2.4-a.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-a\project_2.4-a\obj\Debug\project_2.4-a.pdb

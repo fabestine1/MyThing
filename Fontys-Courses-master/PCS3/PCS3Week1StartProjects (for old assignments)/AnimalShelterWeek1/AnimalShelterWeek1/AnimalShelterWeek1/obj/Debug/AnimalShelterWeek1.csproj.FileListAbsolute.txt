@@ -1,0 +1,18 @@
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\bin\Debug\AnimalShelterWeek1.exe.config
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.AnimalShelterForm.resources
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.Properties.Resources.resources
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.csproj.GenerateResource.Cache
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\bin\Debug\AnimalShelterWeek1.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\bin\Debug\AnimalShelterWeek1.pdb
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\AminalShelterStart\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.pdb
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\bin\Debug\AnimalShelterWeek1.exe.config
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\bin\Debug\AnimalShelterWeek1.exe
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\bin\Debug\AnimalShelterWeek1.pdb
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.AnimalShelterForm.resources
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.Properties.Resources.resources
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.exe
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\AnimalShelterWeek1\AnimalShelterWeek1\AnimalShelterWeek1\obj\Debug\AnimalShelterWeek1.pdb

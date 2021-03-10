@@ -1,0 +1,9 @@
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\bin\Debug\AppAboutZebras.exe.config
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\bin\Debug\AppAboutZebras.exe
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\bin\Debug\AppAboutZebras.pdb
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.Form1.resources
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.Properties.Resources.resources
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.csproj.GenerateResource.Cache
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.exe
+C:\Users\lenovo\Desktop\Exam_Start\AppAboutZebras - startup\AppAboutZebras\obj\Debug\AppAboutZebras.pdb

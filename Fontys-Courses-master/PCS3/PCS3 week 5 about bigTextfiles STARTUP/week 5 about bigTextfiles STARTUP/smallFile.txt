@@ -1,0 +1,10 @@
+7084 msgType=link_negotiation_lum cV=2 GUID=0017880C02A8 time=2015-06-25 16:14:32 RetCode=0
+
+7084 msgType=FETCH_NET cV=2 GUID=0017880C02A8 time=2015-06-25 16:14:32 ipPacketDrops=0 udpMsgDrops=0 udpMsgIn=7931530 udpMsgOut=5696363 lnkSpeedNegotiations=54 
+7081 msgType=link_negotiation_lum cV=2 GUID=0017880C02AE time=2015-06-25 16:14:32 RetCode=0
+
+7081 msgType=FETCH_NET cV=2 GUID=0017880C02AE time=2015-06-25 16:14:32 ipPacketDrops=0 udpMsgDrops=0 udpMsgIn=1334188 udpMsgOut=1016375 lnkSpeedNegotiations=1 
+7078 msgType=udp_dropping_lum cV=2 GUID=0017880C031E time=2015-06-25 16:14:16 RetCode=0
+
+7078 msgType=FETCH_NET cV=2 GUID=0017880C031E time=2015-06-25 16:14:16 ipPacketDrops=0 udpMsgDrops=0 udpMsgIn=1326298 udpMsgOut=1002248 lnkSpeedNegotiations=1 
+7072 msgType=broken_cable_permanently_lum cV=2 GUID=0017880C1BE3 time=2015-06-25 16:14:09 RetCode=0

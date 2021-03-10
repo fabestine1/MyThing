@@ -1,0 +1,6 @@
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\bin\Debug\contract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\bin\Debug\contract.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Debug\contract.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Debug\contract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Debug\contract.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Debug\contract.csprojAssemblyReference.cache

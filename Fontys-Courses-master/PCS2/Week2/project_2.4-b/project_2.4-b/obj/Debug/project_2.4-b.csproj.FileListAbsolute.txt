@@ -1,0 +1,6 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-b\project_2.4-b\bin\Debug\project_2.4-b.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-b\project_2.4-b\bin\Debug\project_2.4-b.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-b\project_2.4-b\bin\Debug\project_2.4-b.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-b\project_2.4-b\obj\Debug\project_2.4-b.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-b\project_2.4-b\obj\Debug\project_2.4-b.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-b\project_2.4-b\obj\Debug\project_2.4-b.pdb

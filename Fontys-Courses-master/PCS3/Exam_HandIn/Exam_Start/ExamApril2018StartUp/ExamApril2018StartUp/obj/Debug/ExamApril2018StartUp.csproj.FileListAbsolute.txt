@@ -1,0 +1,10 @@
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.MyBookShelfForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.csproj.GenerateResource.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\bin\Debug\ExamApril2018StartUp.exe.config
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\bin\Debug\ExamApril2018StartUp.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\bin\Debug\ExamApril2018StartUp.pdb
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\ExamApril2018StartUp\ExamApril2018StartUp\obj\Debug\ExamApril2018StartUp.pdb

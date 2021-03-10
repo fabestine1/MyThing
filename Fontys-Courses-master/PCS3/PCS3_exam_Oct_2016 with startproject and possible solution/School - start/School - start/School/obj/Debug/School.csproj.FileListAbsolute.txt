@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\bin\Debug\School.exe.config
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\bin\Debug\School.exe
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\bin\Debug\School.pdb
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.Form1.resources
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.exe
+C:\Users\flamestar\Downloads\PCS3_exam_Oct_2016 with startproject and possible solution\School - start\School - start\School\obj\Debug\School.pdb

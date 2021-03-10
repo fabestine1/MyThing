@@ -1,0 +1,35 @@
+wine
+33
+Merlot
+12
+20
+2011
+===================
+wcart
+44
+orange hat
+12.50
+100
+discount yes
+===================
+dep
+77
+Bavaria beer
+2.50
+300
+0.25
+===================
+wcart
+88
+orange flag
+25
+10
+discount no
+===================
+wine
+99
+Student wine
+2.5
+250
+2016
+===================

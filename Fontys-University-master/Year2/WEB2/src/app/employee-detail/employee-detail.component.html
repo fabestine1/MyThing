@@ -1,0 +1,42 @@
+<button class="btn btn-primary" (click)="goBack()">Go back</button>
+<div *ngIf="employee">
+  <h3>{{employee.first_name}} {{employee.last_name}} - Details</h3>
+  <hr>
+  <span>Change the details of the employee: </span>
+  <br>
+  <br>
+  <div>
+    <label>ID: </label> {{employee.id}}
+  </div>
+  <div>
+	<div>
+    <label>First name:</label>
+    <label>
+      <input class="form-control" [(ngModel)]="employee.first_name" placeholder="first_name"/>
+    </label>
+	</div>
+	<div>
+	<label>Last name:</label>
+    <label>
+      <input class="form-control" [(ngModel)]="employee.last_name" placeholder="last_name"/>
+    </label>
+	</div>
+	<div>
+	<label>Birthdate:</label>
+    <label>
+      <input class="form-control" [(ngModel)]="employee.birth_date" placeholder="birth_date"/>
+    </label>
+	<div>
+		<label>Department ID:</label>
+		<label><input class="form-control" [(ngModel)]="employee.department_id" placeholder="department_id"/></label>
+    </div>
+	</div>
+    <hr>
+    <div>
+	<h3>Department: <a routerLink="/departments/detail/{{employee.department_id}}">{{department.name}}</a></h3>
+	</div>
+	<hr>
+  </div>
+  <button class="btn btn-success" (click)="save()" style="margin-right: 3px;">Update</button>
+  <button class="btn btn-danger" (click)="delete()">Remove</button>
+</div>

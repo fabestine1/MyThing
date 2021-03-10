@@ -1,0 +1,7 @@
+D:\Fontys\C#1\week5\week5\week5\bin\Debug\week5.exe.config
+D:\Fontys\C#1\week5\week5\week5\bin\Debug\week5.exe
+D:\Fontys\C#1\week5\week5\week5\bin\Debug\week5.pdb
+D:\Fontys\C#1\week5\week5\week5\obj\Debug\5.1.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week5\week5\week5\obj\Debug\5.1.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week5\week5\week5\obj\Debug\week5.exe
+D:\Fontys\C#1\week5\week5\week5\obj\Debug\week5.pdb

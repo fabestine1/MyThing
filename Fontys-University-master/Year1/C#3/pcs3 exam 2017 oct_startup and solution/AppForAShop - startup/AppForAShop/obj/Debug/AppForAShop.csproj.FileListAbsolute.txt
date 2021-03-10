@@ -1,0 +1,9 @@
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.Form1.resources
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.Properties.Resources.resources
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.csproj.GenerateResource.Cache
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\bin\Debug\AppForAShop.exe.config
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\bin\Debug\AppForAShop.exe
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\bin\Debug\AppForAShop.pdb
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.exe
+C:\Users\lenovo\Desktop\pcs3 exam 2017 oct_startup and solution\AppForAShop - startup\AppForAShop\obj\Debug\AppForAShop.pdb

@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\bin\Debug\Race_Track_Solution.exe.config
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\bin\Debug\Race_Track_Solution.exe
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\bin\Debug\Race_Track_Solution.pdb
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Start.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Solution.RaceForm.resources
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Solution.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Start.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Start.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Solution.exe
+C:\Users\flamestar\Downloads\pcs4 exam 2017 june startup and solution\Race_Track_Solution\Race_Track_Start\obj\Debug\Race_Track_Solution.pdb

@@ -1,0 +1,12 @@
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\bin\Debug\JukeBoxStore.exe.config
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\bin\Debug\JukeBoxStore.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\bin\Debug\JukeBoxStore.pdb
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.BeatlesFanForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.JukeboxForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.PromoBoardForm.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.csproj.GenerateResource.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\JukeBoxStore\JukeBoxStore\obj\Debug\JukeBoxStore.pdb

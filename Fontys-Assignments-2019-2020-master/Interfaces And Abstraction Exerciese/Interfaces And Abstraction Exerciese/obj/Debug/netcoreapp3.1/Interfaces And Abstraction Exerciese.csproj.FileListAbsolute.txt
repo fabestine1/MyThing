@@ -1,0 +1,11 @@
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\bin\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.exe
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\bin\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.deps.json
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\bin\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.runtimeconfig.json
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\bin\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.runtimeconfig.dev.json
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\bin\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.dll
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\bin\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.pdb
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\obj\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.csprojAssemblyReference.cache
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\obj\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.AssemblyInfoInputs.cache
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\obj\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.AssemblyInfo.cs
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\obj\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.dll
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Interfaces And Abstraction Exerciese\obj\Debug\netcoreapp3.1\Interfaces And Abstraction Exerciese.pdb

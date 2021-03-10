@@ -1,0 +1,88 @@
+Exam June 2014 Practise
+
+--1
+set serveroutput on;
+
+declare
+    cursor countries is
+        select country_name, country_id
+        from countries
+        order by country_name;
+    
+    cursor results is
+        select e.first_name,e.last_name, c.country_id
+        from employees e
+         JOIN departments d ON e.department_id=d.department_id
+         JOIN locations l ON l.location_id = d.location_id 
+         JOIN countries c ON c.country_id = l.country_id 
+        order by e.salary desc;
+begin
+    for country in countries loop
+        pr(country.country_name);
+        for res in results loop
+            IF res.country_id = country.country_id  THEN
+                pr(' --' || res.last_name || ', '|| res.first_name);
+            END IF;
+            
+        end loop;
+    end loop;
+end;
+
+--2a
+set serveroutput on;
+create or replace PROCEDURE insertlocation(
+locationid out locations.location_id%type,
+street_address in locations.street_address%type,
+postal_code in locations.postal_code%type,
+city in locations.city%type,
+state_province in locations.state_province%type,
+country_id in locations.country_id%type) is
+
+begin
+
+select max(location_id)
+into locationid
+from locations;
+
+locationid := locationid + 100;
+
+    insert into locations(location_id, street_address, postal_code, city, state_province, country_id)
+    values(locationid, initcap(street_address), postal_code, initcap(city), initcap(state_province), country_id);
+    
+    pr('The new location has been added with location id: ' || locationid);
+    
+    exception
+        when no_data_found then
+            pr('There is no such country!');
+        when others then
+            pr('Something went wrong!');
+end insertlocation;
+
+--2b
+
+declare 
+    location_id locations.location_id%type;
+begin
+    insertlocation(location_id, 'Rachelsmolen 1', '5612 MA', 'Eindhoven', 'NB', 'NL');
+    pr(location_id);
+end;
+
+--3
+
+create or replace trigger country_constraint
+after insert or update of location_id on departments
+declare
+    cursor departments is
+        select  Count(d.location_id) as CountasDep
+        from departments d
+        where location_id not like '1700'
+        group by d.location_id;
+
+begin 
+    for dep in departments loop
+        if dep.CountasDep > 3 then
+            RAISE_APPLICATION_ERROR(-20000, 'Too much!');
+        end if;
+    end loop;
+    
+end country_constraint;

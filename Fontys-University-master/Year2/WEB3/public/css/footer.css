@@ -1,0 +1,21 @@
+.footer-nav {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    height: 400px;
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.show, .footer-nav:hover {
+    display: block;
+}
+.hr {
+    color: #5a6268;
+}

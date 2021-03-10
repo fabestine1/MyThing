@@ -1,0 +1,17 @@
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Bert\pcs4\week 1\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.GenerateResource.cache
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.csproj.CoreCompileInputs.cache
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\kaloy\Desktop\week 1 About_Delegates FINAL\week 1 About_Delegates FINAL\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb

@@ -1,0 +1,1 @@
+SELECT LAST_NAME || ' earns ' || SALARY || ' monthly but wants ' || 3 * SALARY "Dream Salaries" FROM EMPLOYEES;

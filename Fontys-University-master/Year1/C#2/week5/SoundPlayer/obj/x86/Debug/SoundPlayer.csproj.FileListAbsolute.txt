@@ -1,0 +1,19 @@
+D:\__Vakken\2012-2013\PCS2\SoundPlayer\SoundPlayer\SoundPlayer\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\__Vakken\2012-2013\PCS2\SoundPlayer\SoundPlayer\SoundPlayer\obj\x86\Debug\SoundPlayer.Form1.resources
+D:\__Vakken\2012-2013\PCS2\SoundPlayer\SoundPlayer\SoundPlayer\obj\x86\Debug\SoundPlayer.Properties.Resources.resources
+D:\__Vakken\2012-2013\PCS2\SoundPlayer\SoundPlayer\SoundPlayer\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\__Vakken\2012-2013\PCS2\SoundPlayer\SoundPlayer\SoundPlayer\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\871294\Dropbox\agnes_school\school\PCS_new\PCS2\practicum\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.csprojResolveAssemblyReference.cache
+C:\Users\871294\Dropbox\agnes_school\school\PCS_new\PCS2\practicum\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.Form1.resources
+C:\Users\871294\Dropbox\agnes_school\school\PCS_new\PCS2\practicum\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes_school\school\PCS_new\PCS2\practicum\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.csproj.GenerateResource.Cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.csprojResolveAssemblyReference.cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.Form1.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.csproj.GenerateResource.Cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\bin\Debug\SoundPlayer.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\bin\Debug\SoundPlayer.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\new\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_2\practicum\week5 april2014\new\Assignment - Sound Player 2014 - Starting Material\Assignment - Sound Player - Starting Material\SoundPlayer\obj\x86\Debug\SoundPlayer.pdb

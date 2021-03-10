@@ -1,0 +1,104 @@
+---
+title: "Introduction SQL in RStudio, part 3 - Anwers"
+date: June 2019
+author: Antoinette Littel
+number_sections: true
+code_folding: hide
+output: html_notebook
+
+---
+In part 3 you are prepared for your assesment with open assignments. This workbook provides the answers, so you can review your results.
+
+
+<h2> Connecting to the database </h2>
+
+The first chunk in this Notebook will run automatically when you make the SQL statements. It loads the libraries you need and connects to the database 'machine.db' that should be in your folder. 
+
+```{r setup, results='hide'}
+library(tidyverse)
+library(readxl)
+library(DBI)
+
+#enable other connections
+# dbDisconnect(con)
+
+# connect to machine.db
+con <- DBI::dbConnect(RSQLite::SQLite(), "machine.db")
+#
+
+#
+# use the database connection for all SQL chunks in this notebook and hide the code by default
+knitr::opts_chunk$set(connection = "con", echo=FALSE)
+```
+
+
+
+<h2>Database design </h2>
+
+Below is the design of the database. You should have this picture in the images folder of your workdirectory. You can open the picture next to your Notebook, so that you can see the design while creating your queries.
+
+<img src = "images/nov17exam.png" />
+
+
+<h2> Assignments </h2>
+
+Make a SQL query for the following questions. 
+
+a)	List all the projects that started in 2018 and ended in 2018.
+
+```{sql, connection=con}
+
+
+```
+<br>
+
+b)	Give the total number of workers that live in Eindhoven and have an hourly rate of more than 20 euros/hr.
+
+```{sql, connection=con}
+
+```
+<br>
+
+c)	List the projects where manager name is Jane plus the projects where city is not Eindhoven and manager name is not Jane.
+```{sql, connection=con}
+
+```
+<br>
+
+d)	Give average hourly rate of all full-time Workers per city, but only when there are more than 1 worker coming from that city.
+```{sql, connection=con}
+
+```
+<br>
+
+e)	Give first name and last name of the workers who have worked on projects with project ids between 2 and 6 (both values are inclusive) and who have first name ending with letters 'rd'. <u>Using a subquery is mandatory!</u>
+```{sql, connection=con}
+
+
+```
+<br>
+
+f)	Give the project name, project type, machine type, brand for the machines of type 'Loader', 'Roller' and 'Dumper'. Sort the result in alphabetical order of project type and then in reverse alphabetical order of machine type.
+```{sql, connection=con}
+
+
+
+```
+<br>
+
+g) List per machineID and description the number of projects that reserved that machine.
+```{sql, connection=con}
+
+
+
+```
+<br>
+
+h) List for each reserved machine, the workers firstname and lastname that reserved that machine. 
+
+```{sql, connection=con}
+ 
+  
+
+```
+<br>

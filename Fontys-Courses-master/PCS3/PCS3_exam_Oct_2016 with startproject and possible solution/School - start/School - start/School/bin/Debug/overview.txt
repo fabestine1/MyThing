@@ -1,0 +1,10 @@
+Fontys ICT
+***** e-courses *****
+E-Course Id: 200 Course name: Jiu Jitsu Nr of participants 0 Price per perticipant: 1000
+E-Course Id: 201 Course name: Kung Fu Nr of participants 0 Price per perticipant: 400
+***** classroom courses *****
+Classroom course Id: 102 Course name: PCS4 Nr of participants 1 Min / max # participants: 1 / 20 Price per perticipant: 600
+***** revenues *****
+Total revenue of all E-Courses: 0
+Total revenue of all Classroom courses that will take place: 600
+

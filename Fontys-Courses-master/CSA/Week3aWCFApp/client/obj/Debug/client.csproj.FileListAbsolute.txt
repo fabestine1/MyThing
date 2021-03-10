@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\bin\Debug\client.exe.config
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\bin\Debug\client.exe
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\bin\Debug\client.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.csprojAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.csproj.GenerateResource.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.exe
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\client\obj\Debug\client.WebShopClient.resources

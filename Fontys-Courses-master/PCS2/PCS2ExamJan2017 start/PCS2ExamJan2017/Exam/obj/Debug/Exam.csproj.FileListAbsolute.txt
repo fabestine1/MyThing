@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.Form1.resources
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.Properties.Resources.resources
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\bin\Debug\Exam.exe.config
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\bin\Debug\Exam.exe
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\bin\Debug\Exam.pdb
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.exe
+C:\Users\flamestar\Downloads\PCS2ExamJan2017 start\PCS2ExamJan2017\Exam\obj\Debug\Exam.pdb

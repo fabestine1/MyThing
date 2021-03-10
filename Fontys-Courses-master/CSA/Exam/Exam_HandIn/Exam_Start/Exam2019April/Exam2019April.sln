@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingClient", "MessagingClient\MessagingClient.csproj", "{1907776B-11EB-4F20-AE04-60244AEED2DA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC127586-DF5C-464A-B48D-28826E7601BE} = {EC127586-DF5C-464A-B48D-28826E7601BE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagerClient", "ManagerClient\ManagerClient.csproj", "{EC771F9B-7F98-4129-81E0-E6D7D291D938}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC127586-DF5C-464A-B48D-28826E7601BE} = {EC127586-DF5C-464A-B48D-28826E7601BE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessagingService", "MessagingService\MessagingService.csproj", "{EC127586-DF5C-464A-B48D-28826E7601BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1907776B-11EB-4F20-AE04-60244AEED2DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1907776B-11EB-4F20-AE04-60244AEED2DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1907776B-11EB-4F20-AE04-60244AEED2DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1907776B-11EB-4F20-AE04-60244AEED2DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC771F9B-7F98-4129-81E0-E6D7D291D938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC771F9B-7F98-4129-81E0-E6D7D291D938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC771F9B-7F98-4129-81E0-E6D7D291D938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC771F9B-7F98-4129-81E0-E6D7D291D938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC127586-DF5C-464A-B48D-28826E7601BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC127586-DF5C-464A-B48D-28826E7601BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC127586-DF5C-464A-B48D-28826E7601BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC127586-DF5C-464A-B48D-28826E7601BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98192140-00A1-4425-8F45-83E0B94C16E9}
+	EndGlobalSection
+EndGlobal

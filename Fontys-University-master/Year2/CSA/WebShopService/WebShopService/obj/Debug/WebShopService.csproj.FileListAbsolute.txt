@@ -1,0 +1,7 @@
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\bin\Debug\WebShopService.dll.config
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\bin\Debug\WebShopService.dll
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\bin\Debug\WebShopService.pdb
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\obj\Debug\WebShopService.csprojAssemblyReference.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\obj\Debug\WebShopService.csproj.CoreCompileInputs.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\obj\Debug\WebShopService.dll
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\WebShopService\obj\Debug\WebShopService.pdb

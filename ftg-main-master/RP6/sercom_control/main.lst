@@ -1,0 +1,603 @@
+   1               		.file	"main.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	get_BatteryLevelAsPercentage
+  18               	get_BatteryLevelAsPercentage:
+  19               	.LFB7:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 0E94 0000 		call getBatteryLevel
+  25 0004 BC01      		movw r22,r24
+  26 0006 84E8      		ldi r24,lo8(900)
+  27 0008 93E0      		ldi r25,hi8(900)
+  28 000a 0E94 0000 		call __divmodhi4
+  29 000e CB01      		movw r24,r22
+  30               	/* epilogue start */
+  31               	.LM3:
+  32 0010 0895      		ret
+  33               	.LFE7:
+  35               	.global	DoDataProcess
+  37               	DoDataProcess:
+  38               	.LFB8:
+  39               	.LM4:
+  40 0012 BF92      		push r11
+  41 0014 CF92      		push r12
+  42 0016 DF92      		push r13
+  43 0018 EF92      		push r14
+  44 001a FF92      		push r15
+  45 001c 0F93      		push r16
+  46 001e 1F93      		push r17
+  47 0020 DF93      		push r29
+  48 0022 CF93      		push r28
+  49 0024 00D0      		rcall .
+  50 0026 00D0      		rcall .
+  51 0028 CDB7      		in r28,__SP_L__
+  52 002a DEB7      		in r29,__SP_H__
+  53               	/* prologue: function */
+  54               	/* frame size = 4 */
+  55               	.LM5:
+  56 002c 0E94 0000 		call getBufferLength
+  57               	.LM6:
+  58 0030 8823      		tst r24
+  59 0032 01F0      		breq .+2
+  60 0034 00C0      		rjmp .L30
+  61 0036 00C0      		rjmp .L26
+  62               	.L25:
+  63               	.LBB2:
+  64               	.LM7:
+  65 0038 0E94 0000 		call readChar
+  66 003c 282F      		mov r18,r24
+  67               	.LVL0:
+  68               	.LM8:
+  69 003e 8091 0000 		lds r24,wrapped.1989
+  70 0042 8823      		tst r24
+  71 0044 01F4      		brne .L6
+  72               	.LM9:
+  73 0046 2B37      		cpi r18,lo8(123)
+  74 0048 01F0      		breq .+2
+  75 004a 00C0      		rjmp .L29
+  76               	.LM10:
+  77 004c B092 0000 		sts wrapped.1989,r11
+  78 0050 00C0      		rjmp .L29
+  79               	.L6:
+  80 0052 4091 0000 		lds r20,index.1988
+  81 0056 5091 0000 		lds r21,(index.1988)+1
+  82               	.LM11:
+  83 005a 2D37      		cpi r18,lo8(125)
+  84 005c 01F0      		breq .+2
+  85 005e 00C0      		rjmp .L7
+  86               	.LM12:
+  87 0060 57FD      		sbrc r21,7
+  88 0062 00C0      		rjmp .L8
+  89               	.LBB3:
+  90               	.LM13:
+  91 0064 1A82      		std Y+2,__zero_reg__
+  92 0066 1982      		std Y+1,__zero_reg__
+  93 0068 1C82      		std Y+4,__zero_reg__
+  94 006a 1B82      		std Y+3,__zero_reg__
+  95               	.LM14:
+  96 006c 4F5F      		subi r20,lo8(-(1))
+  97 006e 5F4F      		sbci r21,hi8(-(1))
+  98 0070 C601      		movw r24,r12
+  99 0072 60E0      		ldi r22,lo8(receiveBuffer.1987)
+ 100 0074 70E0      		ldi r23,hi8(receiveBuffer.1987)
+ 101 0076 0E94 0000 		call parseRequest
+ 102               	.LVL1:
+ 103               	.LM15:
+ 104 007a 80E0      		ldi r24,lo8(__c.1993)
+ 105 007c 90E0      		ldi r25,hi8(__c.1993)
+ 106 007e 0E94 0000 		call writeNStringP
+ 107               	.LM16:
+ 108 0082 8981      		ldd r24,Y+1
+ 109 0084 9A81      		ldd r25,Y+2
+ 110 0086 60E1      		ldi r22,lo8(16)
+ 111 0088 0E94 0000 		call writeInteger
+ 112               	.LM17:
+ 113 008c 80E0      		ldi r24,lo8(__c.1995)
+ 114 008e 90E0      		ldi r25,hi8(__c.1995)
+ 115 0090 0E94 0000 		call writeNStringP
+ 116               	.LM18:
+ 117 0094 8B81      		ldd r24,Y+3
+ 118 0096 9C81      		ldd r25,Y+4
+ 119 0098 60E1      		ldi r22,lo8(16)
+ 120 009a 0E94 0000 		call writeInteger
+ 121               	.LM19:
+ 122 009e 80E0      		ldi r24,lo8(__c.1997)
+ 123 00a0 90E0      		ldi r25,hi8(__c.1997)
+ 124 00a2 0E94 0000 		call writeNStringP
+ 125               	.LM20:
+ 126 00a6 8981      		ldd r24,Y+1
+ 127 00a8 9A81      		ldd r25,Y+2
+ 128 00aa 8430      		cpi r24,4
+ 129 00ac 9105      		cpc r25,__zero_reg__
+ 130 00ae 01F4      		brne .+2
+ 131 00b0 00C0      		rjmp .L12
+ 132 00b2 8530      		cpi r24,5
+ 133 00b4 9105      		cpc r25,__zero_reg__
+ 134 00b6 00F4      		brsh .L16
+ 135 00b8 8230      		cpi r24,2
+ 136 00ba 9105      		cpc r25,__zero_reg__
+ 137 00bc 01F0      		breq .L10
+ 138 00be 8330      		cpi r24,3
+ 139 00c0 9105      		cpc r25,__zero_reg__
+ 140 00c2 00F4      		brsh .L11
+ 141 00c4 0197      		sbiw r24,1
+ 142 00c6 01F0      		breq .+2
+ 143 00c8 00C0      		rjmp .L8
+ 144 00ca 00C0      		rjmp .L33
+ 145               	.L16:
+ 146 00cc 8630      		cpi r24,6
+ 147 00ce 9105      		cpc r25,__zero_reg__
+ 148 00d0 01F4      		brne .+2
+ 149 00d2 00C0      		rjmp .L14
+ 150 00d4 8630      		cpi r24,6
+ 151 00d6 9105      		cpc r25,__zero_reg__
+ 152 00d8 00F4      		brsh .+2
+ 153 00da 00C0      		rjmp .L13
+ 154 00dc 8F3F      		cpi r24,255
+ 155 00de 9105      		cpc r25,__zero_reg__
+ 156 00e0 01F0      		breq .+2
+ 157 00e2 00C0      		rjmp .L8
+ 158 00e4 00C0      		rjmp .L15
+ 159               	.L33:
+ 160               	.LM21:
+ 161 00e6 8091 0000 		lds r24,move_horizontal
+ 162 00ea 9091 0000 		lds r25,(move_horizontal)+1
+ 163 00ee 1816      		cp __zero_reg__,r24
+ 164 00f0 1906      		cpc __zero_reg__,r25
+ 165 00f2 04F4      		brge .+2
+ 166 00f4 00C0      		rjmp .L15
+ 167               	.LM22:
+ 168 00f6 2B81      		ldd r18,Y+3
+ 169 00f8 3C81      		ldd r19,Y+4
+ 170 00fa 2093 0000 		sts move_horizontal,r18
+ 171 00fe 3093 0000 		sts move_horizontal+1,r19
+ 172               	.LM23:
+ 173 0102 8091 0000 		lds r24,topSpeed
+ 174 0106 9091 0000 		lds r25,(topSpeed)+1
+ 175 010a 8217      		cp r24,r18
+ 176 010c 9307      		cpc r25,r19
+ 177 010e 00F4      		brsh .L32
+ 178               	.LM24:
+ 179 0110 2093 0000 		sts topSpeed,r18
+ 180 0114 3093 0000 		sts topSpeed+1,r19
+ 181 0118 00C0      		rjmp .L32
+ 182               	.L10:
+ 183               	.LM25:
+ 184 011a 8091 0000 		lds r24,move_horizontal
+ 185 011e 9091 0000 		lds r25,(move_horizontal)+1
+ 186 0122 97FD      		sbrc r25,7
+ 187 0124 00C0      		rjmp .L15
+ 188               	.LM26:
+ 189 0126 8B81      		ldd r24,Y+3
+ 190 0128 9C81      		ldd r25,Y+4
+ 191 012a 9093 0000 		sts (move_horizontal)+1,r25
+ 192 012e 8093 0000 		sts move_horizontal,r24
+ 193 0132 00C0      		rjmp .L32
+ 194               	.L11:
+ 195               	.LM27:
+ 196 0134 8091 0000 		lds r24,move_turning
+ 197 0138 9091 0000 		lds r25,(move_turning)+1
+ 198 013c 1816      		cp __zero_reg__,r24
+ 199 013e 1906      		cpc __zero_reg__,r25
+ 200 0140 04F0      		brlt .L23
+ 201               	.LM28:
+ 202 0142 F092 0000 		sts (move_turning)+1,r15
+ 203 0146 E092 0000 		sts move_turning,r14
+ 204 014a 00C0      		rjmp .L24
+ 205               	.L12:
+ 206               	.LM29:
+ 207 014c 8091 0000 		lds r24,move_turning
+ 208 0150 9091 0000 		lds r25,(move_turning)+1
+ 209 0154 97FD      		sbrc r25,7
+ 210 0156 00C0      		rjmp .L23
+ 211               	.LM30:
+ 212 0158 1093 0000 		sts (move_turning)+1,r17
+ 213 015c 0093 0000 		sts move_turning,r16
+ 214 0160 00C0      		rjmp .L24
+ 215               	.L23:
+ 216               	.LM31:
+ 217 0162 1092 0000 		sts (move_turning)+1,__zero_reg__
+ 218 0166 1092 0000 		sts move_turning,__zero_reg__
+ 219               	.L24:
+ 220               	.LM32:
+ 221 016a 1092 0000 		sts (move_horizontal)+1,__zero_reg__
+ 222 016e 1092 0000 		sts move_horizontal,__zero_reg__
+ 223 0172 00C0      		rjmp .L8
+ 224               	.L15:
+ 225               	.LM33:
+ 226 0174 1092 0000 		sts (move_horizontal)+1,__zero_reg__
+ 227 0178 1092 0000 		sts move_horizontal,__zero_reg__
+ 228               	.L32:
+ 229               	.LM34:
+ 230 017c 1092 0000 		sts (move_turning)+1,__zero_reg__
+ 231 0180 1092 0000 		sts move_turning,__zero_reg__
+ 232 0184 00C0      		rjmp .L8
+ 233               	.L14:
+ 234               	.LM35:
+ 235 0186 80E0      		ldi r24,lo8(__c.2006)
+ 236 0188 90E0      		ldi r25,hi8(__c.2006)
+ 237 018a 0E94 0000 		call writeNStringP
+ 238               	.LM36:
+ 239 018e 8981      		ldd r24,Y+1
+ 240 0190 9A81      		ldd r25,Y+2
+ 241 0192 60E1      		ldi r22,lo8(16)
+ 242 0194 0E94 0000 		call writeInteger
+ 243               	.LM37:
+ 244 0198 80E0      		ldi r24,lo8(__c.2008)
+ 245 019a 90E0      		ldi r25,hi8(__c.2008)
+ 246 019c 0E94 0000 		call writeNStringP
+ 247               	.LM38:
+ 248 01a0 0E94 0000 		call get_BatteryLevelAsPercentage
+ 249 01a4 60E1      		ldi r22,lo8(16)
+ 250 01a6 0E94 0000 		call writeInteger
+ 251               	.LM39:
+ 252 01aa 80E0      		ldi r24,lo8(__c.2010)
+ 253 01ac 90E0      		ldi r25,hi8(__c.2010)
+ 254 01ae 00C0      		rjmp .L31
+ 255               	.L13:
+ 256               	.LM40:
+ 257 01b0 80E0      		ldi r24,lo8(__c.2013)
+ 258 01b2 90E0      		ldi r25,hi8(__c.2013)
+ 259 01b4 0E94 0000 		call writeNStringP
+ 260               	.LM41:
+ 261 01b8 8981      		ldd r24,Y+1
+ 262 01ba 9A81      		ldd r25,Y+2
+ 263 01bc 60E1      		ldi r22,lo8(16)
+ 264 01be 0E94 0000 		call writeInteger
+ 265               	.LM42:
+ 266 01c2 80E0      		ldi r24,lo8(__c.2015)
+ 267 01c4 90E0      		ldi r25,hi8(__c.2015)
+ 268 01c6 0E94 0000 		call writeNStringP
+ 269               	.LM43:
+ 270 01ca 8091 0000 		lds r24,topSpeed
+ 271 01ce 9091 0000 		lds r25,(topSpeed)+1
+ 272 01d2 60E1      		ldi r22,lo8(16)
+ 273 01d4 0E94 0000 		call writeInteger
+ 274               	.LM44:
+ 275 01d8 80E0      		ldi r24,lo8(__c.2017)
+ 276 01da 90E0      		ldi r25,hi8(__c.2017)
+ 277               	.L31:
+ 278 01dc 0E94 0000 		call writeNStringP
+ 279               	.LVL2:
+ 280               	.L8:
+ 281               	.LBE3:
+ 282               	.LM45:
+ 283 01e0 1092 0000 		sts wrapped.1989,__zero_reg__
+ 284               	.LM46:
+ 285 01e4 1093 0000 		sts (index.1988)+1,r17
+ 286 01e8 0093 0000 		sts index.1988,r16
+ 287 01ec 00C0      		rjmp .L29
+ 288               	.L7:
+ 289               	.LM47:
+ 290 01ee CA01      		movw r24,r20
+ 291 01f0 0196      		adiw r24,1
+ 292 01f2 9093 0000 		sts (index.1988)+1,r25
+ 293 01f6 8093 0000 		sts index.1988,r24
+ 294 01fa FC01      		movw r30,r24
+ 295 01fc E050      		subi r30,lo8(-(receiveBuffer.1987))
+ 296 01fe F040      		sbci r31,hi8(-(receiveBuffer.1987))
+ 297 0200 2083      		st Z,r18
+ 298               	.LM48:
+ 299 0202 8436      		cpi r24,100
+ 300 0204 9105      		cpc r25,__zero_reg__
+ 301 0206 04F0      		brlt .L29
+ 302               	.LM49:
+ 303 0208 1093 0000 		sts (index.1988)+1,r17
+ 304 020c 0093 0000 		sts index.1988,r16
+ 305               	.LM50:
+ 306 0210 1092 0000 		sts wrapped.1989,__zero_reg__
+ 307 0214 00C0      		rjmp .L29
+ 308               	.LVL3:
+ 309               	.L30:
+ 310               	.LM51:
+ 311 0216 0FEF      		ldi r16,lo8(-1)
+ 312 0218 1FEF      		ldi r17,hi8(-1)
+ 313               	.LBB4:
+ 314               	.LM52:
+ 315 021a 6E01      		movw r12,r28
+ 316 021c 0894      		sec
+ 317 021e C11C      		adc r12,__zero_reg__
+ 318 0220 D11C      		adc r13,__zero_reg__
+ 319               	.LM53:
+ 320 0222 81E0      		ldi r24,lo8(1)
+ 321 0224 E82E      		mov r14,r24
+ 322 0226 F12C      		mov r15,__zero_reg__
+ 323               	.LBE4:
+ 324               	.LM54:
+ 325 0228 BB24      		clr r11
+ 326 022a B394      		inc r11
+ 327               	.LVL4:
+ 328               	.L29:
+ 329               	.LBE2:
+ 330               	.LM55:
+ 331 022c 0E94 0000 		call getBufferLength
+ 332               	.LVL5:
+ 333 0230 8823      		tst r24
+ 334 0232 01F0      		breq .+2
+ 335 0234 00C0      		rjmp .L25
+ 336               	.L26:
+ 337               	/* epilogue start */
+ 338               	.LM56:
+ 339 0236 0F90      		pop __tmp_reg__
+ 340 0238 0F90      		pop __tmp_reg__
+ 341 023a 0F90      		pop __tmp_reg__
+ 342 023c 0F90      		pop __tmp_reg__
+ 343 023e CF91      		pop r28
+ 344 0240 DF91      		pop r29
+ 345 0242 1F91      		pop r17
+ 346 0244 0F91      		pop r16
+ 347 0246 FF90      		pop r15
+ 348 0248 EF90      		pop r14
+ 349 024a DF90      		pop r13
+ 350 024c CF90      		pop r12
+ 351 024e BF90      		pop r11
+ 352 0250 0895      		ret
+ 353               	.LFE8:
+ 355               	.global	main
+ 357               	main:
+ 358               	.LFB9:
+ 359               	.LM57:
+ 360               	/* prologue: function */
+ 361               	/* frame size = 0 */
+ 362               	.LM58:
+ 363 0252 0E94 0000 		call initRP6Control
+ 364               	.LM59:
+ 365 0256 0E94 0000 		call initLCD
+ 366               	.LM60:
+ 367 025a 84EB      		ldi r24,lo8(-76)
+ 368 025c 60E5      		ldi r22,lo8(80)
+ 369 025e 70E0      		ldi r23,hi8(80)
+ 370 0260 0E94 0000 		call beep
+ 371 0264 89E6      		ldi r24,lo8(105)
+ 372 0266 90E0      		ldi r25,hi8(105)
+ 373 0268 0E94 0000 		call mSleep
+ 374               	.LM61:
+ 375 026c 8CED      		ldi r24,lo8(-36)
+ 376 026e 60E5      		ldi r22,lo8(80)
+ 377 0270 70E0      		ldi r23,hi8(80)
+ 378 0272 0E94 0000 		call beep
+ 379 0276 80E5      		ldi r24,lo8(80)
+ 380 0278 90E0      		ldi r25,hi8(80)
+ 381 027a 0E94 0000 		call mSleep
+ 382               	.LM62:
+ 383 027e 88E4      		ldi r24,lo8(72)
+ 384 0280 0E94 0000 		call __I2CTWI_initMaster
+ 385               	.LM63:
+ 386 0284 80E0      		ldi r24,lo8(gs(I2C_transmissionError))
+ 387 0286 90E0      		ldi r25,hi8(gs(I2C_transmissionError))
+ 388 0288 0E94 0000 		call I2CTWI_setTransmissionErrorHandler
+ 389               	.LM64:
+ 390 028c 80E0      		ldi r24,lo8(__c.2043)
+ 391 028e 90E0      		ldi r25,hi8(__c.2043)
+ 392 0290 0E94 0000 		call writeNStringP
+ 393               	.LM65:
+ 394 0294 8FEE      		ldi r24,lo8(239)
+ 395 0296 90E0      		ldi r25,hi8(239)
+ 396 0298 60E1      		ldi r22,lo8(16)
+ 397 029a 0E94 0000 		call writeInteger
+ 398               	.LM66:
+ 399 029e 80E0      		ldi r24,lo8(__c.2045)
+ 400 02a0 90E0      		ldi r25,hi8(__c.2045)
+ 401 02a2 0E94 0000 		call writeNStringP
+ 402               	.LM67:
+ 403 02a6 0E94 0000 		call run_testCases
+ 404               	.LM68:
+ 405 02aa 0E94 0000 		call clearReceptionBuffer
+ 406               	.LM69:
+ 407 02ae 88EE      		ldi r24,lo8(1000)
+ 408 02b0 93E0      		ldi r25,hi8(1000)
+ 409 02b2 0E94 0000 		call mSleep
+ 410               	.LM70:
+ 411 02b6 84EF      		ldi r24,lo8(500)
+ 412 02b8 91E0      		ldi r25,hi8(500)
+ 413 02ba 9093 0000 		sts (stopwatches+1)+1,r25
+ 414 02be 8093 0000 		sts stopwatches+1,r24
+ 415               	.LM71:
+ 416 02c2 8091 0000 		lds r24,stopwatches
+ 417 02c6 8160      		ori r24,lo8(1)
+ 418 02c8 8093 0000 		sts stopwatches,r24
+ 419               	.L42:
+ 420               	.LM72:
+ 421 02cc 0E94 0000 		call DoDataProcess
+ 422               	.LM73:
+ 423 02d0 8091 0000 		lds r24,move_turning
+ 424 02d4 9091 0000 		lds r25,(move_turning)+1
+ 425 02d8 0097      		sbiw r24,0
+ 426 02da 01F0      		breq .L35
+ 427               	.LM74:
+ 428 02dc 0197      		sbiw r24,1
+ 429 02de 01F4      		brne .L36
+ 430               	.LM75:
+ 431 02e0 8CE3      		ldi r24,lo8(60)
+ 432 02e2 62E0      		ldi r22,lo8(2)
+ 433 02e4 00C0      		rjmp .L44
+ 434               	.L36:
+ 435               	.LM76:
+ 436 02e6 8CE3      		ldi r24,lo8(60)
+ 437 02e8 63E0      		ldi r22,lo8(3)
+ 438               	.L44:
+ 439 02ea 43E0      		ldi r20,lo8(3)
+ 440 02ec 50E0      		ldi r21,hi8(3)
+ 441 02ee 20E0      		ldi r18,lo8(0)
+ 442 02f0 0E94 0000 		call rotate
+ 443 02f4 00C0      		rjmp .L42
+ 444               	.L35:
+ 445               	.LM77:
+ 446 02f6 8091 0000 		lds r24,move_horizontal
+ 447 02fa 9091 0000 		lds r25,(move_horizontal)+1
+ 448 02fe 0097      		sbiw r24,0
+ 449 0300 01F0      		breq .L42
+ 450               	.LM78:
+ 451 0302 1816      		cp __zero_reg__,r24
+ 452 0304 1906      		cpc __zero_reg__,r25
+ 453 0306 04F4      		brge .L38
+ 454               	.LM79:
+ 455 0308 60E0      		ldi r22,lo8(0)
+ 456 030a 00C0      		rjmp .L43
+ 457               	.L38:
+ 458               	.LM80:
+ 459 030c 61E0      		ldi r22,lo8(1)
+ 460               	.L43:
+ 461 030e 43E0      		ldi r20,lo8(3)
+ 462 0310 50E0      		ldi r21,hi8(3)
+ 463 0312 20E0      		ldi r18,lo8(0)
+ 464 0314 0E94 0000 		call move
+ 465 0318 00C0      		rjmp .L42
+ 466               	.LFE9:
+ 468               	.global	I2C_transmissionError
+ 470               	I2C_transmissionError:
+ 471               	.LFB6:
+ 472               	.LM81:
+ 473               	.LVL6:
+ 474 031a 1F93      		push r17
+ 475               	/* prologue: function */
+ 476               	/* frame size = 0 */
+ 477 031c 182F      		mov r17,r24
+ 478               	.LM82:
+ 479 031e 80E0      		ldi r24,lo8(__c.1975)
+ 480 0320 90E0      		ldi r25,hi8(__c.1975)
+ 481               	.LVL7:
+ 482 0322 0E94 0000 		call writeNStringP
+ 483               	.LM83:
+ 484 0326 812F      		mov r24,r17
+ 485 0328 90E0      		ldi r25,lo8(0)
+ 486 032a 60E1      		ldi r22,lo8(16)
+ 487 032c 0E94 0000 		call writeInteger
+ 488               	.LM84:
+ 489 0330 8AE0      		ldi r24,lo8(10)
+ 490 0332 0E94 0000 		call writeChar
+ 491               	/* epilogue start */
+ 492               	.LM85:
+ 493 0336 1F91      		pop r17
+ 494               	.LVL8:
+ 495 0338 0895      		ret
+ 496               	.LFE6:
+ 498               	.global	move_horizontal
+ 499               	.global	move_horizontal
+ 500               		.section .bss
+ 503               	move_horizontal:
+ 504 0000 0000      		.skip 2,0
+ 505               	.global	move_turning
+ 506               	.global	move_turning
+ 509               	move_turning:
+ 510 0002 0000      		.skip 2,0
+ 511               	.global	topSpeed
+ 512               	.global	topSpeed
+ 515               	topSpeed:
+ 516 0004 0000      		.skip 2,0
+ 517               		.section	.progmem.data,"a",@progbits
+ 520               	__c.2045:
+ 521 0000 7D0A 00   		.string	"}\n"
+ 524               	__c.2043:
+ 525 0003 7B63 6D64 		.string	"{cmd=0x"
+ 525      3D30 7800 
+ 528               	__c.2017:
+ 529 000b 7D0A 00   		.string	"}\n"
+ 532               	__c.2015:
+ 533 000e 3B76 616C 		.string	";val=0x"
+ 533      3D30 7800 
+ 536               	__c.2013:
+ 537 0016 7B63 6D64 		.string	"{cmd=0x"
+ 537      3D30 7800 
+ 540               	__c.2010:
+ 541 001e 7D0A 00   		.string	"}\n"
+ 544               	__c.2008:
+ 545 0021 3B76 616C 		.string	";val=0x"
+ 545      3D30 7800 
+ 548               	__c.2006:
+ 549 0029 7B63 6D64 		.string	"{cmd=0x"
+ 549      3D30 7800 
+ 552               	__c.1997:
+ 553 0031 7D0A 00   		.string	"}\n"
+ 556               	__c.1995:
+ 557 0034 3B76 616C 		.string	";val=0x"
+ 557      3D30 7800 
+ 560               	__c.1993:
+ 561 003c 7B63 6D64 		.string	"{cmd=0x"
+ 561      3D30 7800 
+ 562               		.lcomm wrapped.1989,1
+ 563               		.data
+ 566               	index.1988:
+ 567 0000 FFFF      		.word	-1
+ 568               		.lcomm receiveBuffer.1987,101
+ 569               		.section	.progmem.data
+ 572               	__c.1975:
+ 573 0044 0A49 3243 		.string	"\nI2C ERROR - TWI STATE: 0x"
+ 573      2045 5252 
+ 573      4F52 202D 
+ 573      2054 5749 
+ 573      2053 5441 
+ 574               		.comm timer,2,1
+ 575               		.comm interrupt_status,1,1
+ 576               		.comm status,1,1
+ 577               		.comm drive_status,1,1
+ 578               		.comm statusLEDs,1,1
+ 579               		.comm transmit_buffer,10,1
+ 628               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:2      *ABS*:0000003f __SREG__
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:5      *ABS*:00000034 __CCP__
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:18     .text:00000000 get_BatteryLevelAsPercentage
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:37     .text:00000012 DoDataProcess
+                             .bss:00000006 wrapped.1989
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:566    .data:00000000 index.1988
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:562    .bss:00000007 receiveBuffer.1987
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:560    .progmem.data:0000003c __c.1993
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:556    .progmem.data:00000034 __c.1995
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:552    .progmem.data:00000031 __c.1997
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:503    .bss:00000000 move_horizontal
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:515    .bss:00000004 topSpeed
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:509    .bss:00000002 move_turning
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:548    .progmem.data:00000029 __c.2006
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:544    .progmem.data:00000021 __c.2008
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:540    .progmem.data:0000001e __c.2010
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:536    .progmem.data:00000016 __c.2013
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:532    .progmem.data:0000000e __c.2015
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:528    .progmem.data:0000000b __c.2017
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:357    .text:00000252 main
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:470    .text:0000031a I2C_transmissionError
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:524    .progmem.data:00000003 __c.2043
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:520    .progmem.data:00000000 __c.2045
+C:\Users\Marco\AppData\Local\Temp/cck9bEJs.s:572    .progmem.data:00000044 __c.1975
+                            *COM*:00000002 timer
+                            *COM*:00000001 interrupt_status
+                            *COM*:00000001 status
+                            *COM*:00000001 drive_status
+                            *COM*:00000001 statusLEDs
+                            *COM*:0000000a transmit_buffer
+
+UNDEFINED SYMBOLS
+getBatteryLevel
+__divmodhi4
+getBufferLength
+readChar
+parseRequest
+writeNStringP
+writeInteger
+initRP6Control
+initLCD
+beep
+mSleep
+__I2CTWI_initMaster
+I2CTWI_setTransmissionErrorHandler
+run_testCases
+clearReceptionBuffer
+stopwatches
+rotate
+move
+writeChar
+__do_copy_data
+__do_clear_bss

@@ -1,0 +1,448 @@
+.search_auto{
+	width: 260px;
+	border:1px solid #EBEBEB;
+	padding: 11px 19px 13px;
+	background: #F8F8F8;
+	margin-left: 15px;
+}
+.catalog_sidebar .search_auto{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.search_auto h3{
+	padding: 0 0 12px 0;
+	float: left;
+}
+.catalog_sidebar .search_auto h3{
+	float: none;
+}
+.search_auto .categories{
+	float: right;
+	padding: 11px 0 0 0;
+}
+.catalog_sidebar .search_auto .categories{
+	float: none;
+	padding: 1px 0 9px 0;
+}
+.search_auto .categories input{
+	display: none;
+}
+.search_auto .categories label{
+	position:relative;
+	width: 25px;
+	height: 13px;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 0 0 7px;
+}
+.catalog_sidebar .search_auto .categories label{
+	margin: 0 7px 0 10px;
+}
+
+.search_auto .select_box_1{
+	width: 260px;
+	padding: 0 0 8px 0;
+}
+.catalog_sidebar .search_auto .select_box_1{
+	width: 180px;
+}
+.search_auto .select_box_2{
+	width: 260px;
+	padding: 0 0 8px 0;
+}
+.catalog_sidebar .search_auto .select_box_2{
+	width: 180px;
+}
+.search_auto .select_box_2 .custom-select{
+	float: left;
+	width: 125px;
+}
+.catalog_sidebar .search_auto .select_box_2 .custom-select{
+	float: left;
+	width: 85px;
+}
+.search_auto .select_box_2 .custom-select:first-child{
+	margin-right: 10px;
+}
+.search_auto label{
+	font-size: 13px;
+	display: block;
+	line-height: 18px;
+	padding: 0 0 3px 0;
+}
+.search_auto label strong{
+	color: #293848;
+}
+.search_auto label.check_label{
+	display: inline;
+	vertical-align: top;
+	color: #798FA1;
+	line-height: 20px;
+	font-size: 13px;
+}
+.search_auto .chb_wrapper{
+	float: left;
+	padding: 25px 0 0 0;
+}
+.catalog_sidebar .search_auto .chb_wrapper{
+	float: none;
+	padding: 0px 0 0 0;
+}
+.search_auto .chb_wrapper input{
+	margin: 4px 2px 0 0;
+	vertical-align: top;
+}
+
+.pagination{
+	float: right;
+}
+.pagination ul{
+	overflow: hidden;
+}
+.pagination ul li{
+	float: left;
+	color: #607586;
+	text-shadow:1px 0 0 #607586;
+	letter-spacing: 1px;
+	border:0;
+	background: none;
+	padding: 0 0 0 2px;
+}
+.pagination ul li.space{
+	padding: 5px 8px 0 11px;
+}
+.pagination ul li.next{
+	padding: 0 0 0 15px;
+}
+.pagination ul li a{
+	display: block;
+	width: 29px;
+	height: 29px;
+	background: url(images/pagination.png) no-repeat 0 0;
+	color: #607586;
+	font-size: 13px;
+	line-height: 28px;
+	text-shadow:0 1px 0 #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+}
+.pagination ul li a:hover,
+.pagination ul li.active a{
+	background-position: 0 -29px;
+	color: #FFFFFF;
+	text-shadow:none;
+}
+.pagination ul li.next a{
+	background: none;
+	width: 6px;
+	padding: 9px 0 0;
+	height: 20px;
+}
+.cars_categories,
+.steps{
+	position: absolute;
+	top:3px;
+	right: 0;
+}
+.catalog_sidebar{
+	width: 220px;
+	padding: 0 40px 0 0;
+	float: left;
+}
+.main_catalog{
+	float: left;
+	width: 680px;
+	margin-left: 4%;
+	padding: 15px 0 0 0;
+}
+.top_catalog_box{
+	border-bottom: 1px solid #D1D5DC;
+	padding-bottom: 30px;
+}
+.bottom_catalog_box{
+	padding-top: 30px;
+	padding-bottom: 40px;
+}
+.switch{
+	overflow: hidden;
+	float: left;
+	padding: 0 21px 0 0;
+}
+
+.catalog_table,
+.dealer_catalog{
+	padding: 0 0 0 0;
+}
+.catalog_table li,
+.dealer_catalog li{
+	display: block;
+	padding: 20px 0;
+	border-bottom: 1px solid #D1D5DC;
+	overflow: hidden;
+	background: none;
+}
+.catalog_table li a.thumb,
+.dealer_catalog li a.thumb{
+	display: block;
+	width: 165px;
+	float: left;
+	height: 119px;
+	margin: 0 24px 0 0;
+}
+.catalog_table li .catalog_desc{
+	padding: 0 0 0 0px;
+	width: 491px;
+	float: left;
+}
+.catalog_table li .location,
+.dealer_catalog li .location{
+	float: right;
+	color: #607586;
+	line-height: 20px;
+	padding: 2px 0 0 0;
+}
+.catalog_table li .title_box,
+.dealer_catalog li .title_box{
+	float: left;
+	color: #607586;
+	line-height: 20px;
+	padding: 0px 0 11px 0;
+}
+.catalog_table li .title_box h4,
+.dealer_catalog li .title_box h4{
+	padding-bottom: 7px
+}
+.catalog_table li .title_box h4 a,
+.dealer_catalog li .title_box h4 a{
+	line-height: 20px;
+}
+.catalog_table li .title_box .price,
+.dealer_catalog li .title_box .price{
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: bold;
+	font-family: 'PTSansBold',Arial,sans-serif;
+	color: orange;
+}
+.catalog_table li .grey_area,
+.dealer_catalog li .grey_area{
+	color: #607586;
+	margin: 0 0 10px 0;
+}
+.catalog_table li .grey_area span,
+.dealer_catalog li .grey_area span{
+	padding:0 15px 0 0;
+}
+.catalog_table li a.more,
+.dealer_catalog li a.more{
+	text-decoration: none;
+	color: #607586;
+	line-height: 18px;
+}
+.catalog_table li a.more:hover,
+.dealer_catalog li a.more:hover{
+	text-decoration: underline;
+}
+.catalog_list{
+	padding-top: 20px;
+	overflow: hidden;
+	border-bottom: 1px solid #607586;
+}
+
+
+
+
+body,form,img,h1,h2,h3,h4,h5,p,a,div,ul,li{
+	padding:0;
+	margin:0;
+	border:0;
+}
+input,textarea,a{
+	outline:0;
+}
+body{
+	font-family: 'PTSansRegular',Arial,sans-serif;
+	font-size:13px;
+	color:#607586;
+	background:#FFFFFF;
+	overflow-x:hidden;
+}
+a{
+	font-family: 'PTSansRegular',Arial,sans-serif;
+	font-size:13px;
+	color:#607586;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
+strong{
+	font-family: 'PTSansBold',Arial,sans-serif;
+	font-weight: bold;
+}
+p{
+	line-height: 20px;
+}
+h1{
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 40px;
+	color: #293848;
+	text-shadow:0 0 0 #293848;
+	border-bottom:1px solid #D1D5DC;
+	padding: 0 0 32px 0;
+	margin: 0 0 20px 0;
+	margin-left: 4%;
+}
+.bg_navigation {
+    width: 100%;
+    min-width: 980px;
+    background: url(images/bg_navigation.jpg) repeat-x 0 0 #DBDCDC;
+    margin: 0 auto;
+}
+.bg_navigation {
+    width: 100%;
+    min-width: 800px;
+}
+
+h2{
+	font-weight: normal;
+	font-family: 'PTSansRegular',Arial,sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	color: #293848;
+	text-shadow:0 0 0 #293848;
+	border-bottom:1px solid #D1D5DC;
+	padding: 0 0 7px 0;
+	margin: 0 0 20px 0
+}
+h3{
+	font-weight: normal;
+	font-family: 'PTSansRegular',Arial,sans-serif;
+	font-size: 21px;
+	line-height: 28px;
+	color: #293848;
+	text-shadow:0 0 0 #293848;
+}
+h4{
+	font-weight: bold;
+	font-family: 'PTSansBold',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #293848;
+	padding:0 0 15px 0;
+}
+h4 a{
+	font-weight: bold;
+	font-family: 'PTSansBold',Arial,sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	color: #293848;
+	text-decoration: none;
+}
+h4 a:hover{
+	text-decoration: underline;
+}
+ul{
+	list-style-type: none;
+}
+li{
+	border-bottom:1px solid #E8EAED;
+	background: url(images/marker_2.gif) no-repeat 0 14px;
+	padding: 7px 0 10px 13px;
+}
+li:last-child{
+	border:0;
+	padding: 7px 0 0px 13px;
+}
+cite{
+	font-style: normal;
+	line-height: 24px;
+	font-size: 20px;
+	color: #293848;
+	width: 292px;
+	border-left: 5px solid #EAEAEA;
+	padding: 0 0 0 15px;
+	margin-top: 4px;
+}
+.fL{
+	float:left;
+}
+.fR{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.ovh{
+	overflow: hidden;
+}
+
+
+#navigation-container ul li.current a,
+#navigation-container ul li:hover a{
+	background: grey;
+	color: orange;
+	text-shadow:0 -1px 0 grey;
+}
+
+.logo {
+	float: left;
+  }
+  /* ~~ Top Navigation Bar ~~ */
+  
+  #navigation-container {
+	width: 1200px;
+	margin: 0 auto;
+	height: 70px;
+  }
+  
+  .navigation-bar {
+	background-color: #665f60;
+	height: 70px;
+	width: 100%;
+	text-align:center;
+  }
+  .navigation-bar img{
+  float:left;
+  }
+  .navigation-bar ul {
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	display:inline-block;
+	vertical-align:top;
+  }
+  
+  .navigation-bar li {
+	list-style-type: none;
+	padding: 0px;
+	height: 24px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	display: inline;
+  }
+  
+  .navigation-bar li a {
+	color: black;
+	font-size: 20px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	line-height: 70px;
+	padding: 5px 15px;
+	opacity: 0.7;
+  }
+  
+  #menu {
+	float: right;
+  }
+ 
+  select {
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }

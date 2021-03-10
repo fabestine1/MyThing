@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\bin\Debug\project_2.1.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\bin\Debug\project_2.1.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\bin\Debug\project_2.1.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2.1.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2._1.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2._1.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2.1.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2.1.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2.1.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.1\project_2.1\obj\Debug\project_2.1.pdb

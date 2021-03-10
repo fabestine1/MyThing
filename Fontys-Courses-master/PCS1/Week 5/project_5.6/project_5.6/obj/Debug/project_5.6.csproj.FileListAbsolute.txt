@@ -1,0 +1,7 @@
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\bin\Debug\project_5.6.exe.config
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\bin\Debug\project_5.6.exe
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\bin\Debug\project_5.6.pdb
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\obj\Debug\project_5.6.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\obj\Debug\project_5.6.exe
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\obj\Debug\project_5.6.pdb
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.6\project_5.6\obj\Debug\project_5.6.csprojResolveAssemblyReference.cache

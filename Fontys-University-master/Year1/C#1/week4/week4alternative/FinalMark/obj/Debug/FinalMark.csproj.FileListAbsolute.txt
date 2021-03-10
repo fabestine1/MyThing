@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week4\week4alternative\FinalMark\bin\Debug\FinalMark.exe.config
+D:\Fontys\C#1\week4\week4alternative\FinalMark\bin\Debug\FinalMark.exe
+D:\Fontys\C#1\week4\week4alternative\FinalMark\bin\Debug\FinalMark.pdb
+D:\Fontys\C#1\week4\week4alternative\FinalMark\obj\Debug\FinalMark.exe
+D:\Fontys\C#1\week4\week4alternative\FinalMark\obj\Debug\FinalMark.pdb
+D:\Fontys\C#1\week4\week4alternative\FinalMark\obj\Debug\FinalMark.csprojResolveAssemblyReference.cache

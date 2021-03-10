@@ -1,0 +1,24 @@
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\bin\Debug\Dobbelsteen.exe
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\bin\Debug\Dobbelsteen.pdb
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\Dobbelsteen.DiceForm.resources
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\Dobbelsteen.Properties.Resources.resources
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\Dobbelsteen.exe
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dobbelsteen\obj\x86\Debug\Dobbelsteen.pdb
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dice\obj\x86\Debug\Dobbelsteen.exe
+C:\Documents and Settings\Inge\Desktop\OIS Programmeren - W4 - Uitgangspunt Dobbelsteen opdracht\Dobbelsteen Solution\Dice\obj\x86\Debug\Dobbelsteen.pdb
+C:\Users\871294\Dropbox\agnes_school\school\PCS_new\PCS2\practicum\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.exe
+C:\Users\871294\Dropbox\agnes_school\school\PCS_new\PCS2\practicum\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.pdb
+D:\agnes\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.exe
+D:\agnes\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.pdb
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\bin\Debug\Dobbelsteen.exe
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\bin\Debug\Dobbelsteen.pdb
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dice.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.DiceForm.resources
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.Properties.Resources.resources
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dice.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dice.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.exe
+C:\Users\flamestar\Downloads\Assignment - Dice - Starting project\Assignment - Dice - Starting project\Dice\obj\x86\Debug\Dobbelsteen.pdb

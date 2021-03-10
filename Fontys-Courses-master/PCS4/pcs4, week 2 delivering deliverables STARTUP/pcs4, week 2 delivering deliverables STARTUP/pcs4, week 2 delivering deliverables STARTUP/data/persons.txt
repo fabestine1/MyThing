@@ -1,0 +1,56 @@
+﻿Mr. Blue
+Zaragossastraat
+41
+5688DH
+Eindhoven
+11
+**********
+Sven Kramer
+Mainstreet
+33
+5688GE
+Eindhoven
+22
+**********
+Irene Wust
+Kerkstraat
+20
+5693DE
+Eindhoven
+33
+**********
+Naomi van As
+Mainstreet
+33
+5688GE
+Eindhoven
+44
+**********
+Anouk
+Kerkstraat
+10
+5693DE
+Eindhoven
+55
+**********
+Adele
+Kerkstraat
+13
+5688DE
+Eindhoven
+66
+**********
+Bruno Mars
+Kerkstraat
+39
+5688DE
+Eindhoven
+77
+**********
+RedNex
+AAstraat
+166
+5688BX
+Eindhoven
+88
+**********

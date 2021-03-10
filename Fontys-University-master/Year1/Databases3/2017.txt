@@ -1,0 +1,57 @@
+1)
+select employee_id, last_name
+from employees
+where (12*salary)*(1+NVL(commision_psv,0)) > 100000;
+2)
+select department_name
+from departments
+where department_id in (select department_id
+					   from employees
+					   group by department_id 
+					   having Count(*) >= 20));
+					   
+select department_name
+from departments d join employees e on e.department_id = d.department_id
+group by department_id, department_name
+having Count(*) >= 20;
+
+3)
+select count(decode(job_id,'AD_PRES',1,0))as numb_of_pres,
+		sum(decode(job_id,'AD_PRES',salary,0)) as sum_sal_pres,
+		count(decode(job_id,'AD_VP',1,0))as numb_of_vp,
+		sum(decode(job_id,'AD_VP',salary,0)) as sum_sal_vp,
+from employees;
+4)
+select e1.employee_id, e1.last_name, e1.salary
+from employees e1
+where salary = (select max(salary)
+				from employees e2
+				where e2.job_id = e1.job_id);
+5)
+select e1.employee_id, e1.last_name
+from employees e1
+where employee_id in (select manager_id
+				from employees 
+				group by manager_id
+				having count(*) >= 10);
+6)
+create view ex6
+as
+select e.employee_id, e.last_name, e.job_id, jh.job_id, jh.start_date, jh.end_date 
+from employees e left join job_history jh on e.employee_id = jh.employee_id;
+7)
+select e.employee_id, e.last_name
+from employees e 
+where e.salary>=5000
+and e.employee_id not in (select employee_id
+					from jobs j join job_history jh on j.job_id =jh.job_history
+					where jh.employee_id = e.employee_id
+					and j.min_salary<5000);
+8)
+select department_id
+from employees
+group by department_id
+having sum(salary) = (select max(sum(salary))
+					  from employees
+					  group by department_id);
+					   

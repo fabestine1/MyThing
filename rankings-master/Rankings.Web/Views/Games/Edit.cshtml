@@ -1,0 +1,120 @@
+﻿@model Rankings.Web.Models.GameViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Game</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Identifier" class="control-label"></label>
+                <input readonly="readonly" asp-for="Identifier" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistrationDate" class="control-label"></label>
+                <input readonly="readonly" asp-for="RegistrationDate" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="GameType" class="control-label"></label>
+                <select asp-for="GameType" class="form-control" asp-items="@Model.GameTypes">
+                </select>
+                <span asp-validation-for="GameType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Venue" class="control-label"></label>
+                <select asp-for="Venue" class="form-control" asp-items="@Model.Venues">
+                </select>
+                <span asp-validation-for="Venue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameFirstPlayer" class="control-label"></label>
+                <select asp-for="NameFirstPlayer" class="form-control" asp-items="@Model.Players">
+                </select>
+                <span asp-validation-for="NameFirstPlayer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameSecondPlayer" class="control-label"></label>
+                <select asp-for="NameSecondPlayer" class="form-control" asp-items="@Model.Players">
+                </select>
+                <span asp-validation-for="NameSecondPlayer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScoreFirstPlayer" class="control-label"></label>
+                <input asp-for="ScoreFirstPlayer" class="form-control" />
+                <span asp-validation-for="ScoreFirstPlayer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ScoreSecondPlayer" class="control-label"></label>
+                <input asp-for="ScoreSecondPlayer" class="form-control" />
+                <span asp-validation-for="ScoreSecondPlayer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+    <div class="col col-md-9">
+        <div class="row">
+            <div class="col col-md-2">Result</div>
+            <div class="col col-md-1">Set1</div>
+            <div class="col col-md-1">Set2</div>
+            <div class="col col-md-1">Set3</div>
+            <div class="col col-md-1">Set4</div>
+            <div class="col col-md-1">Set5</div>
+        </div>
+        <div class="row">
+            <div class="col col-md-2">
+                <input asp-for="ScoreFirstPlayer" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreFirstPlayerSet1" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreFirstPlayerSet2" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreFirstPlayerSet3" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreFirstPlayerSet4" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreFirstPlayerSet5" readonly class="form-control" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-md-2">
+                <input asp-for="ScoreSecondPlayer" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreSecondPlayerSet1" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreSecondPlayerSet2" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreSecondPlayerSet3" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreSecondPlayerSet4" readonly class="form-control" />
+            </div>
+            <div class="col col-md-1">
+                <input asp-for="ScoreSecondPlayerSet5" readonly class="form-control" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,188 @@
+Q1a
+=====First solution with join======
+SET SERVEROUTPUT ON
+DECLARE
+    CURSOR c_jobTitle IS
+    SELECT job_title, JOB_ID
+    from JOBS
+    ORDER BY JOB_TITLE;
+    
+    CURSOR c_EMP(p_jobId EMPLOYEES.JOB_ID%type) IS
+    SELECT LAST_NAME, START_DATE, END_DATE
+    from JOB_HISTORY jh JOIN employees e on jh.EMPLOYEE_ID = e.EMPLOYEE_ID
+    WHERE jh.JOB_ID = p_jobId
+    ORDER BY START_DATE;
+    
+    
+BEGIN
+    for r_jobTitle in c_jobTitle loop
+        print(r_jobtitle.job_title);
+        for r_emp in c_emp(r_jobTitle.job_id) loop
+            print(' --' ||r_emp.last_name ||' from: '|| r_emp.start_date || 
+            ' until ' || r_emp.end_date);
+        end loop;
+    
+    end loop;
+END;
+
+======second solution with querry=======
+SET SERVEROUTPUT ON
+DECLARE
+    CURSOR c_jobTitle IS
+    SELECT job_title, JOB_ID
+    from JOBS
+    ORDER BY JOB_TITLE;
+    
+    CURSOR c_EMP(p_jobId EMPLOYEES.JOB_ID%type) IS
+    SELECT EMPLOYEE_ID, START_DATE, END_DATE
+    from JOB_HISTORY 
+    WHERE JOB_ID = p_jobId
+    ORDER BY START_DATE;
+    
+    v_emp_name EMPLOYEES.last_name%type;
+BEGIN
+    for r_jobTitle in c_jobTitle loop
+        print(r_jobtitle.job_title);
+        for r_emp in c_emp(r_jobTitle.job_id) loop
+            select last_name
+            into v_emp_name
+            from employees
+            where employee_id = r_emp.employee_id;
+            print(' --' || v_emp_name ||' from: '|| r_emp.start_date || 
+            ' until ' || r_emp.end_date);
+        end loop;
+    
+    end loop;
+END;
+
+
+Q1b
+
+SET SERVEROUTPUT ON
+DECLARE
+    CURSOR c_jobTitle IS
+    SELECT job_title, JOB_ID
+    from JOBS
+    ORDER BY JOB_TITLE;
+    
+    CURSOR c_EMP(p_jobId EMPLOYEES.JOB_ID%type) IS
+    SELECT EMPLOYEE_ID, START_DATE, END_DATE
+    from JOB_HISTORY 
+    WHERE JOB_ID = p_jobId
+    ORDER BY START_DATE;
+    
+    v_emp_name EMPLOYEES.last_name%type;
+    countHist number;
+BEGIN
+    for r_jobTitle in c_jobTitle loop
+        Select count(*) into countHist
+    From Job_History
+    Where job_id = r_jobTitle.job_id;
+
+        if countHist  >0 then 
+            print(r_jobtitle.job_title);
+            for r_emp in c_emp(r_jobTitle.job_id) loop
+                select last_name
+                into v_emp_name
+                from employees
+                where employee_id = r_emp.employee_id;
+                print(' --' || v_emp_name ||' from: '|| r_emp.start_date || 
+                ' until ' || r_emp.end_date);
+            end loop;
+        end if;
+        
+    
+    end loop;
+END;
+
+
+Q2
+
+create or replace function job_of(p_job_id jobs.job_id%type) return varchar2
+is
+    v_output jobs.job_title%type;
+begin
+    select job_title 
+    into v_output
+    from jobs
+    where job_id = p_job_id;
+
+    return v_output;
+end;
+
+select first_name, last_name, job_of(job_id)
+from employees;
+
+Q3
+Create or replace trigger count_SA_MAN_constrain
+After insert or update of job_id
+On Employees
+Declare
+  count_sa_man  number;
+Begin
+  Select count(*) into count_sa_man
+  From Employees 
+  Where upper(job_id) = 'SA_MAN';
+  If count_sa_man > 5  then
+    Raise_application_error(-20001, 'Too many stock managers');
+  End if;
+End;
+
+set serveroutput on
+update employees
+set job_id = 'SA_MAN'
+where employee_id = 202;
+
+Q4
+create or replace trigger new_ST_REP
+Before update of job_id
+On Employees
+For each row
+Begin
+If upper(:new.job_id) = 'SA_REP' and upper(:old.job_id) <> 'SA_REP' then
+    Print('yooohahahahahaha');
+        :NEW.COMMISSION_PCT := 0.05;
+  End if;
+End;
+
+
+
+
+
+======== STORED PROCEDURE ======
+create or replace procedure new_loc (
+    p_street_address LOCATIONS.STREET_ADDRESS%type,
+    p_P_code LOCATIONS.POSTAL_CODE%type,
+    p_city LOCATIONS.city%type,
+    p_s_P_address LOCATIONS.STATE_PROVINCE%type,
+    p_c_id LOCATIONS.COUNTRY_ID%type,
+    p_location_id OUT LOCATIONS.LOCATION_ID%type
+) is
+    v_loc_id LOCATIONS.LOCATION_ID%type;
+begin
+    select max(location_id)
+    into v_loc_id
+    from locations;
+    v_loc_id := v_loc_id+100;
+    p_location_id := v_loc_id;
+    
+    insert into locations
+    values (p_location_id, initcap(p_street_address), p_P_code,initcap(p_city),
+    initcap(p_s_P_address),upper(p_c_id));
+
+exception 
+    when others  then 
+        print('COUNTRY_ID doesnt exist.');
+        p_location_id := null;
+end;
+
+set SERVEROUTPUT ON
+declare
+    x number;
+begin
+    new_loc('Rachelsmolen 1', '5612 MA', 'Eindhoven', 'NB', 'NL',x );
+    print(x);
+end;
+
+
+

@@ -1,0 +1,7 @@
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\bin\Debug\project_5.10a.exe.config
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\bin\Debug\project_5.10a.exe
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\bin\Debug\project_5.10a.pdb
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\obj\Debug\project_5.10a.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\obj\Debug\project_5.10a.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\obj\Debug\project_5.10a.exe
+C:\Users\flamestar\Documents\Practicals\Week 5\project_5.10a\project_5.10a\obj\Debug\project_5.10a.pdb

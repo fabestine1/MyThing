@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week4\week4alternative\MacSnack\bin\Debug\MacSnack.exe.config
+D:\Fontys\C#1\week4\week4alternative\MacSnack\bin\Debug\MacSnack.exe
+D:\Fontys\C#1\week4\week4alternative\MacSnack\bin\Debug\MacSnack.pdb
+D:\Fontys\C#1\week4\week4alternative\MacSnack\obj\Debug\MacSnack.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week4\week4alternative\MacSnack\obj\Debug\MacSnack.exe
+D:\Fontys\C#1\week4\week4alternative\MacSnack\obj\Debug\MacSnack.pdb

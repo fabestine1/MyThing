@@ -1,0 +1,17 @@
+trigger:
+  batch: true
+  branches:
+    exclude:
+        - master
+
+schedules:
+- cron: "55 7 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+  always: true
+      
+extends:
+  template: devops/base.yml
+

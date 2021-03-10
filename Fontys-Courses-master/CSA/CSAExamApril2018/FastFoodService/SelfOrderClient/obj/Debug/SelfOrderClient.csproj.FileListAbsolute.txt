@@ -1,0 +1,10 @@
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\bin\Debug\SelfOrderClient.exe.config
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\bin\Debug\SelfOrderClient.exe
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\bin\Debug\SelfOrderClient.pdb
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.csprojAssemblyReference.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.ClientForm.resources
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.Properties.Resources.resources
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.csproj.GenerateResource.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.csproj.CoreCompileInputs.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.exe
+F:\Downloads\CSAExamApril2018\FastFoodService\SelfOrderClient\obj\Debug\SelfOrderClient.pdb

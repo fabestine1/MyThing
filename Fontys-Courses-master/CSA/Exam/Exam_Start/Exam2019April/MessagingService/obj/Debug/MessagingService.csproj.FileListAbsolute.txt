@@ -1,0 +1,6 @@
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingService\obj\Debug\MessagingService.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingService\bin\Debug\MessagingService.dll.config
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingService\bin\Debug\MessagingService.dll
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingService\bin\Debug\MessagingService.pdb
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingService\obj\Debug\MessagingService.dll
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingService\obj\Debug\MessagingService.pdb

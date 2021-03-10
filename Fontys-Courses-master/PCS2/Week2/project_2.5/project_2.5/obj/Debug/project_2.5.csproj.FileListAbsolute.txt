@@ -1,0 +1,11 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\bin\Debug\project_2.5.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\bin\Debug\project_2.5.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\bin\Debug\project_2.5.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2.5.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2._5.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2._5.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2.5.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2.5.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2.5.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2.5.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.5\project_2.5\obj\Debug\project_2._5.Form2.resources

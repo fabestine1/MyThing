@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props" Condition="Exists('..\packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props')" />
+  <Import Project="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{49E67843-D96F-477B-AAD7-C67F0FD8D987}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.94.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ClosedXML.0.94.2\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=5.0.4.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.0.4\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelNumberFormat.1.0.3\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastMember, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastMember.1.3.0\lib\net45\FastMember.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <HintPath>..\packages\ServiceStack.Text.5.8.0\lib\net45\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard2.0\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.4.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.19\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDepartment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDepartment.Designer.cs">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddOtherContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOtherContacts.Designer.cs">
+      <DependentUpon>AddOtherContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStock.Designer.cs">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator.cs" />
+    <Compile Include="AdministratorShiftsOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministratorShiftsOverview.Designer.cs">
+      <DependentUpon>AdministratorShiftsOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Announcement.cs" />
+    <Compile Include="ApproveManagerRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApproveManagerRequests.Designer.cs">
+      <DependentUpon>ApproveManagerRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Department.cs" />
+    <Compile Include="DepartmentActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepartmentActions.Designer.cs">
+      <DependentUpon>DepartmentActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepartmentComboBoxItem.cs" />
+    <Compile Include="DepartmentUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DepartmentUserControl.Designer.cs">
+      <DependentUpon>DepartmentUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDepartmentForm.Designer.cs">
+      <DependentUpon>EditDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeCosts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeCosts.Designer.cs">
+      <DependentUpon>EmployeeCosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeComboBoxItem.cs" />
+    <Compile Include="Export.cs" />
+    <Compile Include="FiringRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiringRequest.Designer.cs">
+      <DependentUpon>FiringRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiringRequests.cs" />
+    <Compile Include="HiringRequests.cs" />
+    <Compile Include="HiringRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HiringRequest.Designer.cs">
+      <DependentUpon>HiringRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs" />
+    <Compile Include="ManagerComboBoxItems.cs" />
+    <Compile Include="ManagerStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerStatistics.Designer.cs">
+      <DependentUpon>ManagerStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerStatisticsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagerStatisticsControl.Designer.cs">
+      <DependentUpon>ManagerStatisticsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModifyEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyEmployee.Designer.cs">
+      <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleController.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="ProfileRoles.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveEmployee.Designer.cs">
+      <DependentUpon>RemoveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveManager.Designer.cs">
+      <DependentUpon>RemoveManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RequestControl.Designer.cs">
+      <DependentUpon>RequestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestStock.Designer.cs">
+      <DependentUpon>RequestStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForWorker.Designer.cs">
+      <DependentUpon>SearchForWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShelfRestockRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShelfRestockRequests.Designer.cs">
+      <DependentUpon>ShelfRestockRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs" />
+    <Compile Include="StockRequest.cs" />
+    <Compile Include="StocksComboBoxItem.cs" />
+    <Compile Include="WordaysControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WordaysControl.Designer.cs">
+      <DependentUpon>WordaysControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <Compile Include="Worker.cs" />
+    <Compile Include="StockEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockEdit.Designer.cs">
+      <DependentUpon>StockEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockView.Designer.cs">
+      <DependentUpon>StockView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDepartment.resx">
+      <DependentUpon>AddDepartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddOtherContacts.resx">
+      <DependentUpon>AddOtherContacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStock.resx">
+      <DependentUpon>AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdministratorShiftsOverview.resx">
+      <DependentUpon>AdministratorShiftsOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApproveManagerRequests.resx">
+      <DependentUpon>ApproveManagerRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentActions.resx">
+      <DependentUpon>DepartmentActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentUserControl.resx">
+      <DependentUpon>DepartmentUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDepartmentForm.resx">
+      <DependentUpon>EditDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeCosts.resx">
+      <DependentUpon>EmployeeCosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiringRequest.resx">
+      <DependentUpon>FiringRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HiringRequest.resx">
+      <DependentUpon>HiringRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerStatistics.resx">
+      <DependentUpon>ManagerStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerStatisticsControl.resx">
+      <DependentUpon>ManagerStatisticsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyEmployee.resx">
+      <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RemoveEmployee.resx">
+      <DependentUpon>RemoveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveManager.resx">
+      <DependentUpon>RemoveManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForWorker.resx">
+      <DependentUpon>SearchForWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestControl.resx">
+      <DependentUpon>RequestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestStock.resx">
+      <DependentUpon>RequestStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShelfRestockRequests.resx">
+      <DependentUpon>ShelfRestockRequests.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <EmbeddedResource Include="WordaysControl.resx">
+      <DependentUpon>WordaysControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <EmbeddedResource Include="StockEdit.resx">
+      <DependentUpon>StockEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockView.resx">
+      <DependentUpon>StockView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DigitalTech Logo 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editdepartment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\cs\Microsoft.CodeAnalysis.VersionCheckAnalyzer.resources.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\analyzers\dotnet\Microsoft.CodeAnalysis.VersionCheckAnalyzer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\Humanizer.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.CodeQuality.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.CodeQuality.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetCore.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetCore.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetCore.CSharp.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetFramework.Analyzers.dll" />
+    <Analyzer Include="..\packages\Microsoft.NetFramework.Analyzers.2.9.8\analyzers\dotnet\cs\Microsoft.NetFramework.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.8\build\Microsoft.CodeAnalysis.VersionCheckAnalyzer.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeQuality.Analyzers.2.9.8\build\Microsoft.CodeQuality.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetCore.Analyzers.2.9.8\build\Microsoft.NetCore.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NetFramework.Analyzers.2.9.8\build\Microsoft.NetFramework.Analyzers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.9.8\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props'))" />
+  </Target>
+</Project>

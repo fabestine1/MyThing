@@ -1,0 +1,9 @@
+D:\Fontys\C#2\week1\1.5\bin\Debug\1.5.exe.config
+D:\Fontys\C#2\week1\1.5\bin\Debug\1.5.exe
+D:\Fontys\C#2\week1\1.5\bin\Debug\1.5.pdb
+D:\Fontys\C#2\week1\1.5\obj\Debug\1.5.csprojResolveAssemblyReference.cache
+D:\Fontys\C#2\week1\1.5\obj\Debug\_1._5.Form1.resources
+D:\Fontys\C#2\week1\1.5\obj\Debug\_1._5.Properties.Resources.resources
+D:\Fontys\C#2\week1\1.5\obj\Debug\1.5.csproj.GenerateResource.Cache
+D:\Fontys\C#2\week1\1.5\obj\Debug\1.5.exe
+D:\Fontys\C#2\week1\1.5\obj\Debug\1.5.pdb

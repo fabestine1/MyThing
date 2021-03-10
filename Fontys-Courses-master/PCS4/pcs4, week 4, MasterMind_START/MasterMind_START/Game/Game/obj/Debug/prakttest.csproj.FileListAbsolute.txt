@@ -1,0 +1,33 @@
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\bin\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\bin\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.csprojResolveAssemblyReference.cache
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.Form1.resources
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.csproj.GenerateResource.Cache
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes_school\PCS_new\PCS4\practicum ontwikkelen\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.csprojResolveAssemblyReference.cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.Form1.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\obj\Debug\prakttest.csproj.GenerateResource.Cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\bin\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind\prakttest\prakttest\bin\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\bin\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\bin\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.csprojResolveAssemblyReference.cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.Form1.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\output parameters\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.csproj.GenerateResource.Cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\master mind\mastermind - kopie\prakttest\prakttest\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\master mind\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\week4\master mind\mastermind - kopie\prakttest\prakttest\obj\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\prakttest.pdb

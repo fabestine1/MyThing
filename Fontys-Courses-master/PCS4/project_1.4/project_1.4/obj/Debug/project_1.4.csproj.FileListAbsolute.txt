@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\bin\Debug\project_1.4.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\bin\Debug\project_1.4.exe
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\bin\Debug\project_1.4.pdb
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1.4.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1._4.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1._4.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1.4.csproj.GenerateResource.cache
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1.4.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1.4.exe
+C:\Users\flamestar\Documents\Practicals\PCS4\project_1.4\project_1.4\obj\Debug\project_1.4.pdb

@@ -1,0 +1,9 @@
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\bin\Debug\AppForAShop.exe.config
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\obj\Debug\AppForAShop.csprojResolveAssemblyReference.cache
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\obj\Debug\AppForAShop.Form1.resources
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\obj\Debug\AppForAShop.Properties.Resources.resources
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\obj\Debug\AppForAShop.csproj.GenerateResource.Cache
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\bin\Debug\AppForAShop.exe
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\bin\Debug\AppForAShop.pdb
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\obj\Debug\AppForAShop.exe
+D:\pcs3\exams\pcs3 exam 2017 oct\AppForAShop - solution\AppForAShop\obj\Debug\AppForAShop.pdb

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/switch_fragment"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 0"
+            android:layout_marginTop="0px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch0"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight0"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 1"
+            android:layout_marginTop="75px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="75px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight1" />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150px"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="150px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight2"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 3"
+            android:layout_marginTop="225px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="225px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight3"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 4"
+            android:layout_marginTop="300px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch4"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="300px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight4"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 5"
+            android:layout_marginTop="375px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch5"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="375px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight5"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 6"
+            android:layout_marginTop="450px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch6"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="450px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight6"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 7"
+            android:layout_marginTop="525px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch7"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="525px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight7"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 8"
+            android:layout_marginTop="600px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch8"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="600px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight8"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 9"
+            android:layout_marginTop="675px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch9"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="675px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight9"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 10"
+            android:layout_marginTop="750px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch10"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="750px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight10"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 11"
+            android:layout_marginTop="825px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch11"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="825px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight11"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 12"
+            android:layout_marginTop="900px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch12"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="900px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight12"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 13"
+            android:layout_marginTop="975px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch13"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="975px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight13"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 14"
+            android:layout_marginTop="1050px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch14"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1050px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight14"  />
+        <TextView
+            android:layout_height="75px"
+            android:layout_width="wrap_content"
+            android:text="Lamp 15"
+            android:layout_marginTop="1125px"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="20dp" />
+        <Switch
+            android:id="@+id/switch15"
+            android:layout_height="75px"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1125px"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="switchLight15"  />
+    </RelativeLayout>
+</ScrollView>

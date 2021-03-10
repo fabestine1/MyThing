@@ -1,0 +1,3392 @@
+   1               		.file	"unity.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	UnitySetSetUpTearDown
+  18               	UnitySetSetUpTearDown:
+  19               	.LFB26:
+  20               	.LM1:
+  21               	.LVL0:
+  22               	/* prologue: function */
+  23               	/* frame size = 0 */
+  24               	.LM2:
+  25 0000 9093 0000 		sts (setUpFunc)+1,r25
+  26 0004 8093 0000 		sts setUpFunc,r24
+  27               	.LM3:
+  28 0008 7093 0000 		sts (tearDownFunc)+1,r23
+  29 000c 6093 0000 		sts tearDownFunc,r22
+  30               	/* epilogue start */
+  31               	.LM4:
+  32 0010 0895      		ret
+  33               	.LFE26:
+  35               	.global	UnityResetSetUpTearDownFunc
+  37               	UnityResetSetUpTearDownFunc:
+  38               	.LFB27:
+  39               	.LM5:
+  40               	/* prologue: function */
+  41               	/* frame size = 0 */
+  42               	.LM6:
+  43 0012 1092 0000 		sts (setUpFunc)+1,__zero_reg__
+  44 0016 1092 0000 		sts setUpFunc,__zero_reg__
+  45               	.LM7:
+  46 001a 1092 0000 		sts (tearDownFunc)+1,__zero_reg__
+  47 001e 1092 0000 		sts tearDownFunc,__zero_reg__
+  48               	/* epilogue start */
+  49               	.LM8:
+  50 0022 0895      		ret
+  51               	.LFE27:
+  53               	.global	UnityBegin
+  55               	UnityBegin:
+  56               	.LFB29:
+  57               	.LM9:
+  58               	/* prologue: function */
+  59               	/* frame size = 0 */
+  60               	.LM10:
+  61 0024 1092 0000 		sts Unity+8,__zero_reg__
+  62               	/* epilogue start */
+  63               	.LM11:
+  64 0028 0895      		ret
+  65               	.LFE29:
+  67               	.global	UnityPrintMask
+  69               	UnityPrintMask:
+  70               	.LFB8:
+  71               	.LM12:
+  72               	.LVL1:
+  73 002a 6F92      		push r6
+  74 002c 7F92      		push r7
+  75 002e 8F92      		push r8
+  76 0030 9F92      		push r9
+  77 0032 AF92      		push r10
+  78 0034 BF92      		push r11
+  79 0036 CF92      		push r12
+  80 0038 DF92      		push r13
+  81 003a EF92      		push r14
+  82 003c FF92      		push r15
+  83 003e 0F93      		push r16
+  84 0040 1F93      		push r17
+  85 0042 CF93      		push r28
+  86 0044 DF93      		push r29
+  87               	/* prologue: function */
+  88               	/* frame size = 0 */
+  89 0046 3B01      		movw r6,r22
+  90 0048 4C01      		movw r8,r24
+  91 004a 5901      		movw r10,r18
+  92 004c 6A01      		movw r12,r20
+  93               	.LM13:
+  94 004e E12C      		mov r14,__zero_reg__
+  95 0050 90E8      		ldi r25,hi8(32768)
+  96 0052 F92E      		mov r15,r25
+  97 0054 012D      		mov r16,__zero_reg__
+  98 0056 112D      		mov r17,__zero_reg__
+  99               	.LVL2:
+ 100 0058 C0E0      		ldi r28,lo8(0)
+ 101 005a D0E0      		ldi r29,hi8(0)
+ 102               	.LVL3:
+ 103               	.L12:
+ 104               	.LM14:
+ 105 005c D801      		movw r26,r16
+ 106 005e C701      		movw r24,r14
+ 107 0060 8621      		and r24,r6
+ 108 0062 9721      		and r25,r7
+ 109 0064 A821      		and r26,r8
+ 110 0066 B921      		and r27,r9
+ 111 0068 0097      		sbiw r24,0
+ 112 006a A105      		cpc r26,__zero_reg__
+ 113 006c B105      		cpc r27,__zero_reg__
+ 114 006e 01F0      		breq .L8
+ 115               	.LM15:
+ 116 0070 D801      		movw r26,r16
+ 117 0072 C701      		movw r24,r14
+ 118 0074 8A21      		and r24,r10
+ 119 0076 9B21      		and r25,r11
+ 120 0078 AC21      		and r26,r12
+ 121 007a BD21      		and r27,r13
+ 122 007c 0097      		sbiw r24,0
+ 123 007e A105      		cpc r26,__zero_reg__
+ 124 0080 B105      		cpc r27,__zero_reg__
+ 125 0082 01F0      		breq .L9
+ 126               	.LM16:
+ 127 0084 6091 0000 		lds r22,__iob+2
+ 128 0088 7091 0000 		lds r23,(__iob+2)+1
+ 129 008c 81E3      		ldi r24,lo8(49)
+ 130 008e 90E0      		ldi r25,hi8(49)
+ 131 0090 00C0      		rjmp .L14
+ 132               	.LVL4:
+ 133               	.L9:
+ 134               	.LM17:
+ 135 0092 6091 0000 		lds r22,__iob+2
+ 136 0096 7091 0000 		lds r23,(__iob+2)+1
+ 137 009a 80E3      		ldi r24,lo8(48)
+ 138 009c 90E0      		ldi r25,hi8(48)
+ 139 009e 00C0      		rjmp .L14
+ 140               	.LVL5:
+ 141               	.L8:
+ 142               	.LM18:
+ 143 00a0 6091 0000 		lds r22,__iob+2
+ 144 00a4 7091 0000 		lds r23,(__iob+2)+1
+ 145 00a8 88E5      		ldi r24,lo8(88)
+ 146 00aa 90E0      		ldi r25,hi8(88)
+ 147               	.L14:
+ 148 00ac 0E94 0000 		call fputc
+ 149 00b0 2196      		adiw r28,1
+ 150               	.LM19:
+ 151 00b2 C031      		cpi r28,16
+ 152 00b4 D105      		cpc r29,__zero_reg__
+ 153 00b6 01F0      		breq .L13
+ 154               	.LM20:
+ 155 00b8 1695      		lsr r17
+ 156 00ba 0795      		ror r16
+ 157 00bc F794      		ror r15
+ 158 00be E794      		ror r14
+ 159 00c0 00C0      		rjmp .L12
+ 160               	.L13:
+ 161               	/* epilogue start */
+ 162               	.LM21:
+ 163 00c2 DF91      		pop r29
+ 164 00c4 CF91      		pop r28
+ 165 00c6 1F91      		pop r17
+ 166 00c8 0F91      		pop r16
+ 167 00ca FF90      		pop r15
+ 168 00cc EF90      		pop r14
+ 169               	.LVL6:
+ 170 00ce DF90      		pop r13
+ 171 00d0 CF90      		pop r12
+ 172 00d2 BF90      		pop r11
+ 173 00d4 AF90      		pop r10
+ 174               	.LVL7:
+ 175 00d6 9F90      		pop r9
+ 176 00d8 8F90      		pop r8
+ 177 00da 7F90      		pop r7
+ 178 00dc 6F90      		pop r6
+ 179               	.LVL8:
+ 180 00de 0895      		ret
+ 181               	.LFE8:
+ 183               	.global	UnityPrintNumberHex
+ 185               	UnityPrintNumberHex:
+ 186               	.LFB7:
+ 187               	.LM22:
+ 188               	.LVL9:
+ 189 00e0 CF92      		push r12
+ 190 00e2 DF92      		push r13
+ 191 00e4 EF92      		push r14
+ 192 00e6 FF92      		push r15
+ 193 00e8 1F93      		push r17
+ 194               	/* prologue: function */
+ 195               	/* frame size = 0 */
+ 196 00ea 6B01      		movw r12,r22
+ 197 00ec 7C01      		movw r14,r24
+ 198 00ee 142F      		mov r17,r20
+ 199               	.LM23:
+ 200 00f0 6091 0000 		lds r22,__iob+2
+ 201 00f4 7091 0000 		lds r23,(__iob+2)+1
+ 202               	.LVL10:
+ 203 00f8 80E3      		ldi r24,lo8(48)
+ 204 00fa 90E0      		ldi r25,hi8(48)
+ 205 00fc 0E94 0000 		call fputc
+ 206               	.LVL11:
+ 207               	.LM24:
+ 208 0100 6091 0000 		lds r22,__iob+2
+ 209 0104 7091 0000 		lds r23,(__iob+2)+1
+ 210 0108 88E7      		ldi r24,lo8(120)
+ 211 010a 90E0      		ldi r25,hi8(120)
+ 212 010c 00C0      		rjmp .L21
+ 213               	.LVL12:
+ 214               	.L18:
+ 215               	.LM25:
+ 216 010e 1150      		subi r17,lo8(-(-1))
+ 217               	.LVL13:
+ 218 0110 812F      		mov r24,r17
+ 219 0112 880F      		lsl r24
+ 220 0114 880F      		lsl r24
+ 221 0116 A701      		movw r20,r14
+ 222 0118 9601      		movw r18,r12
+ 223 011a 00C0      		rjmp 2f
+ 224 011c 5695      	1:	lsr r21
+ 225 011e 4795      		ror r20
+ 226 0120 3795      		ror r19
+ 227 0122 2795      		ror r18
+ 228 0124 8A95      	2:	dec r24
+ 229 0126 02F4      		brpl 1b
+ 230 0128 DA01      		movw r26,r20
+ 231 012a C901      		movw r24,r18
+ 232               	.LVL14:
+ 233 012c 8F70      		andi r24,lo8(15)
+ 234 012e 9070      		andi r25,hi8(15)
+ 235 0130 A070      		andi r26,hlo8(15)
+ 236 0132 B070      		andi r27,hhi8(15)
+ 237               	.LM26:
+ 238 0134 8A30      		cpi r24,lo8(10)
+ 239 0136 9105      		cpc r25,__zero_reg__
+ 240 0138 A105      		cpc r26,__zero_reg__
+ 241 013a B105      		cpc r27,__zero_reg__
+ 242 013c 00F4      		brsh .L17
+ 243               	.LM27:
+ 244 013e 6091 0000 		lds r22,__iob+2
+ 245 0142 7091 0000 		lds r23,(__iob+2)+1
+ 246 0146 805D      		subi r24,lo8(-(48))
+ 247               	.LVL15:
+ 248 0148 00C0      		rjmp .L22
+ 249               	.LVL16:
+ 250               	.L17:
+ 251               	.LM28:
+ 252 014a 6091 0000 		lds r22,__iob+2
+ 253 014e 7091 0000 		lds r23,(__iob+2)+1
+ 254 0152 895C      		subi r24,lo8(-(55))
+ 255               	.LVL17:
+ 256               	.L22:
+ 257 0154 90E0      		ldi r25,lo8(0)
+ 258               	.LVL18:
+ 259               	.L21:
+ 260 0156 0E94 0000 		call fputc
+ 261               	.LM29:
+ 262 015a 1123      		tst r17
+ 263 015c 01F4      		brne .L18
+ 264               	/* epilogue start */
+ 265               	.LM30:
+ 266 015e 1F91      		pop r17
+ 267               	.LVL19:
+ 268 0160 FF90      		pop r15
+ 269 0162 EF90      		pop r14
+ 270 0164 DF90      		pop r13
+ 271 0166 CF90      		pop r12
+ 272               	.LVL20:
+ 273 0168 0895      		ret
+ 274               	.LFE7:
+ 276               	.global	UnityPrintNumberUnsigned
+ 278               	UnityPrintNumberUnsigned:
+ 279               	.LFB6:
+ 280               	.LM31:
+ 281               	.LVL21:
+ 282 016a AF92      		push r10
+ 283 016c BF92      		push r11
+ 284 016e CF92      		push r12
+ 285 0170 DF92      		push r13
+ 286 0172 EF92      		push r14
+ 287 0174 FF92      		push r15
+ 288 0176 0F93      		push r16
+ 289 0178 1F93      		push r17
+ 290 017a CF93      		push r28
+ 291 017c DF93      		push r29
+ 292               	/* prologue: function */
+ 293               	/* frame size = 0 */
+ 294 017e 5B01      		movw r10,r22
+ 295 0180 6C01      		movw r12,r24
+ 296               	.LM32:
+ 297 0182 21E0      		ldi r18,lo8(1)
+ 298 0184 E22E      		mov r14,r18
+ 299 0186 F12C      		mov r15,__zero_reg__
+ 300 0188 012D      		mov r16,__zero_reg__
+ 301 018a 112D      		mov r17,__zero_reg__
+ 302               	.LVL22:
+ 303 018c C0E0      		ldi r28,lo8(0)
+ 304 018e D0E0      		ldi r29,hi8(0)
+ 305 0190 00C0      		rjmp .L24
+ 306               	.LVL23:
+ 307               	.L26:
+ 308               	.LM33:
+ 309 0192 C801      		movw r24,r16
+ 310 0194 B701      		movw r22,r14
+ 311 0196 2AE0      		ldi r18,lo8(10)
+ 312 0198 30E0      		ldi r19,hi8(10)
+ 313 019a 40E0      		ldi r20,hlo8(10)
+ 314 019c 50E0      		ldi r21,hhi8(10)
+ 315 019e 0E94 0000 		call __mulsi3
+ 316 01a2 2196      		adiw r28,1
+ 317               	.LM34:
+ 318 01a4 CB30      		cpi r28,11
+ 319 01a6 D105      		cpc r29,__zero_reg__
+ 320 01a8 01F0      		breq .L28
+ 321               	.LM35:
+ 322 01aa AC01      		movw r20,r24
+ 323 01ac CB01      		movw r24,r22
+ 324 01ae DA01      		movw r26,r20
+ 325 01b0 7C01      		movw r14,r24
+ 326 01b2 8D01      		movw r16,r26
+ 327               	.LVL24:
+ 328               	.L24:
+ 329               	.LM36:
+ 330 01b4 C601      		movw r24,r12
+ 331 01b6 B501      		movw r22,r10
+ 332 01b8 A801      		movw r20,r16
+ 333 01ba 9701      		movw r18,r14
+ 334 01bc 0E94 0000 		call __udivmodsi4
+ 335 01c0 2A30      		cpi r18,lo8(10)
+ 336 01c2 3105      		cpc r19,__zero_reg__
+ 337 01c4 4105      		cpc r20,__zero_reg__
+ 338 01c6 5105      		cpc r21,__zero_reg__
+ 339 01c8 00F4      		brsh .L26
+ 340               	.L28:
+ 341               	.LM37:
+ 342 01ca C601      		movw r24,r12
+ 343 01cc B501      		movw r22,r10
+ 344 01ce A801      		movw r20,r16
+ 345 01d0 9701      		movw r18,r14
+ 346 01d2 0E94 0000 		call __udivmodsi4
+ 347 01d6 CA01      		movw r24,r20
+ 348 01d8 B901      		movw r22,r18
+ 349 01da 2AE0      		ldi r18,lo8(10)
+ 350 01dc 30E0      		ldi r19,hi8(10)
+ 351 01de 40E0      		ldi r20,hlo8(10)
+ 352 01e0 50E0      		ldi r21,hhi8(10)
+ 353 01e2 0E94 0000 		call __udivmodsi4
+ 354 01e6 862F      		mov r24,r22
+ 355 01e8 6091 0000 		lds r22,__iob+2
+ 356 01ec 7091 0000 		lds r23,(__iob+2)+1
+ 357 01f0 805D      		subi r24,lo8(-(48))
+ 358 01f2 90E0      		ldi r25,lo8(0)
+ 359 01f4 0E94 0000 		call fputc
+ 360               	.LM38:
+ 361 01f8 C801      		movw r24,r16
+ 362 01fa B701      		movw r22,r14
+ 363 01fc 2AE0      		ldi r18,lo8(10)
+ 364 01fe 30E0      		ldi r19,hi8(10)
+ 365 0200 40E0      		ldi r20,hlo8(10)
+ 366 0202 50E0      		ldi r21,hhi8(10)
+ 367 0204 0E94 0000 		call __udivmodsi4
+ 368 0208 C901      		movw r24,r18
+ 369 020a DA01      		movw r26,r20
+ 370 020c 7C01      		movw r14,r24
+ 371 020e 8D01      		movw r16,r26
+ 372               	.LM39:
+ 373 0210 E114      		cp r14,__zero_reg__
+ 374 0212 F104      		cpc r15,__zero_reg__
+ 375 0214 0105      		cpc r16,__zero_reg__
+ 376 0216 1105      		cpc r17,__zero_reg__
+ 377 0218 01F4      		brne .L28
+ 378               	/* epilogue start */
+ 379               	.LM40:
+ 380 021a DF91      		pop r29
+ 381 021c CF91      		pop r28
+ 382 021e 1F91      		pop r17
+ 383 0220 0F91      		pop r16
+ 384 0222 FF90      		pop r15
+ 385 0224 EF90      		pop r14
+ 386               	.LVL25:
+ 387 0226 DF90      		pop r13
+ 388 0228 CF90      		pop r12
+ 389 022a BF90      		pop r11
+ 390 022c AF90      		pop r10
+ 391               	.LVL26:
+ 392 022e 0895      		ret
+ 393               	.LFE6:
+ 395               	.global	UnityPrintNumber
+ 397               	UnityPrintNumber:
+ 398               	.LFB5:
+ 399               	.LM41:
+ 400               	.LVL27:
+ 401 0230 AF92      		push r10
+ 402 0232 BF92      		push r11
+ 403 0234 CF92      		push r12
+ 404 0236 DF92      		push r13
+ 405 0238 EF92      		push r14
+ 406 023a FF92      		push r15
+ 407 023c 0F93      		push r16
+ 408 023e 1F93      		push r17
+ 409 0240 CF93      		push r28
+ 410 0242 DF93      		push r29
+ 411               	/* prologue: function */
+ 412               	/* frame size = 0 */
+ 413 0244 7B01      		movw r14,r22
+ 414 0246 8C01      		movw r16,r24
+ 415               	.LM42:
+ 416 0248 97FF      		sbrs r25,7
+ 417 024a 00C0      		rjmp .L31
+ 418               	.LM43:
+ 419 024c 6091 0000 		lds r22,__iob+2
+ 420 0250 7091 0000 		lds r23,(__iob+2)+1
+ 421               	.LVL28:
+ 422 0254 8DE2      		ldi r24,lo8(45)
+ 423 0256 90E0      		ldi r25,hi8(45)
+ 424 0258 0E94 0000 		call fputc
+ 425               	.LM44:
+ 426 025c AA24      		clr r10
+ 427 025e BB24      		clr r11
+ 428 0260 6501      		movw r12,r10
+ 429 0262 AE18      		sub r10,r14
+ 430 0264 BF08      		sbc r11,r15
+ 431 0266 C00A      		sbc r12,r16
+ 432 0268 D10A      		sbc r13,r17
+ 433               	.LVL29:
+ 434 026a 00C0      		rjmp .L32
+ 435               	.LVL30:
+ 436               	.L35:
+ 437               	.LM45:
+ 438 026c C801      		movw r24,r16
+ 439 026e B701      		movw r22,r14
+ 440 0270 2AE0      		ldi r18,lo8(10)
+ 441 0272 30E0      		ldi r19,hi8(10)
+ 442 0274 40E0      		ldi r20,hlo8(10)
+ 443 0276 50E0      		ldi r21,hhi8(10)
+ 444 0278 0E94 0000 		call __mulsi3
+ 445 027c 2196      		adiw r28,1
+ 446               	.LM46:
+ 447 027e CB30      		cpi r28,11
+ 448 0280 D105      		cpc r29,__zero_reg__
+ 449 0282 01F0      		breq .L37
+ 450               	.LM47:
+ 451 0284 AC01      		movw r20,r24
+ 452 0286 CB01      		movw r24,r22
+ 453 0288 DA01      		movw r26,r20
+ 454 028a 7C01      		movw r14,r24
+ 455 028c 8D01      		movw r16,r26
+ 456 028e 00C0      		rjmp .L34
+ 457               	.LVL31:
+ 458               	.L31:
+ 459 0290 5B01      		movw r10,r22
+ 460 0292 6C01      		movw r12,r24
+ 461               	.LVL32:
+ 462               	.L32:
+ 463 0294 31E0      		ldi r19,lo8(1)
+ 464 0296 E32E      		mov r14,r19
+ 465 0298 F12C      		mov r15,__zero_reg__
+ 466 029a 012D      		mov r16,__zero_reg__
+ 467 029c 112D      		mov r17,__zero_reg__
+ 468               	.LVL33:
+ 469 029e C0E0      		ldi r28,lo8(0)
+ 470 02a0 D0E0      		ldi r29,hi8(0)
+ 471               	.LVL34:
+ 472               	.L34:
+ 473               	.LM48:
+ 474 02a2 C601      		movw r24,r12
+ 475 02a4 B501      		movw r22,r10
+ 476               	.LVL35:
+ 477 02a6 A801      		movw r20,r16
+ 478 02a8 9701      		movw r18,r14
+ 479 02aa 0E94 0000 		call __divmodsi4
+ 480 02ae 2A30      		cpi r18,lo8(10)
+ 481 02b0 3105      		cpc r19,__zero_reg__
+ 482 02b2 4105      		cpc r20,__zero_reg__
+ 483 02b4 5105      		cpc r21,__zero_reg__
+ 484 02b6 04F4      		brge .L35
+ 485               	.L37:
+ 486               	.LM49:
+ 487 02b8 C601      		movw r24,r12
+ 488 02ba B501      		movw r22,r10
+ 489 02bc A801      		movw r20,r16
+ 490 02be 9701      		movw r18,r14
+ 491 02c0 0E94 0000 		call __divmodsi4
+ 492 02c4 CA01      		movw r24,r20
+ 493 02c6 B901      		movw r22,r18
+ 494 02c8 2AE0      		ldi r18,lo8(10)
+ 495 02ca 30E0      		ldi r19,hi8(10)
+ 496 02cc 40E0      		ldi r20,hlo8(10)
+ 497 02ce 50E0      		ldi r21,hhi8(10)
+ 498 02d0 0E94 0000 		call __divmodsi4
+ 499 02d4 862F      		mov r24,r22
+ 500 02d6 6091 0000 		lds r22,__iob+2
+ 501 02da 7091 0000 		lds r23,(__iob+2)+1
+ 502 02de 805D      		subi r24,lo8(-(48))
+ 503 02e0 90E0      		ldi r25,lo8(0)
+ 504 02e2 0E94 0000 		call fputc
+ 505               	.LM50:
+ 506 02e6 C801      		movw r24,r16
+ 507 02e8 B701      		movw r22,r14
+ 508 02ea 2AE0      		ldi r18,lo8(10)
+ 509 02ec 30E0      		ldi r19,hi8(10)
+ 510 02ee 40E0      		ldi r20,hlo8(10)
+ 511 02f0 50E0      		ldi r21,hhi8(10)
+ 512 02f2 0E94 0000 		call __divmodsi4
+ 513 02f6 C901      		movw r24,r18
+ 514 02f8 DA01      		movw r26,r20
+ 515 02fa 7C01      		movw r14,r24
+ 516 02fc 8D01      		movw r16,r26
+ 517               	.LM51:
+ 518 02fe 1E14      		cp __zero_reg__,r14
+ 519 0300 1F04      		cpc __zero_reg__,r15
+ 520 0302 1006      		cpc __zero_reg__,r16
+ 521 0304 1106      		cpc __zero_reg__,r17
+ 522 0306 04F0      		brlt .L37
+ 523               	/* epilogue start */
+ 524               	.LM52:
+ 525 0308 DF91      		pop r29
+ 526 030a CF91      		pop r28
+ 527 030c 1F91      		pop r17
+ 528 030e 0F91      		pop r16
+ 529 0310 FF90      		pop r15
+ 530 0312 EF90      		pop r14
+ 531               	.LVL36:
+ 532 0314 DF90      		pop r13
+ 533 0316 CF90      		pop r12
+ 534 0318 BF90      		pop r11
+ 535 031a AF90      		pop r10
+ 536               	.LVL37:
+ 537 031c 0895      		ret
+ 538               	.LFE5:
+ 540               	.global	UnityPrintNumberByStyle
+ 542               	UnityPrintNumberByStyle:
+ 543               	.LFB4:
+ 544               	.LM53:
+ 545               	.LVL38:
+ 546               	/* prologue: function */
+ 547               	/* frame size = 0 */
+ 548               	.LM54:
+ 549 031e 44FF      		sbrs r20,4
+ 550 0320 00C0      		rjmp .L40
+ 551               	.LVL39:
+ 552               	.LM55:
+ 553 0322 0E94 0000 		call UnityPrintNumber
+ 554               	.LVL40:
+ 555 0326 0895      		ret
+ 556               	.LVL41:
+ 557               	.L40:
+ 558               	.LM56:
+ 559 0328 45FF      		sbrs r20,5
+ 560 032a 00C0      		rjmp .L42
+ 561               	.LM57:
+ 562 032c 0E94 0000 		call UnityPrintNumberUnsigned
+ 563               	.LVL42:
+ 564 0330 0895      		ret
+ 565               	.LVL43:
+ 566               	.L42:
+ 567               	.LM58:
+ 568 0332 4F70      		andi r20,lo8(15)
+ 569               	.LVL44:
+ 570 0334 440F      		lsl r20
+ 571 0336 0E94 0000 		call UnityPrintNumberHex
+ 572               	.LVL45:
+ 573 033a 0895      		ret
+ 574               	.LFE4:
+ 576               	.global	UnityPrint
+ 578               	UnityPrint:
+ 579               	.LFB3:
+ 580               	.LM59:
+ 581               	.LVL46:
+ 582 033c CF93      		push r28
+ 583 033e DF93      		push r29
+ 584               	/* prologue: function */
+ 585               	/* frame size = 0 */
+ 586               	.LM60:
+ 587 0340 0097      		sbiw r24,0
+ 588 0342 01F4      		brne .+2
+ 589 0344 00C0      		rjmp .L52
+ 590 0346 EC01      		movw r28,r24
+ 591               	.LVL47:
+ 592 0348 00C0      		rjmp .L46
+ 593               	.L51:
+ 594               	.LM61:
+ 595 034a 892F      		mov r24,r25
+ 596               	.LVL48:
+ 597 034c 8052      		subi r24,lo8(-(-32))
+ 598 034e 8F35      		cpi r24,lo8(95)
+ 599 0350 00F4      		brsh .L47
+ 600               	.LM62:
+ 601 0352 6091 0000 		lds r22,__iob+2
+ 602 0356 7091 0000 		lds r23,(__iob+2)+1
+ 603 035a 892F      		mov r24,r25
+ 604 035c 90E0      		ldi r25,lo8(0)
+ 605 035e 00C0      		rjmp .L53
+ 606               	.L47:
+ 607               	.LM63:
+ 608 0360 9D30      		cpi r25,lo8(13)
+ 609 0362 01F4      		brne .L49
+ 610               	.LM64:
+ 611 0364 6091 0000 		lds r22,__iob+2
+ 612 0368 7091 0000 		lds r23,(__iob+2)+1
+ 613 036c 8CE5      		ldi r24,lo8(92)
+ 614 036e 90E0      		ldi r25,hi8(92)
+ 615 0370 0E94 0000 		call fputc
+ 616               	.LM65:
+ 617 0374 6091 0000 		lds r22,__iob+2
+ 618 0378 7091 0000 		lds r23,(__iob+2)+1
+ 619 037c 82E7      		ldi r24,lo8(114)
+ 620 037e 90E0      		ldi r25,hi8(114)
+ 621               	.L53:
+ 622 0380 0E94 0000 		call fputc
+ 623 0384 00C0      		rjmp .L48
+ 624               	.L49:
+ 625               	.LM66:
+ 626 0386 9A30      		cpi r25,lo8(10)
+ 627 0388 01F4      		brne .L50
+ 628               	.LM67:
+ 629 038a 6091 0000 		lds r22,__iob+2
+ 630 038e 7091 0000 		lds r23,(__iob+2)+1
+ 631 0392 8CE5      		ldi r24,lo8(92)
+ 632 0394 90E0      		ldi r25,hi8(92)
+ 633 0396 0E94 0000 		call fputc
+ 634               	.LM68:
+ 635 039a 6091 0000 		lds r22,__iob+2
+ 636 039e 7091 0000 		lds r23,(__iob+2)+1
+ 637 03a2 8EE6      		ldi r24,lo8(110)
+ 638 03a4 90E0      		ldi r25,hi8(110)
+ 639 03a6 00C0      		rjmp .L53
+ 640               	.L50:
+ 641               	.LM69:
+ 642 03a8 6091 0000 		lds r22,__iob+2
+ 643 03ac 7091 0000 		lds r23,(__iob+2)+1
+ 644 03b0 8CE5      		ldi r24,lo8(92)
+ 645 03b2 90E0      		ldi r25,hi8(92)
+ 646 03b4 0E94 0000 		call fputc
+ 647               	.LM70:
+ 648 03b8 6881      		ld r22,Y
+ 649 03ba 70E0      		ldi r23,lo8(0)
+ 650 03bc 80E0      		ldi r24,lo8(0)
+ 651 03be 90E0      		ldi r25,hi8(0)
+ 652 03c0 42E0      		ldi r20,lo8(2)
+ 653 03c2 0E94 0000 		call UnityPrintNumberHex
+ 654               	.L48:
+ 655               	.LM71:
+ 656 03c6 2196      		adiw r28,1
+ 657               	.LVL49:
+ 658               	.L46:
+ 659               	.LM72:
+ 660 03c8 9881      		ld r25,Y
+ 661 03ca 9923      		tst r25
+ 662 03cc 01F0      		breq .+2
+ 663 03ce 00C0      		rjmp .L51
+ 664               	.L52:
+ 665               	/* epilogue start */
+ 666               	.LM73:
+ 667 03d0 DF91      		pop r29
+ 668 03d2 CF91      		pop r28
+ 669               	.LVL50:
+ 670 03d4 0895      		ret
+ 671               	.LFE3:
+ 673               	.global	UnityAddMsgIfSpecified
+ 675               	UnityAddMsgIfSpecified:
+ 676               	.LFB12:
+ 677               	.LM74:
+ 678               	.LVL51:
+ 679 03d6 CF93      		push r28
+ 680 03d8 DF93      		push r29
+ 681               	/* prologue: function */
+ 682               	/* frame size = 0 */
+ 683 03da EC01      		movw r28,r24
+ 684               	.LM75:
+ 685 03dc 0097      		sbiw r24,0
+ 686 03de 01F0      		breq .L56
+ 687               	.LM76:
+ 688 03e0 8091 0000 		lds r24,UnityStrSpacer
+ 689 03e4 9091 0000 		lds r25,(UnityStrSpacer)+1
+ 690               	.LVL52:
+ 691 03e8 0E94 0000 		call UnityPrint
+ 692               	.LM77:
+ 693 03ec CE01      		movw r24,r28
+ 694 03ee 0E94 0000 		call UnityPrint
+ 695               	.LVL53:
+ 696               	.L56:
+ 697               	/* epilogue start */
+ 698               	.LM78:
+ 699 03f2 DF91      		pop r29
+ 700 03f4 CF91      		pop r28
+ 701               	.LVL54:
+ 702 03f6 0895      		ret
+ 703               	.LFE12:
+ 705               		.data
+ 706               	.LC0:
+ 707 0000 2D2D 2D2D 		.string	"-----------------------"
+ 707      2D2D 2D2D 
+ 707      2D2D 2D2D 
+ 707      2D2D 2D2D 
+ 707      2D2D 2D2D 
+ 708               	.LC1:
+ 709 0018 2054 6573 		.string	" Tests "
+ 709      7473 2000 
+ 710               	.LC2:
+ 711 0020 2046 6169 		.string	" Failures "
+ 711      6C75 7265 
+ 711      7320 00
+ 712               	.LC3:
+ 713 002b 2049 676E 		.string	" Ignored"
+ 713      6F72 6564 
+ 713      00
+ 714               	.LC4:
+ 715 0034 4F4B 00   		.string	"OK"
+ 716               	.LC5:
+ 717 0037 4641 494C 		.string	"FAIL"
+ 717      00
+ 718               		.text
+ 719               	.global	UnityEnd
+ 721               	UnityEnd:
+ 722               	.LFB30:
+ 723               	.LM79:
+ 724               	/* prologue: function */
+ 725               	/* frame size = 0 */
+ 726               	.LM80:
+ 727 03f8 80E0      		ldi r24,lo8(.LC0)
+ 728 03fa 90E0      		ldi r25,hi8(.LC0)
+ 729 03fc 0E94 0000 		call UnityPrint
+ 730               	.LM81:
+ 731 0400 6091 0000 		lds r22,__iob+2
+ 732 0404 7091 0000 		lds r23,(__iob+2)+1
+ 733 0408 8AE0      		ldi r24,lo8(10)
+ 734 040a 90E0      		ldi r25,hi8(10)
+ 735 040c 0E94 0000 		call fputc
+ 736               	.LM82:
+ 737 0410 6091 0000 		lds r22,Unity+8
+ 738 0414 70E0      		ldi r23,lo8(0)
+ 739 0416 80E0      		ldi r24,lo8(0)
+ 740 0418 90E0      		ldi r25,hi8(0)
+ 741 041a 0E94 0000 		call UnityPrintNumber
+ 742               	.LM83:
+ 743 041e 80E0      		ldi r24,lo8(.LC1)
+ 744 0420 90E0      		ldi r25,hi8(.LC1)
+ 745 0422 0E94 0000 		call UnityPrint
+ 746               	.LM84:
+ 747 0426 6091 0000 		lds r22,Unity+9
+ 748 042a 70E0      		ldi r23,lo8(0)
+ 749 042c 80E0      		ldi r24,lo8(0)
+ 750 042e 90E0      		ldi r25,hi8(0)
+ 751 0430 0E94 0000 		call UnityPrintNumber
+ 752               	.LM85:
+ 753 0434 80E0      		ldi r24,lo8(.LC2)
+ 754 0436 90E0      		ldi r25,hi8(.LC2)
+ 755 0438 0E94 0000 		call UnityPrint
+ 756               	.LM86:
+ 757 043c 6091 0000 		lds r22,Unity+10
+ 758 0440 70E0      		ldi r23,lo8(0)
+ 759 0442 80E0      		ldi r24,lo8(0)
+ 760 0444 90E0      		ldi r25,hi8(0)
+ 761 0446 0E94 0000 		call UnityPrintNumber
+ 762               	.LM87:
+ 763 044a 80E0      		ldi r24,lo8(.LC3)
+ 764 044c 90E0      		ldi r25,hi8(.LC3)
+ 765 044e 0E94 0000 		call UnityPrint
+ 766               	.LM88:
+ 767 0452 6091 0000 		lds r22,__iob+2
+ 768 0456 7091 0000 		lds r23,(__iob+2)+1
+ 769 045a 8AE0      		ldi r24,lo8(10)
+ 770 045c 90E0      		ldi r25,hi8(10)
+ 771 045e 0E94 0000 		call fputc
+ 772               	.LM89:
+ 773 0462 8091 0000 		lds r24,Unity+9
+ 774 0466 8823      		tst r24
+ 775 0468 01F4      		brne .L58
+ 776               	.LM90:
+ 777 046a 80E0      		ldi r24,lo8(.LC4)
+ 778 046c 90E0      		ldi r25,hi8(.LC4)
+ 779 046e 00C0      		rjmp .L61
+ 780               	.L58:
+ 781               	.LM91:
+ 782 0470 80E0      		ldi r24,lo8(.LC5)
+ 783 0472 90E0      		ldi r25,hi8(.LC5)
+ 784               	.L61:
+ 785 0474 0E94 0000 		call UnityPrint
+ 786               	.LM92:
+ 787 0478 6091 0000 		lds r22,__iob+2
+ 788 047c 7091 0000 		lds r23,(__iob+2)+1
+ 789 0480 8AE0      		ldi r24,lo8(10)
+ 790 0482 90E0      		ldi r25,hi8(10)
+ 791 0484 0E94 0000 		call fputc
+ 792               	.LM93:
+ 793 0488 8091 0000 		lds r24,Unity+9
+ 794 048c 90E0      		ldi r25,lo8(0)
+ 795               	/* epilogue start */
+ 796 048e 0895      		ret
+ 797               	.LFE30:
+ 799               	.global	UnityPrintExpectedAndActualStrings
+ 801               	UnityPrintExpectedAndActualStrings:
+ 802               	.LFB13:
+ 803               	.LM94:
+ 804               	.LVL55:
+ 805 0490 0F93      		push r16
+ 806 0492 1F93      		push r17
+ 807 0494 CF93      		push r28
+ 808 0496 DF93      		push r29
+ 809               	/* prologue: function */
+ 810               	/* frame size = 0 */
+ 811 0498 EC01      		movw r28,r24
+ 812 049a 8B01      		movw r16,r22
+ 813               	.LM95:
+ 814 049c 8091 0000 		lds r24,UnityStrExpected
+ 815 04a0 9091 0000 		lds r25,(UnityStrExpected)+1
+ 816               	.LVL56:
+ 817 04a4 0E94 0000 		call UnityPrint
+ 818               	.LVL57:
+ 819               	.LM96:
+ 820 04a8 2097      		sbiw r28,0
+ 821 04aa 01F0      		breq .L63
+ 822               	.LM97:
+ 823 04ac 6091 0000 		lds r22,__iob+2
+ 824 04b0 7091 0000 		lds r23,(__iob+2)+1
+ 825 04b4 87E2      		ldi r24,lo8(39)
+ 826 04b6 90E0      		ldi r25,hi8(39)
+ 827 04b8 0E94 0000 		call fputc
+ 828               	.LM98:
+ 829 04bc CE01      		movw r24,r28
+ 830 04be 0E94 0000 		call UnityPrint
+ 831               	.LM99:
+ 832 04c2 6091 0000 		lds r22,__iob+2
+ 833 04c6 7091 0000 		lds r23,(__iob+2)+1
+ 834 04ca 87E2      		ldi r24,lo8(39)
+ 835 04cc 90E0      		ldi r25,hi8(39)
+ 836 04ce 0E94 0000 		call fputc
+ 837 04d2 00C0      		rjmp .L64
+ 838               	.L63:
+ 839               	.LM100:
+ 840 04d4 8091 0000 		lds r24,UnityStrNull
+ 841 04d8 9091 0000 		lds r25,(UnityStrNull)+1
+ 842 04dc 0E94 0000 		call UnityPrint
+ 843               	.L64:
+ 844               	.LM101:
+ 845 04e0 8091 0000 		lds r24,UnityStrWas
+ 846 04e4 9091 0000 		lds r25,(UnityStrWas)+1
+ 847 04e8 0E94 0000 		call UnityPrint
+ 848               	.LM102:
+ 849 04ec 0115      		cp r16,__zero_reg__
+ 850 04ee 1105      		cpc r17,__zero_reg__
+ 851 04f0 01F0      		breq .L65
+ 852               	.LM103:
+ 853 04f2 6091 0000 		lds r22,__iob+2
+ 854 04f6 7091 0000 		lds r23,(__iob+2)+1
+ 855 04fa 87E2      		ldi r24,lo8(39)
+ 856 04fc 90E0      		ldi r25,hi8(39)
+ 857 04fe 0E94 0000 		call fputc
+ 858               	.LM104:
+ 859 0502 C801      		movw r24,r16
+ 860 0504 0E94 0000 		call UnityPrint
+ 861               	.LM105:
+ 862 0508 6091 0000 		lds r22,__iob+2
+ 863 050c 7091 0000 		lds r23,(__iob+2)+1
+ 864 0510 87E2      		ldi r24,lo8(39)
+ 865 0512 90E0      		ldi r25,hi8(39)
+ 866 0514 0E94 0000 		call fputc
+ 867 0518 00C0      		rjmp .L67
+ 868               	.L65:
+ 869               	.LM106:
+ 870 051a 8091 0000 		lds r24,UnityStrNull
+ 871 051e 9091 0000 		lds r25,(UnityStrNull)+1
+ 872 0522 0E94 0000 		call UnityPrint
+ 873               	.L67:
+ 874               	/* epilogue start */
+ 875               	.LM107:
+ 876 0526 DF91      		pop r29
+ 877 0528 CF91      		pop r28
+ 878               	.LVL58:
+ 879 052a 1F91      		pop r17
+ 880 052c 0F91      		pop r16
+ 881               	.LVL59:
+ 882 052e 0895      		ret
+ 883               	.LFE13:
+ 885               	.global	UnityTestResultsBegin
+ 887               	UnityTestResultsBegin:
+ 888               	.LFB9:
+ 889               	.LM108:
+ 890               	.LVL60:
+ 891 0530 EF92      		push r14
+ 892 0532 FF92      		push r15
+ 893 0534 0F93      		push r16
+ 894 0536 1F93      		push r17
+ 895               	/* prologue: function */
+ 896               	/* frame size = 0 */
+ 897 0538 E62E      		mov r14,r22
+ 898               	.LM109:
+ 899 053a 0E94 0000 		call UnityPrint
+ 900               	.LVL61:
+ 901               	.LM110:
+ 902 053e 6091 0000 		lds r22,__iob+2
+ 903 0542 7091 0000 		lds r23,(__iob+2)+1
+ 904 0546 8AE3      		ldi r24,lo8(58)
+ 905 0548 90E0      		ldi r25,hi8(58)
+ 906 054a 0E94 0000 		call fputc
+ 907               	.LM111:
+ 908 054e FF24      		clr r15
+ 909               	.LVL62:
+ 910 0550 00E0      		ldi r16,lo8(0)
+ 911 0552 10E0      		ldi r17,hi8(0)
+ 912               	.LVL63:
+ 913 0554 C801      		movw r24,r16
+ 914 0556 B701      		movw r22,r14
+ 915 0558 0E94 0000 		call UnityPrintNumber
+ 916               	.LM112:
+ 917 055c 6091 0000 		lds r22,__iob+2
+ 918 0560 7091 0000 		lds r23,(__iob+2)+1
+ 919 0564 8AE3      		ldi r24,lo8(58)
+ 920 0566 90E0      		ldi r25,hi8(58)
+ 921 0568 0E94 0000 		call fputc
+ 922               	.LM113:
+ 923 056c 8091 0000 		lds r24,Unity+2
+ 924 0570 9091 0000 		lds r25,(Unity+2)+1
+ 925 0574 0E94 0000 		call UnityPrint
+ 926               	.LM114:
+ 927 0578 6091 0000 		lds r22,__iob+2
+ 928 057c 7091 0000 		lds r23,(__iob+2)+1
+ 929 0580 8AE3      		ldi r24,lo8(58)
+ 930 0582 90E0      		ldi r25,hi8(58)
+ 931 0584 0E94 0000 		call fputc
+ 932               	/* epilogue start */
+ 933               	.LM115:
+ 934 0588 1F91      		pop r17
+ 935 058a 0F91      		pop r16
+ 936               	.LVL64:
+ 937 058c FF90      		pop r15
+ 938               	.LVL65:
+ 939 058e EF90      		pop r14
+ 940               	.LVL66:
+ 941 0590 0895      		ret
+ 942               	.LFE9:
+ 944               		.data
+ 945               	.LC6:
+ 946 003c 4641 494C 		.string	"FAIL:"
+ 946      3A00 
+ 947               		.text
+ 948               	.global	UnityTestResultsFailBegin
+ 950               	UnityTestResultsFailBegin:
+ 951               	.LFB10:
+ 952               	.LM116:
+ 953               	.LVL67:
+ 954               	/* prologue: function */
+ 955               	/* frame size = 0 */
+ 956 0592 682F      		mov r22,r24
+ 957               	.LM117:
+ 958 0594 8091 0000 		lds r24,Unity
+ 959 0598 9091 0000 		lds r25,(Unity)+1
+ 960               	.LVL68:
+ 961 059c 0E94 0000 		call UnityTestResultsBegin
+ 962               	.LVL69:
+ 963               	.LM118:
+ 964 05a0 80E0      		ldi r24,lo8(.LC6)
+ 965 05a2 90E0      		ldi r25,hi8(.LC6)
+ 966 05a4 0E94 0000 		call UnityPrint
+ 967               	/* epilogue start */
+ 968               	.LM119:
+ 969 05a8 0895      		ret
+ 970               	.LFE10:
+ 972               		.data
+ 973               	.LC7:
+ 974 0042 5041 5353 		.string	"PASS"
+ 974      00
+ 975               		.text
+ 976               	.global	UnityConcludeTest
+ 978               	UnityConcludeTest:
+ 979               	.LFB11:
+ 980               	.LM120:
+ 981               	/* prologue: function */
+ 982               	/* frame size = 0 */
+ 983               	.LM121:
+ 984 05aa 8091 0000 		lds r24,Unity+12
+ 985 05ae 8823      		tst r24
+ 986 05b0 01F0      		breq .L73
+ 987               	.LM122:
+ 988 05b2 8091 0000 		lds r24,Unity+10
+ 989 05b6 8F5F      		subi r24,lo8(-(1))
+ 990 05b8 8093 0000 		sts Unity+10,r24
+ 991 05bc 00C0      		rjmp .L74
+ 992               	.L73:
+ 993               	.LM123:
+ 994 05be 8091 0000 		lds r24,Unity+11
+ 995 05c2 8823      		tst r24
+ 996 05c4 01F4      		brne .L75
+ 997               	.LM124:
+ 998 05c6 8091 0000 		lds r24,Unity
+ 999 05ca 9091 0000 		lds r25,(Unity)+1
+ 1000 05ce 6091 0000 		lds r22,Unity+4
+ 1001 05d2 0E94 0000 		call UnityTestResultsBegin
+ 1002               	.LM125:
+ 1003 05d6 80E0      		ldi r24,lo8(.LC7)
+ 1004 05d8 90E0      		ldi r25,hi8(.LC7)
+ 1005 05da 0E94 0000 		call UnityPrint
+ 1006               	.LM126:
+ 1007 05de 6091 0000 		lds r22,__iob+2
+ 1008 05e2 7091 0000 		lds r23,(__iob+2)+1
+ 1009 05e6 8AE0      		ldi r24,lo8(10)
+ 1010 05e8 90E0      		ldi r25,hi8(10)
+ 1011 05ea 0E94 0000 		call fputc
+ 1012 05ee 00C0      		rjmp .L74
+ 1013               	.L75:
+ 1014               	.LM127:
+ 1015 05f0 8091 0000 		lds r24,Unity+9
+ 1016 05f4 8F5F      		subi r24,lo8(-(1))
+ 1017 05f6 8093 0000 		sts Unity+9,r24
+ 1018               	.L74:
+ 1019               	.LM128:
+ 1020 05fa 1092 0000 		sts Unity+11,__zero_reg__
+ 1021               	.LM129:
+ 1022 05fe 1092 0000 		sts Unity+12,__zero_reg__
+ 1023               	/* epilogue start */
+ 1024               	.LM130:
+ 1025 0602 0895      		ret
+ 1026               	.LFE11:
+ 1028               	.global	UnityDefaultTestRun
+ 1030               	UnityDefaultTestRun:
+ 1031               	.LFB28:
+ 1032               	.LM131:
+ 1033               	.LVL70:
+ 1034 0604 DF93      		push r29
+ 1035 0606 CF93      		push r28
+ 1036 0608 00D0      		rcall .
+ 1037 060a CDB7      		in r28,__SP_L__
+ 1038 060c DEB7      		in r29,__SP_H__
+ 1039               	/* prologue: function */
+ 1040               	/* frame size = 2 */
+ 1041 060e 9A83      		std Y+2,r25
+ 1042 0610 8983      		std Y+1,r24
+ 1043               	.LM132:
+ 1044 0612 7093 0000 		sts (Unity+2)+1,r23
+ 1045 0616 6093 0000 		sts Unity+2,r22
+ 1046               	.LM133:
+ 1047 061a 6627      		clr r22
+ 1048 061c 57FD      		sbrc r21,7
+ 1049 061e 6095      		com r22
+ 1050 0620 762F      		mov r23,r22
+ 1051               	.LVL71:
+ 1052 0622 4093 0000 		sts Unity+4,r20
+ 1053 0626 5093 0000 		sts (Unity+4)+1,r21
+ 1054 062a 6093 0000 		sts (Unity+4)+2,r22
+ 1055 062e 7093 0000 		sts (Unity+4)+3,r23
+ 1056               	.LM134:
+ 1057 0632 8091 0000 		lds r24,Unity+8
+ 1058               	.LVL72:
+ 1059 0636 8F5F      		subi r24,lo8(-(1))
+ 1060 0638 8093 0000 		sts Unity+8,r24
+ 1061               	.LM135:
+ 1062 063c 80E0      		ldi r24,lo8(Unity+13)
+ 1063 063e 90E0      		ldi r25,hi8(Unity+13)
+ 1064 0640 0E94 0000 		call setjmp
+ 1065               	.LVL73:
+ 1066 0644 892B      		or r24,r25
+ 1067 0646 01F4      		brne .L78
+ 1068               	.LM136:
+ 1069 0648 E091 0000 		lds r30,setUpFunc
+ 1070 064c F091 0000 		lds r31,(setUpFunc)+1
+ 1071 0650 3097      		sbiw r30,0
+ 1072 0652 01F0      		breq .L79
+ 1073               	.LM137:
+ 1074 0654 0995      		icall
+ 1075               	.L79:
+ 1076               	.LM138:
+ 1077 0656 8981      		ldd r24,Y+1
+ 1078 0658 9A81      		ldd r25,Y+2
+ 1079 065a FC01      		movw r30,r24
+ 1080 065c 0995      		icall
+ 1081               	.L78:
+ 1082               	.LM139:
+ 1083 065e 80E0      		ldi r24,lo8(Unity+13)
+ 1084 0660 90E0      		ldi r25,hi8(Unity+13)
+ 1085 0662 0E94 0000 		call setjmp
+ 1086 0666 892B      		or r24,r25
+ 1087 0668 01F4      		brne .L80
+ 1088 066a 8091 0000 		lds r24,Unity+12
+ 1089 066e 8823      		tst r24
+ 1090 0670 01F4      		brne .L80
+ 1091               	.LM140:
+ 1092 0672 E091 0000 		lds r30,tearDownFunc
+ 1093 0676 F091 0000 		lds r31,(tearDownFunc)+1
+ 1094 067a 3097      		sbiw r30,0
+ 1095 067c 01F0      		breq .L80
+ 1096               	.LM141:
+ 1097 067e 0995      		icall
+ 1098               	.L80:
+ 1099               	.LM142:
+ 1100 0680 0E94 0000 		call UnityConcludeTest
+ 1101               	/* epilogue start */
+ 1102               	.LM143:
+ 1103 0684 0F90      		pop __tmp_reg__
+ 1104 0686 0F90      		pop __tmp_reg__
+ 1105 0688 CF91      		pop r28
+ 1106 068a DF91      		pop r29
+ 1107 068c 0895      		ret
+ 1108               	.LFE28:
+ 1110               		.data
+ 1111               	.LC8:
+ 1112 0047 4947 4E4F 		.string	"IGNORE"
+ 1112      5245 00
+ 1113               		.text
+ 1114               	.global	UnityIgnore
+ 1116               	UnityIgnore:
+ 1117               	.LFB25:
+ 1118               	.LM144:
+ 1119               	.LVL74:
+ 1120 068e CF93      		push r28
+ 1121 0690 DF93      		push r29
+ 1122               	/* prologue: function */
+ 1123               	/* frame size = 0 */
+ 1124 0692 EC01      		movw r28,r24
+ 1125               	.LM145:
+ 1126 0694 8091 0000 		lds r24,Unity+11
+ 1127               	.LVL75:
+ 1128 0698 8823      		tst r24
+ 1129 069a 01F4      		brne .L85
+ 1130 069c 8091 0000 		lds r24,Unity+12
+ 1131 06a0 8823      		tst r24
+ 1132 06a2 01F4      		brne .L85
+ 1133               	.LM146:
+ 1134 06a4 8091 0000 		lds r24,Unity
+ 1135 06a8 9091 0000 		lds r25,(Unity)+1
+ 1136 06ac 0E94 0000 		call UnityTestResultsBegin
+ 1137               	.LVL76:
+ 1138               	.LM147:
+ 1139 06b0 80E0      		ldi r24,lo8(.LC8)
+ 1140 06b2 90E0      		ldi r25,hi8(.LC8)
+ 1141 06b4 0E94 0000 		call UnityPrint
+ 1142               	.LM148:
+ 1143 06b8 2097      		sbiw r28,0
+ 1144 06ba 01F0      		breq .L84
+ 1145               	.LM149:
+ 1146 06bc 6091 0000 		lds r22,__iob+2
+ 1147 06c0 7091 0000 		lds r23,(__iob+2)+1
+ 1148 06c4 8AE3      		ldi r24,lo8(58)
+ 1149 06c6 90E0      		ldi r25,hi8(58)
+ 1150 06c8 0E94 0000 		call fputc
+ 1151               	.LM150:
+ 1152 06cc 6091 0000 		lds r22,__iob+2
+ 1153 06d0 7091 0000 		lds r23,(__iob+2)+1
+ 1154 06d4 80E2      		ldi r24,lo8(32)
+ 1155 06d6 90E0      		ldi r25,hi8(32)
+ 1156 06d8 0E94 0000 		call fputc
+ 1157               	.LM151:
+ 1158 06dc CE01      		movw r24,r28
+ 1159 06de 0E94 0000 		call UnityPrint
+ 1160               	.L84:
+ 1161               	.LM152:
+ 1162 06e2 81E0      		ldi r24,lo8(1)
+ 1163 06e4 8093 0000 		sts Unity+12,r24
+ 1164 06e8 6091 0000 		lds r22,__iob+2
+ 1165 06ec 7091 0000 		lds r23,(__iob+2)+1
+ 1166 06f0 8AE0      		ldi r24,lo8(10)
+ 1167 06f2 90E0      		ldi r25,hi8(10)
+ 1168 06f4 0E94 0000 		call fputc
+ 1169 06f8 80E0      		ldi r24,lo8(Unity+13)
+ 1170 06fa 90E0      		ldi r25,hi8(Unity+13)
+ 1171 06fc 61E0      		ldi r22,lo8(1)
+ 1172 06fe 70E0      		ldi r23,hi8(1)
+ 1173 0700 0E94 0000 		call longjmp
+ 1174               	.LVL77:
+ 1175               	.L85:
+ 1176               	/* epilogue start */
+ 1177               	.LM153:
+ 1178 0704 DF91      		pop r29
+ 1179 0706 CF91      		pop r28
+ 1180               	.LVL78:
+ 1181 0708 0895      		ret
+ 1182               	.LFE25:
+ 1184               	.global	UnityFail
+ 1186               	UnityFail:
+ 1187               	.LFB24:
+ 1188               	.LM154:
+ 1189               	.LVL79:
+ 1190 070a CF93      		push r28
+ 1191 070c DF93      		push r29
+ 1192               	/* prologue: function */
+ 1193               	/* frame size = 0 */
+ 1194 070e EC01      		movw r28,r24
+ 1195               	.LM155:
+ 1196 0710 8091 0000 		lds r24,Unity+11
+ 1197               	.LVL80:
+ 1198 0714 8823      		tst r24
+ 1199 0716 01F4      		brne .L90
+ 1200 0718 8091 0000 		lds r24,Unity+12
+ 1201 071c 8823      		tst r24
+ 1202 071e 01F4      		brne .L90
+ 1203               	.LM156:
+ 1204 0720 8091 0000 		lds r24,Unity
+ 1205 0724 9091 0000 		lds r25,(Unity)+1
+ 1206 0728 0E94 0000 		call UnityTestResultsBegin
+ 1207               	.LVL81:
+ 1208               	.LM157:
+ 1209 072c 80E0      		ldi r24,lo8(.LC5)
+ 1210 072e 90E0      		ldi r25,hi8(.LC5)
+ 1211 0730 0E94 0000 		call UnityPrint
+ 1212               	.LM158:
+ 1213 0734 2097      		sbiw r28,0
+ 1214 0736 01F0      		breq .L88
+ 1215               	.LM159:
+ 1216 0738 6091 0000 		lds r22,__iob+2
+ 1217 073c 7091 0000 		lds r23,(__iob+2)+1
+ 1218 0740 8AE3      		ldi r24,lo8(58)
+ 1219 0742 90E0      		ldi r25,hi8(58)
+ 1220 0744 0E94 0000 		call fputc
+ 1221               	.LM160:
+ 1222 0748 8881      		ld r24,Y
+ 1223 074a 8032      		cpi r24,lo8(32)
+ 1224 074c 01F0      		breq .L89
+ 1225               	.LM161:
+ 1226 074e 6091 0000 		lds r22,__iob+2
+ 1227 0752 7091 0000 		lds r23,(__iob+2)+1
+ 1228 0756 80E2      		ldi r24,lo8(32)
+ 1229 0758 90E0      		ldi r25,hi8(32)
+ 1230 075a 0E94 0000 		call fputc
+ 1231               	.L89:
+ 1232               	.LM162:
+ 1233 075e CE01      		movw r24,r28
+ 1234 0760 0E94 0000 		call UnityPrint
+ 1235               	.L88:
+ 1236               	.LM163:
+ 1237 0764 81E0      		ldi r24,lo8(1)
+ 1238 0766 8093 0000 		sts Unity+11,r24
+ 1239 076a 6091 0000 		lds r22,__iob+2
+ 1240 076e 7091 0000 		lds r23,(__iob+2)+1
+ 1241 0772 8AE0      		ldi r24,lo8(10)
+ 1242 0774 90E0      		ldi r25,hi8(10)
+ 1243 0776 0E94 0000 		call fputc
+ 1244 077a 80E0      		ldi r24,lo8(Unity+13)
+ 1245 077c 90E0      		ldi r25,hi8(Unity+13)
+ 1246 077e 61E0      		ldi r22,lo8(1)
+ 1247 0780 70E0      		ldi r23,hi8(1)
+ 1248 0782 0E94 0000 		call longjmp
+ 1249               	.LVL82:
+ 1250               	.L90:
+ 1251               	/* epilogue start */
+ 1252               	.LM164:
+ 1253 0786 DF91      		pop r29
+ 1254 0788 CF91      		pop r28
+ 1255               	.LVL83:
+ 1256 078a 0895      		ret
+ 1257               	.LFE24:
+ 1259               	.global	UnityAssertEqualString
+ 1261               	UnityAssertEqualString:
+ 1262               	.LFB21:
+ 1263               	.LM165:
+ 1264               	.LVL84:
+ 1265 078c EF92      		push r14
+ 1266 078e FF92      		push r15
+ 1267 0790 0F93      		push r16
+ 1268 0792 1F93      		push r17
+ 1269 0794 CF93      		push r28
+ 1270 0796 DF93      		push r29
+ 1271               	/* prologue: function */
+ 1272               	/* frame size = 0 */
+ 1273 0798 8C01      		movw r16,r24
+ 1274 079a EB01      		movw r28,r22
+ 1275 079c 7A01      		movw r14,r20
+ 1276               	.LM166:
+ 1277 079e 8091 0000 		lds r24,Unity+11
+ 1278               	.LVL85:
+ 1279 07a2 8823      		tst r24
+ 1280 07a4 01F4      		brne .L98
+ 1281               	.LVL86:
+ 1282 07a6 8091 0000 		lds r24,Unity+12
+ 1283 07aa 8823      		tst r24
+ 1284 07ac 01F4      		brne .L98
+ 1285               	.LM167:
+ 1286 07ae 0115      		cp r16,__zero_reg__
+ 1287 07b0 1105      		cpc r17,__zero_reg__
+ 1288 07b2 01F0      		breq .L93
+ 1289 07b4 6115      		cp r22,__zero_reg__
+ 1290 07b6 7105      		cpc r23,__zero_reg__
+ 1291 07b8 01F0      		breq .L94
+ 1292               	.LVL87:
+ 1293 07ba D801      		movw r26,r16
+ 1294 07bc FB01      		movw r30,r22
+ 1295 07be 00C0      		rjmp .L95
+ 1296               	.L97:
+ 1297               	.LM168:
+ 1298 07c0 8191      		ld r24,Z+
+ 1299 07c2 1196      		adiw r26,1
+ 1300 07c4 9817      		cp r25,r24
+ 1301 07c6 01F4      		brne .L94
+ 1302               	.L95:
+ 1303               	.LM169:
+ 1304 07c8 9C91      		ld r25,X
+ 1305 07ca 9923      		tst r25
+ 1306 07cc 01F4      		brne .L97
+ 1307 07ce 8081      		ld r24,Z
+ 1308 07d0 8823      		tst r24
+ 1309 07d2 01F4      		brne .L97
+ 1310 07d4 00C0      		rjmp .L96
+ 1311               	.LVL88:
+ 1312               	.L93:
+ 1313               	.LM170:
+ 1314 07d6 6115      		cp r22,__zero_reg__
+ 1315 07d8 7105      		cpc r23,__zero_reg__
+ 1316 07da 01F0      		breq .L96
+ 1317               	.LVL89:
+ 1318               	.L94:
+ 1319               	.LM171:
+ 1320 07dc 81E0      		ldi r24,lo8(1)
+ 1321 07de 8093 0000 		sts Unity+11,r24
+ 1322               	.L96:
+ 1323               	.LM172:
+ 1324 07e2 8091 0000 		lds r24,Unity+11
+ 1325 07e6 8823      		tst r24
+ 1326 07e8 01F0      		breq .L98
+ 1327               	.LM173:
+ 1328 07ea 822F      		mov r24,r18
+ 1329 07ec 0E94 0000 		call UnityTestResultsFailBegin
+ 1330               	.LVL90:
+ 1331               	.LM174:
+ 1332 07f0 C801      		movw r24,r16
+ 1333 07f2 BE01      		movw r22,r28
+ 1334 07f4 0E94 0000 		call UnityPrintExpectedAndActualStrings
+ 1335               	.LM175:
+ 1336 07f8 C701      		movw r24,r14
+ 1337 07fa 0E94 0000 		call UnityAddMsgIfSpecified
+ 1338               	.LM176:
+ 1339 07fe 81E0      		ldi r24,lo8(1)
+ 1340 0800 8093 0000 		sts Unity+11,r24
+ 1341 0804 6091 0000 		lds r22,__iob+2
+ 1342 0808 7091 0000 		lds r23,(__iob+2)+1
+ 1343 080c 8AE0      		ldi r24,lo8(10)
+ 1344 080e 90E0      		ldi r25,hi8(10)
+ 1345 0810 0E94 0000 		call fputc
+ 1346 0814 80E0      		ldi r24,lo8(Unity+13)
+ 1347 0816 90E0      		ldi r25,hi8(Unity+13)
+ 1348 0818 61E0      		ldi r22,lo8(1)
+ 1349 081a 70E0      		ldi r23,hi8(1)
+ 1350 081c 0E94 0000 		call longjmp
+ 1351               	.LVL91:
+ 1352               	.L98:
+ 1353               	/* epilogue start */
+ 1354               	.LM177:
+ 1355 0820 DF91      		pop r29
+ 1356 0822 CF91      		pop r28
+ 1357 0824 1F91      		pop r17
+ 1358 0826 0F91      		pop r16
+ 1359               	.LVL92:
+ 1360 0828 FF90      		pop r15
+ 1361 082a EF90      		pop r14
+ 1362               	.LVL93:
+ 1363 082c 0895      		ret
+ 1364               	.LFE21:
+ 1366               	.global	UnityAssertNumbersWithin
+ 1368               	UnityAssertNumbersWithin:
+ 1369               	.LFB20:
+ 1370               	.LM178:
+ 1371               	.LVL94:
+ 1372 082e 4F92      		push r4
+ 1373 0830 5F92      		push r5
+ 1374 0832 6F92      		push r6
+ 1375 0834 7F92      		push r7
+ 1376 0836 8F92      		push r8
+ 1377               	.LVL95:
+ 1378 0838 AF92      		push r10
+ 1379               	.LVL96:
+ 1380 083a CF92      		push r12
+ 1381               	.LVL97:
+ 1382 083c DF92      		push r13
+ 1383 083e EF92      		push r14
+ 1384               	.LVL98:
+ 1385 0840 FF92      		push r15
+ 1386 0842 0F93      		push r16
+ 1387 0844 1F93      		push r17
+ 1388 0846 DF93      		push r29
+ 1389 0848 CF93      		push r28
+ 1390 084a 00D0      		rcall .
+ 1391 084c 00D0      		rcall .
+ 1392 084e CDB7      		in r28,__SP_L__
+ 1393 0850 DEB7      		in r29,__SP_H__
+ 1394               	/* prologue: function */
+ 1395               	/* frame size = 4 */
+ 1396 0852 6983      		std Y+1,r22
+ 1397 0854 7A83      		std Y+2,r23
+ 1398 0856 8B83      		std Y+3,r24
+ 1399 0858 9C83      		std Y+4,r25
+ 1400 085a 2901      		movw r4,r18
+ 1401 085c 3A01      		movw r6,r20
+ 1402               	.LM179:
+ 1403 085e 8091 0000 		lds r24,Unity+11
+ 1404 0862 8823      		tst r24
+ 1405 0864 01F0      		breq .+2
+ 1406 0866 00C0      		rjmp .L110
+ 1407               	.LVL99:
+ 1408 0868 8091 0000 		lds r24,Unity+12
+ 1409 086c 8823      		tst r24
+ 1410 086e 01F0      		breq .+2
+ 1411 0870 00C0      		rjmp .L110
+ 1412               	.LM180:
+ 1413 0872 84FE      		sbrs r8,4
+ 1414 0874 00C0      		rjmp .L102
+ 1415               	.LVL100:
+ 1416               	.LM181:
+ 1417 0876 2E15      		cp r18,r14
+ 1418 0878 3F05      		cpc r19,r15
+ 1419 087a 4007      		cpc r20,r16
+ 1420 087c 5107      		cpc r21,r17
+ 1421               	.LVL101:
+ 1422 087e 04F4      		brge .L103
+ 1423               	.LVL102:
+ 1424               	.LM182:
+ 1425 0880 1092 0000 		sts Unity+11,__zero_reg__
+ 1426 0884 D801      		movw r26,r16
+ 1427 0886 C701      		movw r24,r14
+ 1428 0888 821B      		sub r24,r18
+ 1429 088a 930B      		sbc r25,r19
+ 1430 088c A40B      		sbc r26,r20
+ 1431 088e B50B      		sbc r27,r21
+ 1432 0890 00C0      		rjmp .L113
+ 1433               	.L103:
+ 1434               	.LM183:
+ 1435 0892 1092 0000 		sts Unity+11,__zero_reg__
+ 1436 0896 DA01      		movw r26,r20
+ 1437 0898 C901      		movw r24,r18
+ 1438 089a 8E19      		sub r24,r14
+ 1439 089c 9F09      		sbc r25,r15
+ 1440 089e A00B      		sbc r26,r16
+ 1441 08a0 B10B      		sbc r27,r17
+ 1442               	.L113:
+ 1443 08a2 2981      		ldd r18,Y+1
+ 1444 08a4 3A81      		ldd r19,Y+2
+ 1445 08a6 4B81      		ldd r20,Y+3
+ 1446 08a8 5C81      		ldd r21,Y+4
+ 1447               	.LVL103:
+ 1448 08aa 2817      		cp r18,r24
+ 1449 08ac 3907      		cpc r19,r25
+ 1450 08ae 4A07      		cpc r20,r26
+ 1451 08b0 5B07      		cpc r21,r27
+ 1452 08b2 04F4      		brge .L105
+ 1453 08b4 00C0      		rjmp .L111
+ 1454               	.LVL104:
+ 1455               	.L102:
+ 1456               	.LM184:
+ 1457 08b6 2E15      		cp r18,r14
+ 1458 08b8 3F05      		cpc r19,r15
+ 1459 08ba 4007      		cpc r20,r16
+ 1460 08bc 5107      		cpc r21,r17
+ 1461               	.LVL105:
+ 1462 08be 00F4      		brsh .L107
+ 1463               	.LVL106:
+ 1464               	.LM185:
+ 1465 08c0 1092 0000 		sts Unity+11,__zero_reg__
+ 1466 08c4 D801      		movw r26,r16
+ 1467 08c6 C701      		movw r24,r14
+ 1468 08c8 821B      		sub r24,r18
+ 1469 08ca 930B      		sbc r25,r19
+ 1470 08cc A40B      		sbc r26,r20
+ 1471 08ce B50B      		sbc r27,r21
+ 1472 08d0 00C0      		rjmp .L112
+ 1473               	.L107:
+ 1474               	.LM186:
+ 1475 08d2 1092 0000 		sts Unity+11,__zero_reg__
+ 1476 08d6 DA01      		movw r26,r20
+ 1477 08d8 C901      		movw r24,r18
+ 1478 08da 8E19      		sub r24,r14
+ 1479 08dc 9F09      		sbc r25,r15
+ 1480 08de A00B      		sbc r26,r16
+ 1481 08e0 B10B      		sbc r27,r17
+ 1482               	.L112:
+ 1483 08e2 2981      		ldd r18,Y+1
+ 1484 08e4 3A81      		ldd r19,Y+2
+ 1485 08e6 4B81      		ldd r20,Y+3
+ 1486 08e8 5C81      		ldd r21,Y+4
+ 1487               	.LVL107:
+ 1488 08ea 2817      		cp r18,r24
+ 1489 08ec 3907      		cpc r19,r25
+ 1490 08ee 4A07      		cpc r20,r26
+ 1491 08f0 5B07      		cpc r21,r27
+ 1492 08f2 00F4      		brsh .L105
+ 1493               	.L111:
+ 1494 08f4 81E0      		ldi r24,lo8(1)
+ 1495 08f6 8093 0000 		sts Unity+11,r24
+ 1496               	.L105:
+ 1497               	.LM187:
+ 1498 08fa 8091 0000 		lds r24,Unity+11
+ 1499 08fe 8823      		tst r24
+ 1500 0900 01F0      		breq .L110
+ 1501               	.LM188:
+ 1502 0902 8A2D      		mov r24,r10
+ 1503               	.LVL108:
+ 1504 0904 0E94 0000 		call UnityTestResultsFailBegin
+ 1505               	.LM189:
+ 1506 0908 8091 0000 		lds r24,UnityStrDelta
+ 1507 090c 9091 0000 		lds r25,(UnityStrDelta)+1
+ 1508 0910 0E94 0000 		call UnityPrint
+ 1509               	.LM190:
+ 1510 0914 6981      		ldd r22,Y+1
+ 1511 0916 7A81      		ldd r23,Y+2
+ 1512 0918 8B81      		ldd r24,Y+3
+ 1513 091a 9C81      		ldd r25,Y+4
+ 1514 091c 482D      		mov r20,r8
+ 1515 091e 0E94 0000 		call UnityPrintNumberByStyle
+ 1516               	.LM191:
+ 1517 0922 8091 0000 		lds r24,UnityStrExpected
+ 1518 0926 9091 0000 		lds r25,(UnityStrExpected)+1
+ 1519 092a 0E94 0000 		call UnityPrint
+ 1520               	.LM192:
+ 1521 092e C301      		movw r24,r6
+ 1522 0930 B201      		movw r22,r4
+ 1523 0932 482D      		mov r20,r8
+ 1524 0934 0E94 0000 		call UnityPrintNumberByStyle
+ 1525               	.LM193:
+ 1526 0938 8091 0000 		lds r24,UnityStrWas
+ 1527 093c 9091 0000 		lds r25,(UnityStrWas)+1
+ 1528 0940 0E94 0000 		call UnityPrint
+ 1529               	.LM194:
+ 1530 0944 C801      		movw r24,r16
+ 1531 0946 B701      		movw r22,r14
+ 1532 0948 482D      		mov r20,r8
+ 1533 094a 0E94 0000 		call UnityPrintNumberByStyle
+ 1534               	.LM195:
+ 1535 094e C601      		movw r24,r12
+ 1536               	.LVL109:
+ 1537 0950 0E94 0000 		call UnityAddMsgIfSpecified
+ 1538               	.LM196:
+ 1539 0954 81E0      		ldi r24,lo8(1)
+ 1540 0956 8093 0000 		sts Unity+11,r24
+ 1541 095a 6091 0000 		lds r22,__iob+2
+ 1542 095e 7091 0000 		lds r23,(__iob+2)+1
+ 1543 0962 8AE0      		ldi r24,lo8(10)
+ 1544 0964 90E0      		ldi r25,hi8(10)
+ 1545 0966 0E94 0000 		call fputc
+ 1546 096a 80E0      		ldi r24,lo8(Unity+13)
+ 1547 096c 90E0      		ldi r25,hi8(Unity+13)
+ 1548 096e 61E0      		ldi r22,lo8(1)
+ 1549 0970 70E0      		ldi r23,hi8(1)
+ 1550 0972 0E94 0000 		call longjmp
+ 1551               	.LVL110:
+ 1552               	.L110:
+ 1553               	/* epilogue start */
+ 1554               	.LM197:
+ 1555 0976 0F90      		pop __tmp_reg__
+ 1556 0978 0F90      		pop __tmp_reg__
+ 1557 097a 0F90      		pop __tmp_reg__
+ 1558 097c 0F90      		pop __tmp_reg__
+ 1559 097e CF91      		pop r28
+ 1560 0980 DF91      		pop r29
+ 1561 0982 1F91      		pop r17
+ 1562 0984 0F91      		pop r16
+ 1563 0986 FF90      		pop r15
+ 1564 0988 EF90      		pop r14
+ 1565               	.LVL111:
+ 1566 098a DF90      		pop r13
+ 1567 098c CF90      		pop r12
+ 1568 098e AF90      		pop r10
+ 1569 0990 8F90      		pop r8
+ 1570               	.LVL112:
+ 1571 0992 7F90      		pop r7
+ 1572 0994 6F90      		pop r6
+ 1573 0996 5F90      		pop r5
+ 1574 0998 4F90      		pop r4
+ 1575               	.LVL113:
+ 1576 099a 0895      		ret
+ 1577               	.LFE20:
+ 1579               	.global	UnityAssertFloatsWithin
+ 1581               	UnityAssertFloatsWithin:
+ 1582               	.LFB19:
+ 1583               	.LM198:
+ 1584               	.LVL114:
+ 1585 099c 6F92      		push r6
+ 1586 099e 7F92      		push r7
+ 1587 09a0 8F92      		push r8
+ 1588 09a2 9F92      		push r9
+ 1589 09a4 AF92      		push r10
+ 1590               	.LVL115:
+ 1591 09a6 CF92      		push r12
+ 1592               	.LVL116:
+ 1593 09a8 DF92      		push r13
+ 1594 09aa EF92      		push r14
+ 1595               	.LVL117:
+ 1596 09ac FF92      		push r15
+ 1597 09ae 0F93      		push r16
+ 1598 09b0 1F93      		push r17
+ 1599               	/* prologue: function */
+ 1600               	/* frame size = 0 */
+ 1601 09b2 3B01      		movw r6,r22
+ 1602 09b4 4C01      		movw r8,r24
+ 1603               	.LM199:
+ 1604 09b6 8091 0000 		lds r24,Unity+11
+ 1605 09ba 8823      		tst r24
+ 1606 09bc 01F0      		breq .+2
+ 1607 09be 00C0      		rjmp .L121
+ 1608               	.LVL118:
+ 1609 09c0 8091 0000 		lds r24,Unity+12
+ 1610 09c4 8823      		tst r24
+ 1611 09c6 01F0      		breq .+2
+ 1612 09c8 00C0      		rjmp .L121
+ 1613               	.LM200:
+ 1614 09ca C801      		movw r24,r16
+ 1615 09cc B701      		movw r22,r14
+ 1616               	.LVL119:
+ 1617 09ce 0E94 0000 		call __subsf3
+ 1618               	.LVL120:
+ 1619 09d2 7B01      		movw r14,r22
+ 1620 09d4 8C01      		movw r16,r24
+ 1621               	.LVL121:
+ 1622               	.LM201:
+ 1623 09d6 20E0      		ldi r18,lo8(0x0)
+ 1624 09d8 30E0      		ldi r19,hi8(0x0)
+ 1625 09da 40E0      		ldi r20,hlo8(0x0)
+ 1626 09dc 50E0      		ldi r21,hhi8(0x0)
+ 1627 09de 0E94 0000 		call __ltsf2
+ 1628 09e2 8823      		tst r24
+ 1629 09e4 04F4      		brge .L116
+ 1630               	.LM202:
+ 1631 09e6 60E0      		ldi r22,lo8(0x0)
+ 1632 09e8 70E0      		ldi r23,hi8(0x0)
+ 1633 09ea 80E0      		ldi r24,hlo8(0x0)
+ 1634 09ec 90E0      		ldi r25,hhi8(0x0)
+ 1635 09ee A801      		movw r20,r16
+ 1636 09f0 9701      		movw r18,r14
+ 1637 09f2 0E94 0000 		call __subsf3
+ 1638 09f6 7B01      		movw r14,r22
+ 1639 09f8 8C01      		movw r16,r24
+ 1640               	.L116:
+ 1641               	.LM203:
+ 1642 09fa C401      		movw r24,r8
+ 1643 09fc B301      		movw r22,r6
+ 1644 09fe 20E0      		ldi r18,lo8(0x0)
+ 1645 0a00 30E0      		ldi r19,hi8(0x0)
+ 1646 0a02 40E0      		ldi r20,hlo8(0x0)
+ 1647 0a04 50E0      		ldi r21,hhi8(0x0)
+ 1648 0a06 0E94 0000 		call __ltsf2
+ 1649 0a0a 87FD      		sbrc r24,7
+ 1650 0a0c 00C0      		rjmp .L118
+ 1651 0a0e A401      		movw r20,r8
+ 1652 0a10 9301      		movw r18,r6
+ 1653               	.LVL122:
+ 1654 0a12 00C0      		rjmp .L119
+ 1655               	.LVL123:
+ 1656               	.L118:
+ 1657               	.LM204:
+ 1658 0a14 60E0      		ldi r22,lo8(0x0)
+ 1659 0a16 70E0      		ldi r23,hi8(0x0)
+ 1660 0a18 80E0      		ldi r24,hlo8(0x0)
+ 1661 0a1a 90E0      		ldi r25,hhi8(0x0)
+ 1662 0a1c A401      		movw r20,r8
+ 1663 0a1e 9301      		movw r18,r6
+ 1664 0a20 0E94 0000 		call __subsf3
+ 1665 0a24 9B01      		movw r18,r22
+ 1666 0a26 AC01      		movw r20,r24
+ 1667               	.LVL124:
+ 1668               	.L119:
+ 1669               	.LM205:
+ 1670 0a28 CA01      		movw r24,r20
+ 1671 0a2a B901      		movw r22,r18
+ 1672 0a2c A801      		movw r20,r16
+ 1673 0a2e 9701      		movw r18,r14
+ 1674               	.LVL125:
+ 1675 0a30 0E94 0000 		call __ltsf2
+ 1676 0a34 8823      		tst r24
+ 1677 0a36 04F4      		brge .L121
+ 1678               	.LM206:
+ 1679 0a38 8A2D      		mov r24,r10
+ 1680               	.LVL126:
+ 1681 0a3a 0E94 0000 		call UnityTestResultsFailBegin
+ 1682               	.LM207:
+ 1683 0a3e 8091 0000 		lds r24,UnityStrDelta
+ 1684 0a42 9091 0000 		lds r25,(UnityStrDelta)+1
+ 1685 0a46 0E94 0000 		call UnityPrint
+ 1686               	.LM208:
+ 1687 0a4a C601      		movw r24,r12
+ 1688               	.LVL127:
+ 1689 0a4c 0E94 0000 		call UnityAddMsgIfSpecified
+ 1690               	.LM209:
+ 1691 0a50 81E0      		ldi r24,lo8(1)
+ 1692 0a52 8093 0000 		sts Unity+11,r24
+ 1693 0a56 6091 0000 		lds r22,__iob+2
+ 1694 0a5a 7091 0000 		lds r23,(__iob+2)+1
+ 1695 0a5e 8AE0      		ldi r24,lo8(10)
+ 1696 0a60 90E0      		ldi r25,hi8(10)
+ 1697 0a62 0E94 0000 		call fputc
+ 1698 0a66 80E0      		ldi r24,lo8(Unity+13)
+ 1699 0a68 90E0      		ldi r25,hi8(Unity+13)
+ 1700 0a6a 61E0      		ldi r22,lo8(1)
+ 1701 0a6c 70E0      		ldi r23,hi8(1)
+ 1702 0a6e 0E94 0000 		call longjmp
+ 1703               	.LVL128:
+ 1704               	.L121:
+ 1705               	/* epilogue start */
+ 1706               	.LM210:
+ 1707 0a72 1F91      		pop r17
+ 1708 0a74 0F91      		pop r16
+ 1709 0a76 FF90      		pop r15
+ 1710 0a78 EF90      		pop r14
+ 1711               	.LVL129:
+ 1712 0a7a DF90      		pop r13
+ 1713 0a7c CF90      		pop r12
+ 1714 0a7e AF90      		pop r10
+ 1715 0a80 9F90      		pop r9
+ 1716 0a82 8F90      		pop r8
+ 1717 0a84 7F90      		pop r7
+ 1718 0a86 6F90      		pop r6
+ 1719               	.LVL130:
+ 1720 0a88 0895      		ret
+ 1721               	.LFE19:
+ 1723               	.global	UnityAssertEqualNumber
+ 1725               	UnityAssertEqualNumber:
+ 1726               	.LFB16:
+ 1727               	.LM211:
+ 1728               	.LVL131:
+ 1729 0a8a 4F92      		push r4
+ 1730 0a8c 5F92      		push r5
+ 1731 0a8e 6F92      		push r6
+ 1732 0a90 7F92      		push r7
+ 1733 0a92 8F92      		push r8
+ 1734 0a94 9F92      		push r9
+ 1735 0a96 AF92      		push r10
+ 1736 0a98 BF92      		push r11
+ 1737 0a9a CF92      		push r12
+ 1738               	.LVL132:
+ 1739 0a9c EF92      		push r14
+ 1740               	.LVL133:
+ 1741 0a9e 0F93      		push r16
+ 1742               	.LVL134:
+ 1743 0aa0 1F93      		push r17
+ 1744               	/* prologue: function */
+ 1745               	/* frame size = 0 */
+ 1746 0aa2 4B01      		movw r8,r22
+ 1747 0aa4 5C01      		movw r10,r24
+ 1748 0aa6 2901      		movw r4,r18
+ 1749 0aa8 3A01      		movw r6,r20
+ 1750               	.LM212:
+ 1751 0aaa 8091 0000 		lds r24,Unity+11
+ 1752 0aae 8823      		tst r24
+ 1753 0ab0 01F4      		brne .L126
+ 1754               	.LVL135:
+ 1755 0ab2 8091 0000 		lds r24,Unity+12
+ 1756 0ab6 8823      		tst r24
+ 1757 0ab8 01F4      		brne .L126
+ 1758               	.LM213:
+ 1759 0aba 8216      		cp r8,r18
+ 1760 0abc 9306      		cpc r9,r19
+ 1761 0abe A406      		cpc r10,r20
+ 1762 0ac0 B506      		cpc r11,r21
+ 1763 0ac2 01F0      		breq .L126
+ 1764               	.LVL136:
+ 1765               	.LM214:
+ 1766 0ac4 8E2D      		mov r24,r14
+ 1767               	.LVL137:
+ 1768 0ac6 0E94 0000 		call UnityTestResultsFailBegin
+ 1769               	.LVL138:
+ 1770               	.LM215:
+ 1771 0aca 8091 0000 		lds r24,UnityStrExpected
+ 1772 0ace 9091 0000 		lds r25,(UnityStrExpected)+1
+ 1773 0ad2 0E94 0000 		call UnityPrint
+ 1774               	.LM216:
+ 1775 0ad6 C501      		movw r24,r10
+ 1776 0ad8 B401      		movw r22,r8
+ 1777 0ada 4C2D      		mov r20,r12
+ 1778               	.LVL139:
+ 1779 0adc 0E94 0000 		call UnityPrintNumberByStyle
+ 1780               	.LM217:
+ 1781 0ae0 8091 0000 		lds r24,UnityStrWas
+ 1782 0ae4 9091 0000 		lds r25,(UnityStrWas)+1
+ 1783 0ae8 0E94 0000 		call UnityPrint
+ 1784               	.LM218:
+ 1785 0aec C301      		movw r24,r6
+ 1786 0aee B201      		movw r22,r4
+ 1787 0af0 4C2D      		mov r20,r12
+ 1788 0af2 0E94 0000 		call UnityPrintNumberByStyle
+ 1789               	.LM219:
+ 1790 0af6 C801      		movw r24,r16
+ 1791               	.LVL140:
+ 1792 0af8 0E94 0000 		call UnityAddMsgIfSpecified
+ 1793               	.LM220:
+ 1794 0afc 81E0      		ldi r24,lo8(1)
+ 1795 0afe 8093 0000 		sts Unity+11,r24
+ 1796 0b02 6091 0000 		lds r22,__iob+2
+ 1797 0b06 7091 0000 		lds r23,(__iob+2)+1
+ 1798 0b0a 8AE0      		ldi r24,lo8(10)
+ 1799 0b0c 90E0      		ldi r25,hi8(10)
+ 1800 0b0e 0E94 0000 		call fputc
+ 1801 0b12 80E0      		ldi r24,lo8(Unity+13)
+ 1802 0b14 90E0      		ldi r25,hi8(Unity+13)
+ 1803 0b16 61E0      		ldi r22,lo8(1)
+ 1804 0b18 70E0      		ldi r23,hi8(1)
+ 1805 0b1a 0E94 0000 		call longjmp
+ 1806               	.LVL141:
+ 1807               	.L126:
+ 1808               	/* epilogue start */
+ 1809               	.LM221:
+ 1810 0b1e 1F91      		pop r17
+ 1811 0b20 0F91      		pop r16
+ 1812 0b22 EF90      		pop r14
+ 1813 0b24 CF90      		pop r12
+ 1814 0b26 BF90      		pop r11
+ 1815 0b28 AF90      		pop r10
+ 1816 0b2a 9F90      		pop r9
+ 1817 0b2c 8F90      		pop r8
+ 1818               	.LVL142:
+ 1819 0b2e 7F90      		pop r7
+ 1820 0b30 6F90      		pop r6
+ 1821 0b32 5F90      		pop r5
+ 1822 0b34 4F90      		pop r4
+ 1823 0b36 0895      		ret
+ 1824               	.LFE16:
+ 1826               	.global	UnityAssertBits
+ 1828               	UnityAssertBits:
+ 1829               	.LFB15:
+ 1830               	.LM222:
+ 1831               	.LVL143:
+ 1832 0b38 2F92      		push r2
+ 1833 0b3a 3F92      		push r3
+ 1834 0b3c 4F92      		push r4
+ 1835 0b3e 5F92      		push r5
+ 1836 0b40 6F92      		push r6
+ 1837 0b42 7F92      		push r7
+ 1838 0b44 8F92      		push r8
+ 1839 0b46 9F92      		push r9
+ 1840 0b48 AF92      		push r10
+ 1841               	.LVL144:
+ 1842 0b4a CF92      		push r12
+ 1843               	.LVL145:
+ 1844 0b4c DF92      		push r13
+ 1845 0b4e EF92      		push r14
+ 1846               	.LVL146:
+ 1847 0b50 FF92      		push r15
+ 1848 0b52 0F93      		push r16
+ 1849 0b54 1F93      		push r17
+ 1850               	/* prologue: function */
+ 1851               	/* frame size = 0 */
+ 1852 0b56 3B01      		movw r6,r22
+ 1853 0b58 4C01      		movw r8,r24
+ 1854 0b5a 1901      		movw r2,r18
+ 1855 0b5c 2A01      		movw r4,r20
+ 1856               	.LM223:
+ 1857 0b5e 8091 0000 		lds r24,Unity+11
+ 1858 0b62 8823      		tst r24
+ 1859 0b64 01F0      		breq .+2
+ 1860 0b66 00C0      		rjmp .L129
+ 1861               	.LVL147:
+ 1862 0b68 8091 0000 		lds r24,Unity+12
+ 1863 0b6c 8823      		tst r24
+ 1864 0b6e 01F4      		brne .L129
+ 1865               	.LM224:
+ 1866 0b70 D801      		movw r26,r16
+ 1867 0b72 C701      		movw r24,r14
+ 1868               	.LVL148:
+ 1869 0b74 8227      		eor r24,r18
+ 1870 0b76 9327      		eor r25,r19
+ 1871 0b78 A427      		eor r26,r20
+ 1872 0b7a B527      		eor r27,r21
+ 1873 0b7c 8621      		and r24,r6
+ 1874 0b7e 9721      		and r25,r7
+ 1875 0b80 A821      		and r26,r8
+ 1876 0b82 B921      		and r27,r9
+ 1877 0b84 0097      		sbiw r24,0
+ 1878 0b86 A105      		cpc r26,__zero_reg__
+ 1879 0b88 B105      		cpc r27,__zero_reg__
+ 1880 0b8a 01F0      		breq .L129
+ 1881               	.LVL149:
+ 1882               	.LM225:
+ 1883 0b8c 8A2D      		mov r24,r10
+ 1884               	.LVL150:
+ 1885 0b8e 0E94 0000 		call UnityTestResultsFailBegin
+ 1886               	.LVL151:
+ 1887               	.LM226:
+ 1888 0b92 8091 0000 		lds r24,UnityStrExpected
+ 1889 0b96 9091 0000 		lds r25,(UnityStrExpected)+1
+ 1890 0b9a 0E94 0000 		call UnityPrint
+ 1891               	.LM227:
+ 1892 0b9e B301      		movw r22,r6
+ 1893               	.LVL152:
+ 1894 0ba0 C401      		movw r24,r8
+ 1895 0ba2 A201      		movw r20,r4
+ 1896 0ba4 9101      		movw r18,r2
+ 1897 0ba6 0E94 0000 		call UnityPrintMask
+ 1898               	.LM228:
+ 1899 0baa 8091 0000 		lds r24,UnityStrWas
+ 1900 0bae 9091 0000 		lds r25,(UnityStrWas)+1
+ 1901 0bb2 0E94 0000 		call UnityPrint
+ 1902               	.LM229:
+ 1903 0bb6 B301      		movw r22,r6
+ 1904 0bb8 C401      		movw r24,r8
+ 1905 0bba A801      		movw r20,r16
+ 1906 0bbc 9701      		movw r18,r14
+ 1907 0bbe 0E94 0000 		call UnityPrintMask
+ 1908               	.LM230:
+ 1909 0bc2 C601      		movw r24,r12
+ 1910               	.LVL153:
+ 1911 0bc4 0E94 0000 		call UnityAddMsgIfSpecified
+ 1912               	.LM231:
+ 1913 0bc8 81E0      		ldi r24,lo8(1)
+ 1914 0bca 8093 0000 		sts Unity+11,r24
+ 1915 0bce 6091 0000 		lds r22,__iob+2
+ 1916 0bd2 7091 0000 		lds r23,(__iob+2)+1
+ 1917 0bd6 8AE0      		ldi r24,lo8(10)
+ 1918 0bd8 90E0      		ldi r25,hi8(10)
+ 1919 0bda 0E94 0000 		call fputc
+ 1920 0bde 80E0      		ldi r24,lo8(Unity+13)
+ 1921 0be0 90E0      		ldi r25,hi8(Unity+13)
+ 1922 0be2 61E0      		ldi r22,lo8(1)
+ 1923 0be4 70E0      		ldi r23,hi8(1)
+ 1924 0be6 0E94 0000 		call longjmp
+ 1925               	.LVL154:
+ 1926               	.L129:
+ 1927               	/* epilogue start */
+ 1928               	.LM232:
+ 1929 0bea 1F91      		pop r17
+ 1930 0bec 0F91      		pop r16
+ 1931 0bee FF90      		pop r15
+ 1932 0bf0 EF90      		pop r14
+ 1933               	.LVL155:
+ 1934 0bf2 DF90      		pop r13
+ 1935 0bf4 CF90      		pop r12
+ 1936 0bf6 AF90      		pop r10
+ 1937 0bf8 9F90      		pop r9
+ 1938 0bfa 8F90      		pop r8
+ 1939 0bfc 7F90      		pop r7
+ 1940 0bfe 6F90      		pop r6
+ 1941               	.LVL156:
+ 1942 0c00 5F90      		pop r5
+ 1943 0c02 4F90      		pop r4
+ 1944 0c04 3F90      		pop r3
+ 1945 0c06 2F90      		pop r2
+ 1946 0c08 0895      		ret
+ 1947               	.LFE15:
+ 1949               	.global	UnityCheckArraysForNull
+ 1951               	UnityCheckArraysForNull:
+ 1952               	.LFB14:
+ 1953               	.LM233:
+ 1954               	.LVL157:
+ 1955 0c0a CF93      		push r28
+ 1956 0c0c DF93      		push r29
+ 1957               	/* prologue: function */
+ 1958               	/* frame size = 0 */
+ 1959 0c0e E901      		movw r28,r18
+ 1960               	.LM234:
+ 1961 0c10 892B      		or r24,r25
+ 1962 0c12 01F4      		brne .L131
+ 1963               	.LVL158:
+ 1964 0c14 672B      		or r22,r23
+ 1965 0c16 01F0      		breq .L132
+ 1966               	.LM235:
+ 1967 0c18 842F      		mov r24,r20
+ 1968               	.LVL159:
+ 1969 0c1a 0E94 0000 		call UnityTestResultsFailBegin
+ 1970               	.LVL160:
+ 1971               	.LM236:
+ 1972 0c1e 8091 0000 		lds r24,UnityStrNullPointerForExpected
+ 1973 0c22 9091 0000 		lds r25,(UnityStrNullPointerForExpected)+1
+ 1974 0c26 00C0      		rjmp .L136
+ 1975               	.LVL161:
+ 1976               	.L131:
+ 1977               	.LM237:
+ 1978 0c28 672B      		or r22,r23
+ 1979 0c2a 01F0      		breq .L133
+ 1980 0c2c 20E0      		ldi r18,lo8(0)
+ 1981 0c2e 30E0      		ldi r19,hi8(0)
+ 1982 0c30 00C0      		rjmp .L134
+ 1983               	.LVL162:
+ 1984               	.L133:
+ 1985               	.LM238:
+ 1986 0c32 842F      		mov r24,r20
+ 1987               	.LVL163:
+ 1988 0c34 0E94 0000 		call UnityTestResultsFailBegin
+ 1989               	.LVL164:
+ 1990               	.LM239:
+ 1991 0c38 8091 0000 		lds r24,UnityStrNullPointerForActual
+ 1992 0c3c 9091 0000 		lds r25,(UnityStrNullPointerForActual)+1
+ 1993               	.L136:
+ 1994 0c40 0E94 0000 		call UnityPrint
+ 1995               	.LM240:
+ 1996 0c44 CE01      		movw r24,r28
+ 1997 0c46 0E94 0000 		call UnityAddMsgIfSpecified
+ 1998               	.LM241:
+ 1999 0c4a 81E0      		ldi r24,lo8(1)
+ 2000 0c4c 8093 0000 		sts Unity+11,r24
+ 2001 0c50 6091 0000 		lds r22,__iob+2
+ 2002 0c54 7091 0000 		lds r23,(__iob+2)+1
+ 2003 0c58 8AE0      		ldi r24,lo8(10)
+ 2004 0c5a 90E0      		ldi r25,hi8(10)
+ 2005 0c5c 0E94 0000 		call fputc
+ 2006 0c60 80E0      		ldi r24,lo8(Unity+13)
+ 2007 0c62 90E0      		ldi r25,hi8(Unity+13)
+ 2008 0c64 61E0      		ldi r22,lo8(1)
+ 2009 0c66 70E0      		ldi r23,hi8(1)
+ 2010 0c68 0E94 0000 		call longjmp
+ 2011               	.LVL165:
+ 2012               	.L132:
+ 2013 0c6c 21E0      		ldi r18,lo8(1)
+ 2014 0c6e 30E0      		ldi r19,hi8(1)
+ 2015               	.L134:
+ 2016               	.LM242:
+ 2017 0c70 C901      		movw r24,r18
+ 2018               	.LVL166:
+ 2019               	/* epilogue start */
+ 2020 0c72 DF91      		pop r29
+ 2021 0c74 CF91      		pop r28
+ 2022               	.LVL167:
+ 2023 0c76 0895      		ret
+ 2024               	.LFE14:
+ 2026               	.global	UnityAssertEqualStringArray
+ 2028               	UnityAssertEqualStringArray:
+ 2029               	.LFB22:
+ 2030               	.LM243:
+ 2031               	.LVL168:
+ 2032 0c78 2F92      		push r2
+ 2033 0c7a 3F92      		push r3
+ 2034 0c7c 4F92      		push r4
+ 2035 0c7e 5F92      		push r5
+ 2036 0c80 6F92      		push r6
+ 2037 0c82 7F92      		push r7
+ 2038 0c84 8F92      		push r8
+ 2039 0c86 9F92      		push r9
+ 2040 0c88 AF92      		push r10
+ 2041 0c8a BF92      		push r11
+ 2042 0c8c CF92      		push r12
+ 2043 0c8e DF92      		push r13
+ 2044 0c90 EF92      		push r14
+ 2045               	.LVL169:
+ 2046 0c92 FF92      		push r15
+ 2047 0c94 0F93      		push r16
+ 2048               	.LVL170:
+ 2049 0c96 1F93      		push r17
+ 2050 0c98 DF93      		push r29
+ 2051 0c9a CF93      		push r28
+ 2052 0c9c 0F92      		push __tmp_reg__
+ 2053 0c9e CDB7      		in r28,__SP_L__
+ 2054 0ca0 DEB7      		in r29,__SP_H__
+ 2055               	/* prologue: function */
+ 2056               	/* frame size = 1 */
+ 2057 0ca2 F82E      		mov r15,r24
+ 2058 0ca4 992E      		mov r9,r25
+ 2059               	.LVL171:
+ 2060 0ca6 2B01      		movw r4,r22
+ 2061 0ca8 5901      		movw r10,r18
+ 2062 0caa 6A01      		movw r12,r20
+ 2063 0cac 1801      		movw r2,r16
+ 2064               	.LVL172:
+ 2065 0cae E982      		std Y+1,r14
+ 2066               	.LVL173:
+ 2067               	.LM244:
+ 2068 0cb0 8091 0000 		lds r24,Unity+11
+ 2069               	.LVL174:
+ 2070 0cb4 8823      		tst r24
+ 2071 0cb6 01F0      		breq .+2
+ 2072 0cb8 00C0      		rjmp .L147
+ 2073               	.LVL175:
+ 2074 0cba 8091 0000 		lds r24,Unity+12
+ 2075 0cbe 8823      		tst r24
+ 2076 0cc0 01F0      		breq .+2
+ 2077 0cc2 00C0      		rjmp .L147
+ 2078               	.LM245:
+ 2079 0cc4 2115      		cp r18,__zero_reg__
+ 2080 0cc6 3105      		cpc r19,__zero_reg__
+ 2081 0cc8 4105      		cpc r20,__zero_reg__
+ 2082 0cca 5105      		cpc r21,__zero_reg__
+ 2083 0ccc 01F4      		brne .L139
+ 2084               	.LVL176:
+ 2085               	.LM246:
+ 2086 0cce 8E2D      		mov r24,r14
+ 2087 0cd0 0E94 0000 		call UnityTestResultsFailBegin
+ 2088               	.LVL177:
+ 2089               	.LM247:
+ 2090 0cd4 8091 0000 		lds r24,UnityStrPointless
+ 2091 0cd8 9091 0000 		lds r25,(UnityStrPointless)+1
+ 2092 0cdc 0E94 0000 		call UnityPrint
+ 2093 0ce0 00C0      		rjmp .L151
+ 2094               	.LVL178:
+ 2095               	.L139:
+ 2096               	.LM248:
+ 2097 0ce2 8F2D      		mov r24,r15
+ 2098 0ce4 4981      		ldd r20,Y+1
+ 2099 0ce6 9801      		movw r18,r16
+ 2100               	.LVL179:
+ 2101 0ce8 0E94 0000 		call UnityCheckArraysForNull
+ 2102 0cec 0197      		sbiw r24,1
+ 2103 0cee 01F4      		brne .+2
+ 2104 0cf0 00C0      		rjmp .L147
+ 2105               	.LVL180:
+ 2106               	.LM249:
+ 2107 0cf2 8F2D      		mov r24,r15
+ 2108 0cf4 992D      		mov r25,r9
+ 2109 0cf6 9C01      		movw r18,r24
+ 2110 0cf8 4901      		movw r8,r18
+ 2111 0cfa B201      		movw r22,r4
+ 2112 0cfc EE24      		clr r14
+ 2113 0cfe FF24      		clr r15
+ 2114 0d00 8701      		movw r16,r14
+ 2115               	.LVL181:
+ 2116               	.LM250:
+ 2117 0d02 41E0      		ldi r20,lo8(1)
+ 2118               	.L146:
+ 2119               	.LM251:
+ 2120 0d04 3701      		movw r6,r14
+ 2121               	.LVL182:
+ 2122 0d06 660C      		lsl r6
+ 2123 0d08 771C      		rol r7
+ 2124               	.LM252:
+ 2125 0d0a F401      		movw r30,r8
+ 2126 0d0c 2081      		ld r18,Z
+ 2127 0d0e 3181      		ldd r19,Z+1
+ 2128 0d10 2115      		cp r18,__zero_reg__
+ 2129 0d12 3105      		cpc r19,__zero_reg__
+ 2130 0d14 01F0      		breq .L140
+ 2131 0d16 FB01      		movw r30,r22
+ 2132 0d18 8081      		ld r24,Z
+ 2133 0d1a 9181      		ldd r25,Z+1
+ 2134 0d1c 0097      		sbiw r24,0
+ 2135 0d1e 01F0      		breq .L140
+ 2136 0d20 D901      		movw r26,r18
+ 2137 0d22 FC01      		movw r30,r24
+ 2138 0d24 00C0      		rjmp .L141
+ 2139               	.L143:
+ 2140               	.LM253:
+ 2141 0d26 8191      		ld r24,Z+
+ 2142 0d28 1196      		adiw r26,1
+ 2143 0d2a 9817      		cp r25,r24
+ 2144 0d2c 01F4      		brne .L150
+ 2145               	.L141:
+ 2146               	.LM254:
+ 2147 0d2e 9C91      		ld r25,X
+ 2148 0d30 9923      		tst r25
+ 2149 0d32 01F4      		brne .L143
+ 2150 0d34 8081      		ld r24,Z
+ 2151 0d36 8823      		tst r24
+ 2152 0d38 01F4      		brne .L143
+ 2153 0d3a 00C0      		rjmp .L142
+ 2154               	.L140:
+ 2155               	.LM255:
+ 2156 0d3c FB01      		movw r30,r22
+ 2157 0d3e 8081      		ld r24,Z
+ 2158 0d40 9181      		ldd r25,Z+1
+ 2159 0d42 2817      		cp r18,r24
+ 2160 0d44 3907      		cpc r19,r25
+ 2161 0d46 01F0      		breq .L142
+ 2162               	.L150:
+ 2163               	.LM256:
+ 2164 0d48 4093 0000 		sts Unity+11,r20
+ 2165               	.L142:
+ 2166               	.LM257:
+ 2167 0d4c 8091 0000 		lds r24,Unity+11
+ 2168 0d50 8823      		tst r24
+ 2169 0d52 01F0      		breq .L144
+ 2170               	.LM258:
+ 2171 0d54 8981      		ldd r24,Y+1
+ 2172 0d56 0E94 0000 		call UnityTestResultsFailBegin
+ 2173               	.LM259:
+ 2174 0d5a F2E0      		ldi r31,lo8(2)
+ 2175 0d5c AF16      		cp r10,r31
+ 2176 0d5e B104      		cpc r11,__zero_reg__
+ 2177 0d60 C104      		cpc r12,__zero_reg__
+ 2178 0d62 D104      		cpc r13,__zero_reg__
+ 2179 0d64 00F0      		brlo .L145
+ 2180               	.LM260:
+ 2181 0d66 8091 0000 		lds r24,UnityStrElement
+ 2182 0d6a 9091 0000 		lds r25,(UnityStrElement)+1
+ 2183 0d6e 0E94 0000 		call UnityPrint
+ 2184               	.LM261:
+ 2185 0d72 0894      		sec
+ 2186 0d74 A108      		sbc r10,__zero_reg__
+ 2187 0d76 B108      		sbc r11,__zero_reg__
+ 2188 0d78 C108      		sbc r12,__zero_reg__
+ 2189 0d7a D108      		sbc r13,__zero_reg__
+ 2190 0d7c AE18      		sub r10,r14
+ 2191 0d7e BF08      		sbc r11,r15
+ 2192 0d80 C00A      		sbc r12,r16
+ 2193 0d82 D10A      		sbc r13,r17
+ 2194               	.LVL183:
+ 2195 0d84 C601      		movw r24,r12
+ 2196 0d86 B501      		movw r22,r10
+ 2197 0d88 44EA      		ldi r20,lo8(-92)
+ 2198 0d8a 0E94 0000 		call UnityPrintNumberByStyle
+ 2199               	.L145:
+ 2200               	.LM262:
+ 2201 0d8e 640C      		add r6,r4
+ 2202 0d90 751C      		adc r7,r5
+ 2203 0d92 F301      		movw r30,r6
+ 2204 0d94 6081      		ld r22,Z
+ 2205 0d96 7181      		ldd r23,Z+1
+ 2206 0d98 F401      		movw r30,r8
+ 2207 0d9a 8081      		ld r24,Z
+ 2208 0d9c 9181      		ldd r25,Z+1
+ 2209 0d9e 0E94 0000 		call UnityPrintExpectedAndActualStrings
+ 2210               	.LVL184:
+ 2211               	.L151:
+ 2212               	.LM263:
+ 2213 0da2 C101      		movw r24,r2
+ 2214 0da4 0E94 0000 		call UnityAddMsgIfSpecified
+ 2215               	.LM264:
+ 2216 0da8 81E0      		ldi r24,lo8(1)
+ 2217 0daa 8093 0000 		sts Unity+11,r24
+ 2218 0dae 6091 0000 		lds r22,__iob+2
+ 2219 0db2 7091 0000 		lds r23,(__iob+2)+1
+ 2220 0db6 8AE0      		ldi r24,lo8(10)
+ 2221 0db8 90E0      		ldi r25,hi8(10)
+ 2222 0dba 0E94 0000 		call fputc
+ 2223 0dbe 80E0      		ldi r24,lo8(Unity+13)
+ 2224 0dc0 90E0      		ldi r25,hi8(Unity+13)
+ 2225 0dc2 61E0      		ldi r22,lo8(1)
+ 2226 0dc4 70E0      		ldi r23,hi8(1)
+ 2227 0dc6 0E94 0000 		call longjmp
+ 2228               	.LVL185:
+ 2229               	.L144:
+ 2230               	.LM265:
+ 2231 0dca 0894      		sec
+ 2232 0dcc E11C      		adc r14,__zero_reg__
+ 2233 0dce F11C      		adc r15,__zero_reg__
+ 2234 0dd0 011D      		adc r16,__zero_reg__
+ 2235 0dd2 111D      		adc r17,__zero_reg__
+ 2236               	.LVL186:
+ 2237 0dd4 82E0      		ldi r24,lo8(2)
+ 2238 0dd6 90E0      		ldi r25,hi8(2)
+ 2239 0dd8 880E      		add r8,r24
+ 2240 0dda 991E      		adc r9,r25
+ 2241 0ddc 6E5F      		subi r22,lo8(-(2))
+ 2242 0dde 7F4F      		sbci r23,hi8(-(2))
+ 2243 0de0 EA14      		cp r14,r10
+ 2244 0de2 FB04      		cpc r15,r11
+ 2245 0de4 0C05      		cpc r16,r12
+ 2246 0de6 1D05      		cpc r17,r13
+ 2247 0de8 00F4      		brsh .+2
+ 2248 0dea 00C0      		rjmp .L146
+ 2249               	.LVL187:
+ 2250               	.L147:
+ 2251               	/* epilogue start */
+ 2252               	.LM266:
+ 2253 0dec 0F90      		pop __tmp_reg__
+ 2254 0dee CF91      		pop r28
+ 2255 0df0 DF91      		pop r29
+ 2256 0df2 1F91      		pop r17
+ 2257 0df4 0F91      		pop r16
+ 2258               	.LVL188:
+ 2259 0df6 FF90      		pop r15
+ 2260               	.LVL189:
+ 2261 0df8 EF90      		pop r14
+ 2262               	.LVL190:
+ 2263 0dfa DF90      		pop r13
+ 2264 0dfc CF90      		pop r12
+ 2265 0dfe BF90      		pop r11
+ 2266 0e00 AF90      		pop r10
+ 2267               	.LVL191:
+ 2268 0e02 9F90      		pop r9
+ 2269               	.LVL192:
+ 2270 0e04 8F90      		pop r8
+ 2271 0e06 7F90      		pop r7
+ 2272 0e08 6F90      		pop r6
+ 2273 0e0a 5F90      		pop r5
+ 2274 0e0c 4F90      		pop r4
+ 2275               	.LVL193:
+ 2276 0e0e 3F90      		pop r3
+ 2277 0e10 2F90      		pop r2
+ 2278               	.LVL194:
+ 2279 0e12 0895      		ret
+ 2280               	.LFE22:
+ 2282               	.global	UnityAssertEqualFloatArray
+ 2284               	UnityAssertEqualFloatArray:
+ 2285               	.LFB18:
+ 2286               	.LM267:
+ 2287               	.LVL195:
+ 2288 0e14 2F92      		push r2
+ 2289 0e16 3F92      		push r3
+ 2290 0e18 4F92      		push r4
+ 2291 0e1a 5F92      		push r5
+ 2292 0e1c 6F92      		push r6
+ 2293 0e1e 7F92      		push r7
+ 2294 0e20 8F92      		push r8
+ 2295 0e22 9F92      		push r9
+ 2296 0e24 AF92      		push r10
+ 2297 0e26 BF92      		push r11
+ 2298 0e28 CF92      		push r12
+ 2299 0e2a DF92      		push r13
+ 2300 0e2c EF92      		push r14
+ 2301               	.LVL196:
+ 2302 0e2e FF92      		push r15
+ 2303 0e30 0F93      		push r16
+ 2304               	.LVL197:
+ 2305 0e32 1F93      		push r17
+ 2306 0e34 DF93      		push r29
+ 2307 0e36 CF93      		push r28
+ 2308 0e38 CDB7      		in r28,__SP_L__
+ 2309 0e3a DEB7      		in r29,__SP_H__
+ 2310 0e3c 2797      		sbiw r28,7
+ 2311 0e3e 0FB6      		in __tmp_reg__,__SREG__
+ 2312 0e40 F894      		cli
+ 2313 0e42 DEBF      		out __SP_H__,r29
+ 2314 0e44 0FBE      		out __SREG__,__tmp_reg__
+ 2315 0e46 CDBF      		out __SP_L__,r28
+ 2316               	/* prologue: function */
+ 2317               	/* frame size = 7 */
+ 2318 0e48 F82E      		mov r15,r24
+ 2319 0e4a D92E      		mov r13,r25
+ 2320               	.LVL198:
+ 2321 0e4c C62E      		mov r12,r22
+ 2322 0e4e B72E      		mov r11,r23
+ 2323               	.LVL199:
+ 2324 0e50 3901      		movw r6,r18
+ 2325 0e52 4A01      		movw r8,r20
+ 2326 0e54 1C83      		std Y+4,r17
+ 2327 0e56 0B83      		std Y+3,r16
+ 2328               	.LVL200:
+ 2329 0e58 ED82      		std Y+5,r14
+ 2330               	.LVL201:
+ 2331               	.LM268:
+ 2332 0e5a 8091 0000 		lds r24,Unity+11
+ 2333               	.LVL202:
+ 2334 0e5e 8823      		tst r24
+ 2335 0e60 01F0      		breq .+2
+ 2336 0e62 00C0      		rjmp .L162
+ 2337               	.LVL203:
+ 2338 0e64 8091 0000 		lds r24,Unity+12
+ 2339 0e68 8823      		tst r24
+ 2340 0e6a 01F0      		breq .+2
+ 2341 0e6c 00C0      		rjmp .L162
+ 2342               	.LM269:
+ 2343 0e6e 2115      		cp r18,__zero_reg__
+ 2344 0e70 3105      		cpc r19,__zero_reg__
+ 2345 0e72 4105      		cpc r20,__zero_reg__
+ 2346 0e74 5105      		cpc r21,__zero_reg__
+ 2347 0e76 01F4      		brne .L154
+ 2348               	.LVL204:
+ 2349               	.LM270:
+ 2350 0e78 8E2D      		mov r24,r14
+ 2351 0e7a 0E94 0000 		call UnityTestResultsFailBegin
+ 2352               	.LVL205:
+ 2353               	.LM271:
+ 2354 0e7e 8091 0000 		lds r24,UnityStrPointless
+ 2355 0e82 9091 0000 		lds r25,(UnityStrPointless)+1
+ 2356 0e86 00C0      		rjmp .L168
+ 2357               	.LVL206:
+ 2358               	.L154:
+ 2359               	.LM272:
+ 2360 0e88 8F2D      		mov r24,r15
+ 2361 0e8a 4D81      		ldd r20,Y+5
+ 2362 0e8c 2B81      		ldd r18,Y+3
+ 2363 0e8e 3C81      		ldd r19,Y+4
+ 2364               	.LVL207:
+ 2365 0e90 0E94 0000 		call UnityCheckArraysForNull
+ 2366 0e94 0197      		sbiw r24,1
+ 2367 0e96 01F4      		brne .+2
+ 2368 0e98 00C0      		rjmp .L162
+ 2369               	.LM273:
+ 2370 0e9a 1301      		movw r2,r6
+ 2371 0e9c 2401      		movw r4,r8
+ 2372               	.LVL208:
+ 2373 0e9e 2F2D      		mov r18,r15
+ 2374               	.LVL209:
+ 2375 0ea0 3D2D      		mov r19,r13
+ 2376               	.LVL210:
+ 2377 0ea2 C901      		movw r24,r18
+ 2378               	.LVL211:
+ 2379 0ea4 9A83      		std Y+2,r25
+ 2380 0ea6 8983      		std Y+1,r24
+ 2381               	.LVL212:
+ 2382 0ea8 2C2D      		mov r18,r12
+ 2383               	.LVL213:
+ 2384 0eaa 3B2D      		mov r19,r11
+ 2385               	.LVL214:
+ 2386 0eac C901      		movw r24,r18
+ 2387               	.LVL215:
+ 2388 0eae 9F83      		std Y+7,r25
+ 2389 0eb0 8E83      		std Y+6,r24
+ 2390               	.LVL216:
+ 2391               	.L161:
+ 2392               	.LM274:
+ 2393 0eb2 E981      		ldd r30,Y+1
+ 2394 0eb4 FA81      		ldd r31,Y+2
+ 2395 0eb6 E080      		ld r14,Z
+ 2396 0eb8 F180      		ldd r15,Z+1
+ 2397 0eba 0281      		ldd r16,Z+2
+ 2398 0ebc 1381      		ldd r17,Z+3
+ 2399               	.LVL217:
+ 2400 0ebe C801      		movw r24,r16
+ 2401 0ec0 B701      		movw r22,r14
+ 2402 0ec2 EE81      		ldd r30,Y+6
+ 2403 0ec4 FF81      		ldd r31,Y+7
+ 2404 0ec6 2081      		ld r18,Z
+ 2405 0ec8 3181      		ldd r19,Z+1
+ 2406 0eca 4281      		ldd r20,Z+2
+ 2407 0ecc 5381      		ldd r21,Z+3
+ 2408 0ece 0E94 0000 		call __subsf3
+ 2409               	.LVL218:
+ 2410 0ed2 5B01      		movw r10,r22
+ 2411 0ed4 6C01      		movw r12,r24
+ 2412               	.LM275:
+ 2413 0ed6 20E0      		ldi r18,lo8(0x0)
+ 2414 0ed8 30E0      		ldi r19,hi8(0x0)
+ 2415 0eda 40E0      		ldi r20,hlo8(0x0)
+ 2416 0edc 50E0      		ldi r21,hhi8(0x0)
+ 2417 0ede 0E94 0000 		call __ltsf2
+ 2418 0ee2 8823      		tst r24
+ 2419 0ee4 04F4      		brge .L155
+ 2420               	.LM276:
+ 2421 0ee6 60E0      		ldi r22,lo8(0x0)
+ 2422 0ee8 70E0      		ldi r23,hi8(0x0)
+ 2423 0eea 80E0      		ldi r24,hlo8(0x0)
+ 2424 0eec 90E0      		ldi r25,hhi8(0x0)
+ 2425 0eee A601      		movw r20,r12
+ 2426 0ef0 9501      		movw r18,r10
+ 2427 0ef2 0E94 0000 		call __subsf3
+ 2428 0ef6 5B01      		movw r10,r22
+ 2429 0ef8 6C01      		movw r12,r24
+ 2430               	.L155:
+ 2431               	.LM277:
+ 2432 0efa C801      		movw r24,r16
+ 2433 0efc B701      		movw r22,r14
+ 2434 0efe 2CEA      		ldi r18,lo8(0x3727c5ac)
+ 2435 0f00 35EC      		ldi r19,hi8(0x3727c5ac)
+ 2436 0f02 47E2      		ldi r20,hlo8(0x3727c5ac)
+ 2437 0f04 57E3      		ldi r21,hhi8(0x3727c5ac)
+ 2438 0f06 0E94 0000 		call __mulsf3
+ 2439 0f0a 7B01      		movw r14,r22
+ 2440 0f0c 8C01      		movw r16,r24
+ 2441               	.LVL219:
+ 2442               	.LM278:
+ 2443 0f0e 20E0      		ldi r18,lo8(0x0)
+ 2444 0f10 30E0      		ldi r19,hi8(0x0)
+ 2445 0f12 40E0      		ldi r20,hlo8(0x0)
+ 2446 0f14 50E0      		ldi r21,hhi8(0x0)
+ 2447 0f16 0E94 0000 		call __ltsf2
+ 2448 0f1a 8823      		tst r24
+ 2449 0f1c 04F4      		brge .L157
+ 2450               	.LM279:
+ 2451 0f1e 60E0      		ldi r22,lo8(0x0)
+ 2452 0f20 70E0      		ldi r23,hi8(0x0)
+ 2453 0f22 80E0      		ldi r24,hlo8(0x0)
+ 2454 0f24 90E0      		ldi r25,hhi8(0x0)
+ 2455 0f26 A801      		movw r20,r16
+ 2456 0f28 9701      		movw r18,r14
+ 2457 0f2a 0E94 0000 		call __subsf3
+ 2458 0f2e 7B01      		movw r14,r22
+ 2459 0f30 8C01      		movw r16,r24
+ 2460               	.L157:
+ 2461               	.LM280:
+ 2462 0f32 0894      		sec
+ 2463 0f34 2108      		sbc r2,__zero_reg__
+ 2464 0f36 3108      		sbc r3,__zero_reg__
+ 2465 0f38 4108      		sbc r4,__zero_reg__
+ 2466 0f3a 5108      		sbc r5,__zero_reg__
+ 2467               	.LM281:
+ 2468 0f3c C601      		movw r24,r12
+ 2469 0f3e B501      		movw r22,r10
+ 2470 0f40 A801      		movw r20,r16
+ 2471 0f42 9701      		movw r18,r14
+ 2472 0f44 0E94 0000 		call __gtsf2
+ 2473 0f48 1816      		cp __zero_reg__,r24
+ 2474 0f4a 04F4      		brge .L167
+ 2475               	.LM282:
+ 2476 0f4c 8D81      		ldd r24,Y+5
+ 2477 0f4e 0E94 0000 		call UnityTestResultsFailBegin
+ 2478               	.LM283:
+ 2479 0f52 8091 0000 		lds r24,UnityStrElement
+ 2480 0f56 9091 0000 		lds r25,(UnityStrElement)+1
+ 2481 0f5a 0E94 0000 		call UnityPrint
+ 2482               	.LM284:
+ 2483 0f5e 0894      		sec
+ 2484 0f60 6108      		sbc r6,__zero_reg__
+ 2485 0f62 7108      		sbc r7,__zero_reg__
+ 2486 0f64 8108      		sbc r8,__zero_reg__
+ 2487 0f66 9108      		sbc r9,__zero_reg__
+ 2488 0f68 6218      		sub r6,r2
+ 2489 0f6a 7308      		sbc r7,r3
+ 2490 0f6c 8408      		sbc r8,r4
+ 2491 0f6e 9508      		sbc r9,r5
+ 2492 0f70 C401      		movw r24,r8
+ 2493 0f72 B301      		movw r22,r6
+ 2494 0f74 44EA      		ldi r20,lo8(-92)
+ 2495 0f76 0E94 0000 		call UnityPrintNumberByStyle
+ 2496               	.LM285:
+ 2497 0f7a 8091 0000 		lds r24,UnityStrDelta
+ 2498 0f7e 9091 0000 		lds r25,(UnityStrDelta)+1
+ 2499               	.LVL220:
+ 2500               	.L168:
+ 2501 0f82 0E94 0000 		call UnityPrint
+ 2502               	.LM286:
+ 2503 0f86 8B81      		ldd r24,Y+3
+ 2504 0f88 9C81      		ldd r25,Y+4
+ 2505 0f8a 0E94 0000 		call UnityAddMsgIfSpecified
+ 2506               	.LM287:
+ 2507 0f8e 81E0      		ldi r24,lo8(1)
+ 2508 0f90 8093 0000 		sts Unity+11,r24
+ 2509 0f94 6091 0000 		lds r22,__iob+2
+ 2510 0f98 7091 0000 		lds r23,(__iob+2)+1
+ 2511 0f9c 8AE0      		ldi r24,lo8(10)
+ 2512 0f9e 90E0      		ldi r25,hi8(10)
+ 2513 0fa0 0E94 0000 		call fputc
+ 2514 0fa4 80E0      		ldi r24,lo8(Unity+13)
+ 2515 0fa6 90E0      		ldi r25,hi8(Unity+13)
+ 2516 0fa8 61E0      		ldi r22,lo8(1)
+ 2517 0faa 70E0      		ldi r23,hi8(1)
+ 2518 0fac 0E94 0000 		call longjmp
+ 2519               	.LVL221:
+ 2520               	.L167:
+ 2521               	.LM288:
+ 2522 0fb0 8981      		ldd r24,Y+1
+ 2523 0fb2 9A81      		ldd r25,Y+2
+ 2524 0fb4 0496      		adiw r24,4
+ 2525 0fb6 9A83      		std Y+2,r25
+ 2526 0fb8 8983      		std Y+1,r24
+ 2527               	.LVL222:
+ 2528               	.LM289:
+ 2529 0fba EE81      		ldd r30,Y+6
+ 2530 0fbc FF81      		ldd r31,Y+7
+ 2531 0fbe 3496      		adiw r30,4
+ 2532 0fc0 FF83      		std Y+7,r31
+ 2533 0fc2 EE83      		std Y+6,r30
+ 2534               	.LVL223:
+ 2535               	.LM290:
+ 2536 0fc4 2114      		cp r2,__zero_reg__
+ 2537 0fc6 3104      		cpc r3,__zero_reg__
+ 2538 0fc8 4104      		cpc r4,__zero_reg__
+ 2539 0fca 5104      		cpc r5,__zero_reg__
+ 2540 0fcc 01F0      		breq .+2
+ 2541 0fce 00C0      		rjmp .L161
+ 2542               	.LVL224:
+ 2543               	.L162:
+ 2544               	/* epilogue start */
+ 2545               	.LM291:
+ 2546 0fd0 2796      		adiw r28,7
+ 2547 0fd2 0FB6      		in __tmp_reg__,__SREG__
+ 2548 0fd4 F894      		cli
+ 2549 0fd6 DEBF      		out __SP_H__,r29
+ 2550 0fd8 0FBE      		out __SREG__,__tmp_reg__
+ 2551 0fda CDBF      		out __SP_L__,r28
+ 2552 0fdc CF91      		pop r28
+ 2553 0fde DF91      		pop r29
+ 2554 0fe0 1F91      		pop r17
+ 2555 0fe2 0F91      		pop r16
+ 2556 0fe4 FF90      		pop r15
+ 2557               	.LVL225:
+ 2558 0fe6 EF90      		pop r14
+ 2559               	.LVL226:
+ 2560 0fe8 DF90      		pop r13
+ 2561               	.LVL227:
+ 2562 0fea CF90      		pop r12
+ 2563               	.LVL228:
+ 2564 0fec BF90      		pop r11
+ 2565               	.LVL229:
+ 2566 0fee AF90      		pop r10
+ 2567               	.LVL230:
+ 2568 0ff0 9F90      		pop r9
+ 2569 0ff2 8F90      		pop r8
+ 2570 0ff4 7F90      		pop r7
+ 2571 0ff6 6F90      		pop r6
+ 2572               	.LVL231:
+ 2573 0ff8 5F90      		pop r5
+ 2574 0ffa 4F90      		pop r4
+ 2575 0ffc 3F90      		pop r3
+ 2576 0ffe 2F90      		pop r2
+ 2577               	.LVL232:
+ 2578 1000 0895      		ret
+ 2579               	.LFE18:
+ 2581               	.global	UnityAssertEqualIntArray
+ 2583               	UnityAssertEqualIntArray:
+ 2584               	.LFB17:
+ 2585               	.LM292:
+ 2586               	.LVL233:
+ 2587 1002 2F92      		push r2
+ 2588 1004 3F92      		push r3
+ 2589 1006 4F92      		push r4
+ 2590 1008 5F92      		push r5
+ 2591 100a 6F92      		push r6
+ 2592 100c 7F92      		push r7
+ 2593 100e 8F92      		push r8
+ 2594 1010 9F92      		push r9
+ 2595 1012 AF92      		push r10
+ 2596 1014 BF92      		push r11
+ 2597 1016 CF92      		push r12
+ 2598               	.LVL234:
+ 2599 1018 DF92      		push r13
+ 2600 101a EF92      		push r14
+ 2601               	.LVL235:
+ 2602 101c FF92      		push r15
+ 2603 101e 0F93      		push r16
+ 2604               	.LVL236:
+ 2605 1020 1F93      		push r17
+ 2606 1022 CF93      		push r28
+ 2607 1024 DF93      		push r29
+ 2608               	/* prologue: function */
+ 2609               	/* frame size = 0 */
+ 2610 1026 F82E      		mov r15,r24
+ 2611 1028 D92E      		mov r13,r25
+ 2612               	.LVL237:
+ 2613 102a 362E      		mov r3,r22
+ 2614 102c 272E      		mov r2,r23
+ 2615               	.LVL238:
+ 2616 102e 4901      		movw r8,r18
+ 2617 1030 5A01      		movw r10,r20
+ 2618 1032 2801      		movw r4,r16
+ 2619               	.LVL239:
+ 2620 1034 6E2C      		mov r6,r14
+ 2621               	.LVL240:
+ 2622 1036 7C2C      		mov r7,r12
+ 2623               	.LVL241:
+ 2624               	.LM293:
+ 2625 1038 8091 0000 		lds r24,Unity+11
+ 2626               	.LVL242:
+ 2627 103c 8823      		tst r24
+ 2628 103e 01F0      		breq .+2
+ 2629 1040 00C0      		rjmp .L182
+ 2630               	.LVL243:
+ 2631 1042 8091 0000 		lds r24,Unity+12
+ 2632 1046 8823      		tst r24
+ 2633 1048 01F0      		breq .+2
+ 2634 104a 00C0      		rjmp .L182
+ 2635               	.LM294:
+ 2636 104c 2115      		cp r18,__zero_reg__
+ 2637 104e 3105      		cpc r19,__zero_reg__
+ 2638 1050 4105      		cpc r20,__zero_reg__
+ 2639 1052 5105      		cpc r21,__zero_reg__
+ 2640 1054 01F4      		brne .L171
+ 2641               	.LVL244:
+ 2642               	.LM295:
+ 2643 1056 8E2D      		mov r24,r14
+ 2644 1058 0E94 0000 		call UnityTestResultsFailBegin
+ 2645               	.LVL245:
+ 2646               	.LM296:
+ 2647 105c 8091 0000 		lds r24,UnityStrPointless
+ 2648 1060 9091 0000 		lds r25,(UnityStrPointless)+1
+ 2649 1064 0E94 0000 		call UnityPrint
+ 2650 1068 00C0      		rjmp .L186
+ 2651               	.LVL246:
+ 2652               	.L171:
+ 2653               	.LM297:
+ 2654 106a 8F2D      		mov r24,r15
+ 2655 106c 4E2D      		mov r20,r14
+ 2656 106e 9801      		movw r18,r16
+ 2657               	.LVL247:
+ 2658 1070 0E94 0000 		call UnityCheckArraysForNull
+ 2659 1074 0197      		sbiw r24,1
+ 2660 1076 01F4      		brne .+2
+ 2661 1078 00C0      		rjmp .L182
+ 2662               	.LVL248:
+ 2663               	.LM298:
+ 2664 107a 2F2D      		mov r18,r15
+ 2665               	.LVL249:
+ 2666 107c 3D2D      		mov r19,r13
+ 2667               	.LVL250:
+ 2668 107e C901      		movw r24,r18
+ 2669               	.LVL251:
+ 2670 1080 EC01      		movw r28,r24
+ 2671               	.LVL252:
+ 2672               	.LM299:
+ 2673 1082 232D      		mov r18,r3
+ 2674               	.LVL253:
+ 2675 1084 322D      		mov r19,r2
+ 2676               	.LVL254:
+ 2677 1086 C901      		movw r24,r18
+ 2678               	.LVL255:
+ 2679 1088 6C01      		movw r12,r24
+ 2680               	.LVL256:
+ 2681               	.LM300:
+ 2682 108a 81E2      		ldi r24,lo8(33)
+ 2683               	.LVL257:
+ 2684 108c 7816      		cp r7,r24
+ 2685 108e 01F0      		breq .L173
+ 2686 1090 8715      		cp r24,r7
+ 2687 1092 00F0      		brlo .L175
+ 2688 1094 91E1      		ldi r25,lo8(17)
+ 2689 1096 7916      		cp r7,r25
+ 2690 1098 01F0      		breq .L173
+ 2691 109a E2E1      		ldi r30,lo8(18)
+ 2692 109c 7E16      		cp r7,r30
+ 2693 109e 01F0      		breq .+2
+ 2694 10a0 00C0      		rjmp .L172
+ 2695 10a2 00C0      		rjmp .L174
+ 2696               	.L175:
+ 2697 10a4 F1E4      		ldi r31,lo8(65)
+ 2698 10a6 7F16      		cp r7,r31
+ 2699 10a8 01F0      		breq .L173
+ 2700 10aa 82E4      		ldi r24,lo8(66)
+ 2701 10ac 7816      		cp r7,r24
+ 2702 10ae 01F4      		brne .+2
+ 2703 10b0 00C0      		rjmp .L174
+ 2704 10b2 92E2      		ldi r25,lo8(34)
+ 2705 10b4 7916      		cp r7,r25
+ 2706 10b6 01F0      		breq .+2
+ 2707 10b8 00C0      		rjmp .L172
+ 2708 10ba 00C0      		rjmp .L174
+ 2709               	.L173:
+ 2710 10bc 8501      		movw r16,r10
+ 2711 10be 7401      		movw r14,r8
+ 2712               	.LVL258:
+ 2713               	.L177:
+ 2714               	.LM301:
+ 2715 10c0 0894      		sec
+ 2716 10c2 E108      		sbc r14,__zero_reg__
+ 2717 10c4 F108      		sbc r15,__zero_reg__
+ 2718 10c6 0109      		sbc r16,__zero_reg__
+ 2719 10c8 1109      		sbc r17,__zero_reg__
+ 2720               	.LM302:
+ 2721 10ca 9881      		ld r25,Y
+ 2722 10cc F601      		movw r30,r12
+ 2723 10ce 8081      		ld r24,Z
+ 2724 10d0 9817      		cp r25,r24
+ 2725 10d2 01F4      		brne .+2
+ 2726 10d4 00C0      		rjmp .L176
+ 2727               	.LM303:
+ 2728 10d6 862D      		mov r24,r6
+ 2729 10d8 0E94 0000 		call UnityTestResultsFailBegin
+ 2730               	.LVL259:
+ 2731               	.LM304:
+ 2732 10dc 8091 0000 		lds r24,UnityStrElement
+ 2733 10e0 9091 0000 		lds r25,(UnityStrElement)+1
+ 2734 10e4 0E94 0000 		call UnityPrint
+ 2735               	.LM305:
+ 2736 10e8 0894      		sec
+ 2737 10ea 8108      		sbc r8,__zero_reg__
+ 2738 10ec 9108      		sbc r9,__zero_reg__
+ 2739 10ee A108      		sbc r10,__zero_reg__
+ 2740 10f0 B108      		sbc r11,__zero_reg__
+ 2741 10f2 8E18      		sub r8,r14
+ 2742 10f4 9F08      		sbc r9,r15
+ 2743 10f6 A00A      		sbc r10,r16
+ 2744 10f8 B10A      		sbc r11,r17
+ 2745 10fa C501      		movw r24,r10
+ 2746 10fc B401      		movw r22,r8
+ 2747 10fe 44EA      		ldi r20,lo8(-92)
+ 2748 1100 0E94 0000 		call UnityPrintNumberByStyle
+ 2749               	.LM306:
+ 2750 1104 8091 0000 		lds r24,UnityStrExpected
+ 2751 1108 9091 0000 		lds r25,(UnityStrExpected)+1
+ 2752 110c 0E94 0000 		call UnityPrint
+ 2753               	.LM307:
+ 2754 1110 6881      		ld r22,Y
+ 2755 1112 7727      		clr r23
+ 2756 1114 67FD      		sbrc r22,7
+ 2757 1116 7095      		com r23
+ 2758 1118 872F      		mov r24,r23
+ 2759 111a 972F      		mov r25,r23
+ 2760 111c 472D      		mov r20,r7
+ 2761 111e 0E94 0000 		call UnityPrintNumberByStyle
+ 2762               	.LM308:
+ 2763 1122 8091 0000 		lds r24,UnityStrWas
+ 2764 1126 9091 0000 		lds r25,(UnityStrWas)+1
+ 2765 112a 0E94 0000 		call UnityPrint
+ 2766               	.LM309:
+ 2767 112e F601      		movw r30,r12
+ 2768 1130 6081      		ld r22,Z
+ 2769 1132 7727      		clr r23
+ 2770 1134 67FD      		sbrc r22,7
+ 2771 1136 7095      		com r23
+ 2772 1138 872F      		mov r24,r23
+ 2773 113a 972F      		mov r25,r23
+ 2774               	.L187:
+ 2775 113c 472D      		mov r20,r7
+ 2776 113e 0E94 0000 		call UnityPrintNumberByStyle
+ 2777               	.LVL260:
+ 2778               	.L186:
+ 2779               	.LM310:
+ 2780 1142 C201      		movw r24,r4
+ 2781 1144 0E94 0000 		call UnityAddMsgIfSpecified
+ 2782               	.LM311:
+ 2783 1148 81E0      		ldi r24,lo8(1)
+ 2784 114a 8093 0000 		sts Unity+11,r24
+ 2785 114e 6091 0000 		lds r22,__iob+2
+ 2786 1152 7091 0000 		lds r23,(__iob+2)+1
+ 2787 1156 8AE0      		ldi r24,lo8(10)
+ 2788 1158 90E0      		ldi r25,hi8(10)
+ 2789 115a 0E94 0000 		call fputc
+ 2790 115e 80E0      		ldi r24,lo8(Unity+13)
+ 2791 1160 90E0      		ldi r25,hi8(Unity+13)
+ 2792 1162 61E0      		ldi r22,lo8(1)
+ 2793 1164 70E0      		ldi r23,hi8(1)
+ 2794 1166 0E94 0000 		call longjmp
+ 2795               	.LVL261:
+ 2796               	.L176:
+ 2797               	.LM312:
+ 2798 116a 2196      		adiw r28,1
+ 2799               	.LM313:
+ 2800 116c 0894      		sec
+ 2801 116e C11C      		adc r12,__zero_reg__
+ 2802 1170 D11C      		adc r13,__zero_reg__
+ 2803               	.LM314:
+ 2804 1172 E114      		cp r14,__zero_reg__
+ 2805 1174 F104      		cpc r15,__zero_reg__
+ 2806 1176 0105      		cpc r16,__zero_reg__
+ 2807 1178 1105      		cpc r17,__zero_reg__
+ 2808 117a 01F0      		breq .+2
+ 2809 117c 00C0      		rjmp .L177
+ 2810 117e 00C0      		rjmp .L182
+ 2811               	.LVL262:
+ 2812               	.L174:
+ 2813 1180 8501      		movw r16,r10
+ 2814 1182 7401      		movw r14,r8
+ 2815               	.LVL263:
+ 2816               	.L179:
+ 2817               	.LM315:
+ 2818 1184 0894      		sec
+ 2819 1186 E108      		sbc r14,__zero_reg__
+ 2820 1188 F108      		sbc r15,__zero_reg__
+ 2821 118a 0109      		sbc r16,__zero_reg__
+ 2822 118c 1109      		sbc r17,__zero_reg__
+ 2823               	.LM316:
+ 2824 118e 2881      		ld r18,Y
+ 2825 1190 3981      		ldd r19,Y+1
+ 2826 1192 F601      		movw r30,r12
+ 2827 1194 8081      		ld r24,Z
+ 2828 1196 9181      		ldd r25,Z+1
+ 2829 1198 2817      		cp r18,r24
+ 2830 119a 3907      		cpc r19,r25
+ 2831 119c 01F0      		breq .L178
+ 2832               	.LM317:
+ 2833 119e 862D      		mov r24,r6
+ 2834 11a0 0E94 0000 		call UnityTestResultsFailBegin
+ 2835               	.LVL264:
+ 2836               	.LM318:
+ 2837 11a4 8091 0000 		lds r24,UnityStrElement
+ 2838 11a8 9091 0000 		lds r25,(UnityStrElement)+1
+ 2839 11ac 0E94 0000 		call UnityPrint
+ 2840               	.LM319:
+ 2841 11b0 0894      		sec
+ 2842 11b2 8108      		sbc r8,__zero_reg__
+ 2843 11b4 9108      		sbc r9,__zero_reg__
+ 2844 11b6 A108      		sbc r10,__zero_reg__
+ 2845 11b8 B108      		sbc r11,__zero_reg__
+ 2846 11ba 8E18      		sub r8,r14
+ 2847 11bc 9F08      		sbc r9,r15
+ 2848 11be A00A      		sbc r10,r16
+ 2849 11c0 B10A      		sbc r11,r17
+ 2850 11c2 C501      		movw r24,r10
+ 2851 11c4 B401      		movw r22,r8
+ 2852 11c6 44EA      		ldi r20,lo8(-92)
+ 2853 11c8 0E94 0000 		call UnityPrintNumberByStyle
+ 2854               	.LM320:
+ 2855 11cc 8091 0000 		lds r24,UnityStrExpected
+ 2856 11d0 9091 0000 		lds r25,(UnityStrExpected)+1
+ 2857 11d4 0E94 0000 		call UnityPrint
+ 2858               	.LM321:
+ 2859 11d8 6881      		ld r22,Y
+ 2860 11da 7981      		ldd r23,Y+1
+ 2861 11dc 8827      		clr r24
+ 2862 11de 77FD      		sbrc r23,7
+ 2863 11e0 8095      		com r24
+ 2864 11e2 982F      		mov r25,r24
+ 2865 11e4 472D      		mov r20,r7
+ 2866 11e6 0E94 0000 		call UnityPrintNumberByStyle
+ 2867               	.LM322:
+ 2868 11ea 8091 0000 		lds r24,UnityStrWas
+ 2869 11ee 9091 0000 		lds r25,(UnityStrWas)+1
+ 2870 11f2 0E94 0000 		call UnityPrint
+ 2871               	.LM323:
+ 2872 11f6 F601      		movw r30,r12
+ 2873 11f8 6081      		ld r22,Z
+ 2874 11fa 7181      		ldd r23,Z+1
+ 2875 11fc 8827      		clr r24
+ 2876 11fe 77FD      		sbrc r23,7
+ 2877 1200 8095      		com r24
+ 2878 1202 982F      		mov r25,r24
+ 2879 1204 00C0      		rjmp .L187
+ 2880               	.LVL265:
+ 2881               	.L178:
+ 2882               	.LM324:
+ 2883 1206 2296      		adiw r28,2
+ 2884               	.LM325:
+ 2885 1208 82E0      		ldi r24,lo8(2)
+ 2886 120a 90E0      		ldi r25,hi8(2)
+ 2887 120c C80E      		add r12,r24
+ 2888 120e D91E      		adc r13,r25
+ 2889               	.LM326:
+ 2890 1210 E114      		cp r14,__zero_reg__
+ 2891 1212 F104      		cpc r15,__zero_reg__
+ 2892 1214 0105      		cpc r16,__zero_reg__
+ 2893 1216 1105      		cpc r17,__zero_reg__
+ 2894 1218 01F0      		breq .+2
+ 2895 121a 00C0      		rjmp .L179
+ 2896 121c 00C0      		rjmp .L182
+ 2897               	.LVL266:
+ 2898               	.L172:
+ 2899 121e 8501      		movw r16,r10
+ 2900 1220 7401      		movw r14,r8
+ 2901               	.LVL267:
+ 2902               	.L181:
+ 2903               	.LM327:
+ 2904 1222 0894      		sec
+ 2905 1224 E108      		sbc r14,__zero_reg__
+ 2906 1226 F108      		sbc r15,__zero_reg__
+ 2907 1228 0109      		sbc r16,__zero_reg__
+ 2908 122a 1109      		sbc r17,__zero_reg__
+ 2909               	.LM328:
+ 2910 122c 2881      		ld r18,Y
+ 2911 122e 3981      		ldd r19,Y+1
+ 2912 1230 4A81      		ldd r20,Y+2
+ 2913 1232 5B81      		ldd r21,Y+3
+ 2914 1234 F601      		movw r30,r12
+ 2915 1236 8081      		ld r24,Z
+ 2916 1238 9181      		ldd r25,Z+1
+ 2917 123a A281      		ldd r26,Z+2
+ 2918 123c B381      		ldd r27,Z+3
+ 2919 123e 2817      		cp r18,r24
+ 2920 1240 3907      		cpc r19,r25
+ 2921 1242 4A07      		cpc r20,r26
+ 2922 1244 5B07      		cpc r21,r27
+ 2923 1246 01F0      		breq .L180
+ 2924               	.LM329:
+ 2925 1248 862D      		mov r24,r6
+ 2926 124a 0E94 0000 		call UnityTestResultsFailBegin
+ 2927               	.LVL268:
+ 2928               	.LM330:
+ 2929 124e 8091 0000 		lds r24,UnityStrElement
+ 2930 1252 9091 0000 		lds r25,(UnityStrElement)+1
+ 2931 1256 0E94 0000 		call UnityPrint
+ 2932               	.LM331:
+ 2933 125a 0894      		sec
+ 2934 125c 8108      		sbc r8,__zero_reg__
+ 2935 125e 9108      		sbc r9,__zero_reg__
+ 2936 1260 A108      		sbc r10,__zero_reg__
+ 2937 1262 B108      		sbc r11,__zero_reg__
+ 2938 1264 8E18      		sub r8,r14
+ 2939 1266 9F08      		sbc r9,r15
+ 2940 1268 A00A      		sbc r10,r16
+ 2941 126a B10A      		sbc r11,r17
+ 2942 126c C501      		movw r24,r10
+ 2943 126e B401      		movw r22,r8
+ 2944 1270 44EA      		ldi r20,lo8(-92)
+ 2945 1272 0E94 0000 		call UnityPrintNumberByStyle
+ 2946               	.LM332:
+ 2947 1276 8091 0000 		lds r24,UnityStrExpected
+ 2948 127a 9091 0000 		lds r25,(UnityStrExpected)+1
+ 2949 127e 0E94 0000 		call UnityPrint
+ 2950               	.LM333:
+ 2951 1282 6881      		ld r22,Y
+ 2952 1284 7981      		ldd r23,Y+1
+ 2953 1286 8A81      		ldd r24,Y+2
+ 2954 1288 9B81      		ldd r25,Y+3
+ 2955 128a 472D      		mov r20,r7
+ 2956 128c 0E94 0000 		call UnityPrintNumberByStyle
+ 2957               	.LM334:
+ 2958 1290 8091 0000 		lds r24,UnityStrWas
+ 2959 1294 9091 0000 		lds r25,(UnityStrWas)+1
+ 2960 1298 0E94 0000 		call UnityPrint
+ 2961               	.LM335:
+ 2962 129c F601      		movw r30,r12
+ 2963 129e 6081      		ld r22,Z
+ 2964 12a0 7181      		ldd r23,Z+1
+ 2965 12a2 8281      		ldd r24,Z+2
+ 2966 12a4 9381      		ldd r25,Z+3
+ 2967 12a6 00C0      		rjmp .L187
+ 2968               	.LVL269:
+ 2969               	.L180:
+ 2970               	.LM336:
+ 2971 12a8 2496      		adiw r28,4
+ 2972               	.LM337:
+ 2973 12aa 84E0      		ldi r24,lo8(4)
+ 2974 12ac 90E0      		ldi r25,hi8(4)
+ 2975 12ae C80E      		add r12,r24
+ 2976 12b0 D91E      		adc r13,r25
+ 2977               	.LM338:
+ 2978 12b2 E114      		cp r14,__zero_reg__
+ 2979 12b4 F104      		cpc r15,__zero_reg__
+ 2980 12b6 0105      		cpc r16,__zero_reg__
+ 2981 12b8 1105      		cpc r17,__zero_reg__
+ 2982 12ba 01F0      		breq .+2
+ 2983 12bc 00C0      		rjmp .L181
+ 2984               	.LVL270:
+ 2985               	.L182:
+ 2986               	/* epilogue start */
+ 2987               	.LM339:
+ 2988 12be DF91      		pop r29
+ 2989 12c0 CF91      		pop r28
+ 2990               	.LVL271:
+ 2991 12c2 1F91      		pop r17
+ 2992 12c4 0F91      		pop r16
+ 2993               	.LVL272:
+ 2994 12c6 FF90      		pop r15
+ 2995               	.LVL273:
+ 2996 12c8 EF90      		pop r14
+ 2997               	.LVL274:
+ 2998 12ca DF90      		pop r13
+ 2999               	.LVL275:
+ 3000 12cc CF90      		pop r12
+ 3001               	.LVL276:
+ 3002 12ce BF90      		pop r11
+ 3003 12d0 AF90      		pop r10
+ 3004 12d2 9F90      		pop r9
+ 3005 12d4 8F90      		pop r8
+ 3006               	.LVL277:
+ 3007 12d6 7F90      		pop r7
+ 3008               	.LVL278:
+ 3009 12d8 6F90      		pop r6
+ 3010               	.LVL279:
+ 3011 12da 5F90      		pop r5
+ 3012 12dc 4F90      		pop r4
+ 3013               	.LVL280:
+ 3014 12de 3F90      		pop r3
+ 3015               	.LVL281:
+ 3016 12e0 2F90      		pop r2
+ 3017               	.LVL282:
+ 3018 12e2 0895      		ret
+ 3019               	.LFE17:
+ 3021               	.global	UnityAssertEqualMemory
+ 3023               	UnityAssertEqualMemory:
+ 3024               	.LFB23:
+ 3025               	.LM340:
+ 3026               	.LVL283:
+ 3027 12e4 2F92      		push r2
+ 3028 12e6 3F92      		push r3
+ 3029 12e8 4F92      		push r4
+ 3030 12ea 5F92      		push r5
+ 3031 12ec 6F92      		push r6
+ 3032 12ee 7F92      		push r7
+ 3033 12f0 8F92      		push r8
+ 3034 12f2 9F92      		push r9
+ 3035 12f4 AF92      		push r10
+ 3036               	.LVL284:
+ 3037 12f6 BF92      		push r11
+ 3038 12f8 CF92      		push r12
+ 3039               	.LVL285:
+ 3040 12fa DF92      		push r13
+ 3041 12fc EF92      		push r14
+ 3042               	.LVL286:
+ 3043 12fe FF92      		push r15
+ 3044 1300 0F93      		push r16
+ 3045 1302 1F93      		push r17
+ 3046 1304 DF93      		push r29
+ 3047 1306 CF93      		push r28
+ 3048 1308 00D0      		rcall .
+ 3049 130a 00D0      		rcall .
+ 3050 130c 0F92      		push __tmp_reg__
+ 3051 130e CDB7      		in r28,__SP_L__
+ 3052 1310 DEB7      		in r29,__SP_H__
+ 3053               	/* prologue: function */
+ 3054               	/* frame size = 5 */
+ 3055 1312 B82E      		mov r11,r24
+ 3056 1314 992E      		mov r9,r25
+ 3057               	.LVL287:
+ 3058 1316 6A83      		std Y+2,r22
+ 3059 1318 7B83      		std Y+3,r23
+ 3060               	.LVL288:
+ 3061 131a 2901      		movw r4,r18
+ 3062 131c 3A01      		movw r6,r20
+ 3063 131e 1601      		movw r2,r12
+ 3064               	.LVL289:
+ 3065 1320 A982      		std Y+1,r10
+ 3066               	.LVL290:
+ 3067               	.LM341:
+ 3068 1322 8091 0000 		lds r24,Unity+11
+ 3069               	.LVL291:
+ 3070 1326 8823      		tst r24
+ 3071 1328 01F0      		breq .+2
+ 3072 132a 00C0      		rjmp .L197
+ 3073               	.LVL292:
+ 3074 132c 8091 0000 		lds r24,Unity+12
+ 3075 1330 8823      		tst r24
+ 3076 1332 01F0      		breq .+2
+ 3077 1334 00C0      		rjmp .L197
+ 3078               	.LM342:
+ 3079 1336 E114      		cp r14,__zero_reg__
+ 3080 1338 F104      		cpc r15,__zero_reg__
+ 3081 133a 0105      		cpc r16,__zero_reg__
+ 3082 133c 1105      		cpc r17,__zero_reg__
+ 3083               	.LVL293:
+ 3084 133e 01F0      		breq .L190
+ 3085 1340 2115      		cp r18,__zero_reg__
+ 3086 1342 3105      		cpc r19,__zero_reg__
+ 3087 1344 4105      		cpc r20,__zero_reg__
+ 3088 1346 5105      		cpc r21,__zero_reg__
+ 3089 1348 01F4      		brne .L191
+ 3090               	.L190:
+ 3091               	.LM343:
+ 3092 134a 8981      		ldd r24,Y+1
+ 3093 134c 0E94 0000 		call UnityTestResultsFailBegin
+ 3094               	.LVL294:
+ 3095               	.LM344:
+ 3096 1350 8091 0000 		lds r24,UnityStrPointless
+ 3097 1354 9091 0000 		lds r25,(UnityStrPointless)+1
+ 3098 1358 00C0      		rjmp .L198
+ 3099               	.LVL295:
+ 3100               	.L191:
+ 3101               	.LM345:
+ 3102 135a 8B2D      		mov r24,r11
+ 3103 135c 6A81      		ldd r22,Y+2
+ 3104               	.LVL296:
+ 3105 135e 7B81      		ldd r23,Y+3
+ 3106               	.LVL297:
+ 3107 1360 4981      		ldd r20,Y+1
+ 3108 1362 9601      		movw r18,r12
+ 3109               	.LVL298:
+ 3110 1364 0E94 0000 		call UnityCheckArraysForNull
+ 3111 1368 0197      		sbiw r24,1
+ 3112 136a 01F4      		brne .+2
+ 3113 136c 00C0      		rjmp .L197
+ 3114               	.LVL299:
+ 3115               	.LM346:
+ 3116 136e 2B2D      		mov r18,r11
+ 3117               	.LVL300:
+ 3118 1370 392D      		mov r19,r9
+ 3119               	.LVL301:
+ 3120 1372 C901      		movw r24,r18
+ 3121               	.LVL302:
+ 3122 1374 4C01      		movw r8,r24
+ 3123               	.LVL303:
+ 3124               	.LM347:
+ 3125 1376 2A81      		ldd r18,Y+2
+ 3126               	.LVL304:
+ 3127 1378 3B81      		ldd r19,Y+3
+ 3128               	.LVL305:
+ 3129 137a C901      		movw r24,r18
+ 3130               	.LVL306:
+ 3131 137c 9D83      		std Y+5,r25
+ 3132 137e 8C83      		std Y+4,r24
+ 3133               	.LVL307:
+ 3134 1380 5701      		movw r10,r14
+ 3135 1382 6801      		movw r12,r16
+ 3136               	.LVL308:
+ 3137 1384 00C0      		rjmp .L192
+ 3138               	.LVL309:
+ 3139               	.L195:
+ 3140               	.LM348:
+ 3141 1386 C401      		movw r24,r8
+ 3142 1388 6C81      		ldd r22,Y+4
+ 3143 138a 7D81      		ldd r23,Y+5
+ 3144 138c A201      		movw r20,r4
+ 3145 138e 0E94 0000 		call memcmp
+ 3146 1392 0097      		sbiw r24,0
+ 3147 1394 01F0      		breq .L193
+ 3148               	.LM349:
+ 3149 1396 81E0      		ldi r24,lo8(1)
+ 3150 1398 8093 0000 		sts Unity+11,r24
+ 3151 139c 00C0      		rjmp .L194
+ 3152               	.L193:
+ 3153               	.LM350:
+ 3154 139e 840C      		add r8,r4
+ 3155 13a0 951C      		adc r9,r5
+ 3156               	.LVL310:
+ 3157 13a2 2C81      		ldd r18,Y+4
+ 3158 13a4 3D81      		ldd r19,Y+5
+ 3159 13a6 240D      		add r18,r4
+ 3160 13a8 351D      		adc r19,r5
+ 3161 13aa 3D83      		std Y+5,r19
+ 3162 13ac 2C83      		std Y+4,r18
+ 3163               	.LVL311:
+ 3164               	.L192:
+ 3165               	.LM351:
+ 3166 13ae 0894      		sec
+ 3167 13b0 A108      		sbc r10,__zero_reg__
+ 3168 13b2 B108      		sbc r11,__zero_reg__
+ 3169 13b4 C108      		sbc r12,__zero_reg__
+ 3170 13b6 D108      		sbc r13,__zero_reg__
+ 3171 13b8 3FEF      		ldi r19,lo8(-1)
+ 3172 13ba A316      		cp r10,r19
+ 3173 13bc 3FEF      		ldi r19,hi8(-1)
+ 3174 13be B306      		cpc r11,r19
+ 3175 13c0 3FEF      		ldi r19,hlo8(-1)
+ 3176 13c2 C306      		cpc r12,r19
+ 3177 13c4 3FEF      		ldi r19,hhi8(-1)
+ 3178 13c6 D306      		cpc r13,r19
+ 3179               	.LVL312:
+ 3180 13c8 01F4      		brne .L195
+ 3181               	.L194:
+ 3182               	.LM352:
+ 3183 13ca 8091 0000 		lds r24,Unity+11
+ 3184 13ce 8823      		tst r24
+ 3185 13d0 01F0      		breq .L197
+ 3186               	.LM353:
+ 3187 13d2 8981      		ldd r24,Y+1
+ 3188 13d4 0E94 0000 		call UnityTestResultsFailBegin
+ 3189               	.LM354:
+ 3190 13d8 82E0      		ldi r24,lo8(2)
+ 3191 13da E816      		cp r14,r24
+ 3192 13dc F104      		cpc r15,__zero_reg__
+ 3193 13de 0105      		cpc r16,__zero_reg__
+ 3194 13e0 1105      		cpc r17,__zero_reg__
+ 3195 13e2 00F0      		brlo .L196
+ 3196               	.LM355:
+ 3197 13e4 8091 0000 		lds r24,UnityStrElement
+ 3198 13e8 9091 0000 		lds r25,(UnityStrElement)+1
+ 3199 13ec 0E94 0000 		call UnityPrint
+ 3200               	.LM356:
+ 3201 13f0 0894      		sec
+ 3202 13f2 E108      		sbc r14,__zero_reg__
+ 3203 13f4 F108      		sbc r15,__zero_reg__
+ 3204 13f6 0109      		sbc r16,__zero_reg__
+ 3205 13f8 1109      		sbc r17,__zero_reg__
+ 3206 13fa EA18      		sub r14,r10
+ 3207 13fc FB08      		sbc r15,r11
+ 3208 13fe 0C09      		sbc r16,r12
+ 3209 1400 1D09      		sbc r17,r13
+ 3210 1402 C801      		movw r24,r16
+ 3211 1404 B701      		movw r22,r14
+ 3212 1406 44EA      		ldi r20,lo8(-92)
+ 3213 1408 0E94 0000 		call UnityPrintNumberByStyle
+ 3214               	.L196:
+ 3215               	.LM357:
+ 3216 140c 8091 0000 		lds r24,UnityStrMemory
+ 3217 1410 9091 0000 		lds r25,(UnityStrMemory)+1
+ 3218               	.LVL313:
+ 3219               	.L198:
+ 3220 1414 0E94 0000 		call UnityPrint
+ 3221               	.LM358:
+ 3222 1418 C101      		movw r24,r2
+ 3223 141a 0E94 0000 		call UnityAddMsgIfSpecified
+ 3224               	.LM359:
+ 3225 141e 81E0      		ldi r24,lo8(1)
+ 3226 1420 8093 0000 		sts Unity+11,r24
+ 3227 1424 6091 0000 		lds r22,__iob+2
+ 3228 1428 7091 0000 		lds r23,(__iob+2)+1
+ 3229 142c 8AE0      		ldi r24,lo8(10)
+ 3230 142e 90E0      		ldi r25,hi8(10)
+ 3231 1430 0E94 0000 		call fputc
+ 3232 1434 80E0      		ldi r24,lo8(Unity+13)
+ 3233 1436 90E0      		ldi r25,hi8(Unity+13)
+ 3234 1438 61E0      		ldi r22,lo8(1)
+ 3235 143a 70E0      		ldi r23,hi8(1)
+ 3236 143c 0E94 0000 		call longjmp
+ 3237               	.LVL314:
+ 3238               	.L197:
+ 3239               	/* epilogue start */
+ 3240               	.LM360:
+ 3241 1440 0F90      		pop __tmp_reg__
+ 3242 1442 0F90      		pop __tmp_reg__
+ 3243 1444 0F90      		pop __tmp_reg__
+ 3244 1446 0F90      		pop __tmp_reg__
+ 3245 1448 0F90      		pop __tmp_reg__
+ 3246 144a CF91      		pop r28
+ 3247 144c DF91      		pop r29
+ 3248 144e 1F91      		pop r17
+ 3249 1450 0F91      		pop r16
+ 3250 1452 FF90      		pop r15
+ 3251 1454 EF90      		pop r14
+ 3252               	.LVL315:
+ 3253 1456 DF90      		pop r13
+ 3254 1458 CF90      		pop r12
+ 3255               	.LVL316:
+ 3256 145a BF90      		pop r11
+ 3257               	.LVL317:
+ 3258 145c AF90      		pop r10
+ 3259               	.LVL318:
+ 3260 145e 9F90      		pop r9
+ 3261               	.LVL319:
+ 3262 1460 8F90      		pop r8
+ 3263               	.LVL320:
+ 3264 1462 7F90      		pop r7
+ 3265 1464 6F90      		pop r6
+ 3266 1466 5F90      		pop r5
+ 3267 1468 4F90      		pop r4
+ 3268               	.LVL321:
+ 3269 146a 3F90      		pop r3
+ 3270 146c 2F90      		pop r2
+ 3271               	.LVL322:
+ 3272 146e 0895      		ret
+ 3273               	.LFE23:
+ 3275               	.global	Unity
+ 3276               	.global	Unity
+ 3277               		.section .bss
+ 3280               	Unity:
+ 3281 0000 0000 0000 		.skip 36,0
+ 3281      0000 0000 
+ 3281      0000 0000 
+ 3281      0000 0000 
+ 3281      0000 0000 
+ 3282               	.global	UnityStrNull
+ 3283               		.data
+ 3284               	.LC9:
+ 3285 004e 4E55 4C4C 		.string	"NULL"
+ 3285      00
+ 3288               	UnityStrNull:
+ 3289 0053 0000      		.word	.LC9
+ 3290               	.global	UnityStrSpacer
+ 3291               	.LC10:
+ 3292 0055 2E20 00   		.string	". "
+ 3295               	UnityStrSpacer:
+ 3296 0058 0000      		.word	.LC10
+ 3297               	.global	UnityStrExpected
+ 3298               	.LC11:
+ 3299 005a 2045 7870 		.string	" Expected "
+ 3299      6563 7465 
+ 3299      6420 00
+ 3302               	UnityStrExpected:
+ 3303 0065 0000      		.word	.LC11
+ 3304               	.global	UnityStrWas
+ 3305               	.LC12:
+ 3306 0067 2057 6173 		.string	" Was "
+ 3306      2000 
+ 3309               	UnityStrWas:
+ 3310 006d 0000      		.word	.LC12
+ 3311               	.global	UnityStrTo
+ 3312               	.LC13:
+ 3313 006f 2054 6F20 		.string	" To "
+ 3313      00
+ 3316               	UnityStrTo:
+ 3317 0074 0000      		.word	.LC13
+ 3318               	.global	UnityStrElement
+ 3319               	.LC14:
+ 3320 0076 2045 6C65 		.string	" Element "
+ 3320      6D65 6E74 
+ 3320      2000 
+ 3323               	UnityStrElement:
+ 3324 0080 0000      		.word	.LC14
+ 3325               	.global	UnityStrMemory
+ 3326               	.LC15:
+ 3327 0082 204D 656D 		.string	" Memory Mismatch"
+ 3327      6F72 7920 
+ 3327      4D69 736D 
+ 3327      6174 6368 
+ 3327      00
+ 3330               	UnityStrMemory:
+ 3331 0093 0000      		.word	.LC15
+ 3332               	.global	UnityStrDelta
+ 3333               	.LC16:
+ 3334 0095 2056 616C 		.string	" Values Not Within Delta "
+ 3334      7565 7320 
+ 3334      4E6F 7420 
+ 3334      5769 7468 
+ 3334      696E 2044 
+ 3337               	UnityStrDelta:
+ 3338 00af 0000      		.word	.LC16
+ 3339               	.global	UnityStrPointless
+ 3340               	.LC17:
+ 3341 00b1 2059 6F75 		.string	" You Asked Me To Compare Nothing, Which Was Pointless."
+ 3341      2041 736B 
+ 3341      6564 204D 
+ 3341      6520 546F 
+ 3341      2043 6F6D 
+ 3344               	UnityStrPointless:
+ 3345 00e8 0000      		.word	.LC17
+ 3346               	.global	UnityStrNullPointerForExpected
+ 3347               	.LC18:
+ 3348 00ea 2045 7870 		.string	" Expected pointer to be NULL"
+ 3348      6563 7465 
+ 3348      6420 706F 
+ 3348      696E 7465 
+ 3348      7220 746F 
+ 3351               	UnityStrNullPointerForExpected:
+ 3352 0107 0000      		.word	.LC18
+ 3353               	.global	UnityStrNullPointerForActual
+ 3354               	.LC19:
+ 3355 0109 2041 6374 		.string	" Actual pointer was NULL"
+ 3355      7561 6C20 
+ 3355      706F 696E 
+ 3355      7465 7220 
+ 3355      7761 7320 
+ 3358               	UnityStrNullPointerForActual:
+ 3359 0122 0000      		.word	.LC19
+ 3360               	.global	setUpFunc
+ 3361               	.global	setUpFunc
+ 3362               		.section .bss
+ 3365               	setUpFunc:
+ 3366 0024 0000      		.skip 2,0
+ 3367               	.global	tearDownFunc
+ 3368               	.global	tearDownFunc
+ 3371               	tearDownFunc:
+ 3372 0026 0000      		.skip 2,0
+ 3613               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 unity.c
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:2      *ABS*:0000003f __SREG__
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:5      *ABS*:00000034 __CCP__
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:18     .text:00000000 UnitySetSetUpTearDown
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3365   .bss:00000024 setUpFunc
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3371   .bss:00000026 tearDownFunc
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:37     .text:00000012 UnityResetSetUpTearDownFunc
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:55     .text:00000024 UnityBegin
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3280   .bss:00000000 Unity
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:69     .text:0000002a UnityPrintMask
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:185    .text:000000e0 UnityPrintNumberHex
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:278    .text:0000016a UnityPrintNumberUnsigned
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:397    .text:00000230 UnityPrintNumber
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:542    .text:0000031e UnityPrintNumberByStyle
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:578    .text:0000033c UnityPrint
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:675    .text:000003d6 UnityAddMsgIfSpecified
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3295   .data:00000058 UnityStrSpacer
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:721    .text:000003f8 UnityEnd
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:801    .text:00000490 UnityPrintExpectedAndActualStrings
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3302   .data:00000065 UnityStrExpected
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3288   .data:00000053 UnityStrNull
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3309   .data:0000006d UnityStrWas
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:887    .text:00000530 UnityTestResultsBegin
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:950    .text:00000592 UnityTestResultsFailBegin
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:978    .text:000005aa UnityConcludeTest
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1030   .text:00000604 UnityDefaultTestRun
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1116   .text:0000068e UnityIgnore
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1186   .text:0000070a UnityFail
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1261   .text:0000078c UnityAssertEqualString
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1368   .text:0000082e UnityAssertNumbersWithin
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3337   .data:000000af UnityStrDelta
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1581   .text:0000099c UnityAssertFloatsWithin
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1725   .text:00000a8a UnityAssertEqualNumber
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1828   .text:00000b38 UnityAssertBits
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:1951   .text:00000c0a UnityCheckArraysForNull
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3351   .data:00000107 UnityStrNullPointerForExpected
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3358   .data:00000122 UnityStrNullPointerForActual
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:2028   .text:00000c78 UnityAssertEqualStringArray
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3344   .data:000000e8 UnityStrPointless
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3323   .data:00000080 UnityStrElement
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:2284   .text:00000e14 UnityAssertEqualFloatArray
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:2583   .text:00001002 UnityAssertEqualIntArray
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3023   .text:000012e4 UnityAssertEqualMemory
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3330   .data:00000093 UnityStrMemory
+C:\Users\Marco\AppData\Local\Temp/ccgH7K8h.s:3316   .data:00000074 UnityStrTo
+
+UNDEFINED SYMBOLS
+__iob
+fputc
+__mulsi3
+__udivmodsi4
+__divmodsi4
+setjmp
+longjmp
+__subsf3
+__ltsf2
+__mulsf3
+__gtsf2
+memcmp
+__do_copy_data
+__do_clear_bss

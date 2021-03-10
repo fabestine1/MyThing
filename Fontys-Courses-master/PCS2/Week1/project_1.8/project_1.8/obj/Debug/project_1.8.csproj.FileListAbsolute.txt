@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\bin\Debug\project_1.8.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\bin\Debug\project_1.8.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\bin\Debug\project_1.8.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1._8.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1._8.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1.8.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1.8.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1.8.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1.8.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week1\project_1.8\project_1.8\obj\Debug\project_1.8.csprojResolveAssemblyReference.cache

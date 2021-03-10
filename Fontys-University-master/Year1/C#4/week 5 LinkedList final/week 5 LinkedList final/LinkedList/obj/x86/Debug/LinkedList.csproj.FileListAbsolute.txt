@@ -1,0 +1,8 @@
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\bin\Debug\LinkedList.exe
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\bin\Debug\LinkedList.pdb
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\obj\x86\Debug\LinkedList.csprojResolveAssemblyReference.cache
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\obj\x86\Debug\LinkedList.Form1.resources
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\obj\x86\Debug\LinkedList.Properties.Resources.resources
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\obj\x86\Debug\LinkedList.csproj.GenerateResource.Cache
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\obj\x86\Debug\LinkedList.exe
+C:\Bert\pcs4\week 5\week 5 LinkedList final\LinkedList\obj\x86\Debug\LinkedList.pdb

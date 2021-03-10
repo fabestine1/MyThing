@@ -1,0 +1,7 @@
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\bin\Debug\dsadasd.exe.config
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\bin\Debug\dsadasd.exe
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\bin\Debug\dsadasd.pdb
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\obj\Debug\dsadasd.csprojResolveAssemblyReference.cache
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\obj\Debug\dsadasd.csproj.CoreCompileInputs.cache
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\obj\Debug\dsadasd.exe
+C:\Users\kaloy\Desktop\dsadasd\dsadasd\obj\Debug\dsadasd.pdb

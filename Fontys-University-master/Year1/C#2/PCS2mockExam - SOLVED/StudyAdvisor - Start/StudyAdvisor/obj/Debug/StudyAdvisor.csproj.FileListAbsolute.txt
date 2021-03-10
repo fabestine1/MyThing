@@ -1,0 +1,10 @@
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\Examples\StudyAdvisor - Start\StudyAdvisor\bin\Debug\StudyAdvisor.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\bin\Debug\StudyAdvisor.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\bin\Debug\StudyAdvisor.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\bin\Debug\StudyAdvisor.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\obj\Debug\StudyAdvisor.csprojResolveAssemblyReference.cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\obj\Debug\StudyAdvisor.MainForm.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\obj\Debug\StudyAdvisor.Properties.Resources.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\obj\Debug\StudyAdvisor.csproj.GenerateResource.Cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\obj\Debug\StudyAdvisor.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 2\exam\PCS2mockExam\StudyAdvisor - Start\StudyAdvisor\obj\Debug\StudyAdvisor.pdb

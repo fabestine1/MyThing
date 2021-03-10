@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.Form1.resources
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.Properties.Resources.resources
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\bin\Debug\TraineeRegistration.exe.config
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\bin\Debug\TraineeRegistration.exe
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\bin\Debug\TraineeRegistration.pdb
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.exe
+C:\Users\flamestar\Downloads\exam pcs2 2017 june\PCS2ExamJune2017 start\TraineeRegistration\obj\Debug\TraineeRegistration.pdb

@@ -1,0 +1,107 @@
+﻿@model Rankings.Web.Models.GameViewModel
+
+<h4>Register Game</h4>
+<hr />
+
+<p style="color:red">Invoeren van de set standen is optioneel. Kies zelf of je die wel of niet wilt invullen!</p>
+
+<form asp-action="Create">
+    <div class="row">
+        <div class="col col-md-3">
+            <div class="form-group">
+                @* <label asp-for="GameType" class="control-label"></label> *@
+                <select asp-for="GameType" class="form-control" asp-items="@Model.GameTypes">
+                </select>
+                <span asp-validation-for="GameType" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col col-md-3">
+            <div class="form-group">
+                @* <label asp-for="Venue" class="control-label"></label> *@
+                <select asp-for="Venue" class="form-control" asp-items="@Model.Venues">
+                </select>
+                <span asp-validation-for="Venue" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+    <div class="row top-buffer">
+        <div class="col col-md-12 bg-light">
+            <div class="row">
+                <div class="col col-md-3">Player</div>
+                <div class="col col-md-2">Result</div>
+                <div class="col col-md-1">Set1</div>
+                <div class="col col-md-1">Set2</div>
+                <div class="col col-md-1">Set3</div>
+                <div class="col col-md-1">Set4</div>
+                <div class="col col-md-1">Set5</div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3">
+                    <select style="width: auto;" readonly="readonly" asp-for="NameFirstPlayer" class="form-control" asp-items="@Model.Players">
+                        <option value="" selected disabled>Please select player</option>
+                    </select>
+                </div>
+                <div class="col col-md-2">
+                    <input asp-for="ScoreFirstPlayer" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreFirstPlayerSet1" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreFirstPlayerSet2" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreFirstPlayerSet3" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreFirstPlayerSet4" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreFirstPlayerSet5" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-md-3">
+                    <select style="width: auto;" readonly="readonly" asp-for="NameSecondPlayer" class="form-control" asp-items="@Model.OpponentPlayers">
+                        <option value="" selected disabled>Please select player</option>
+                    </select>
+                </div>
+                <div class="col col-md-2">
+                    <input asp-for="ScoreSecondPlayer" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreSecondPlayerSet1" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreSecondPlayerSet2" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreSecondPlayerSet3" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreSecondPlayerSet4" class="form-control" />
+                </div>
+                <div class="col col-md-1">
+                    <input asp-for="ScoreSecondPlayerSet5" class="form-control" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row top-buffer">
+        <div class="col col-md-1">
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-md-12">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

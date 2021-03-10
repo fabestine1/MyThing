@@ -1,0 +1,10 @@
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\bin\Debug\continue week1(week2).exe.config
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\bin\Debug\continue week1(week2).exe
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\bin\Debug\continue week1(week2).pdb
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue_week1_week2_.Form1.resources
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue_week1_week2_.Properties.Resources.resources
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue week1(week2).csproj.GenerateResource.Cache
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue week1(week2).csproj.CoreCompileInputs.cache
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue week1(week2).exe
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue week1(week2).pdb
+E:\Uni\Programming\PCS3\continue week1(week2)\continue week1(week2)\obj\Debug\continue week1(week2).csprojResolveAssemblyReference.cache

@@ -1,0 +1,8 @@
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\bin\Debug\netstandard1.6\WeatherStuff.deps.json
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\bin\Debug\netstandard1.6\WeatherStuff.dll
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\bin\Debug\netstandard1.6\WeatherStuff.pdb
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\obj\Debug\netstandard1.6\WeatherStuff.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\obj\Debug\netstandard1.6\WeatherStuff.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\obj\Debug\netstandard1.6\WeatherStuff.AssemblyInfo.cs
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\obj\Debug\netstandard1.6\WeatherStuff.dll
+C:\Users\flamestar\Documents\Assignments\OOD1\ClassLibrary1\ClassLibrary1\obj\Debug\netstandard1.6\WeatherStuff.pdb

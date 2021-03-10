@@ -1,0 +1,7 @@
+D:\Fontys\C#1\week2\week2\2.4\bin\Debug\2.4.exe.config
+D:\Fontys\C#1\week2\week2\2.4\bin\Debug\2.4.exe
+D:\Fontys\C#1\week2\week2\2.4\bin\Debug\2.4.pdb
+D:\Fontys\C#1\week2\week2\2.4\obj\Debug\2.4.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week2\week2\2.4\obj\Debug\2.4.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week2\week2\2.4\obj\Debug\2.4.exe
+D:\Fontys\C#1\week2\week2\2.4\obj\Debug\2.4.pdb

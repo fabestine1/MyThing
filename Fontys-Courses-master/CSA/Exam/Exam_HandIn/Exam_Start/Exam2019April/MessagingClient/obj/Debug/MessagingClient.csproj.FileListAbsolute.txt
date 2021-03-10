@@ -1,0 +1,14 @@
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.csprojAssemblyReference.cache
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.Form1.resources
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.csproj.GenerateResource.cache
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.Form1.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.csproj.GenerateResource.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\bin\Debug\MessagingClient.exe.config
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\bin\Debug\MessagingClient.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\bin\Debug\MessagingClient.pdb
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.exe
+C:\Users\flamestar\Desktop\Exam_HandIn\Exam_Start\Exam2019April\MessagingClient\obj\Debug\MessagingClient.pdb

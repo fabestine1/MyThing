@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\bin\Debug\Songfestival.exe.config
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\bin\Debug\Songfestival.exe
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\bin\Debug\Songfestival.pdb
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.Form1.resources
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.exe
+C:\Users\flamestar\Downloads\pcs4, week 4 Songfestival STARTUP\Songfestival\Songfestival\obj\Debug\Songfestival.pdb

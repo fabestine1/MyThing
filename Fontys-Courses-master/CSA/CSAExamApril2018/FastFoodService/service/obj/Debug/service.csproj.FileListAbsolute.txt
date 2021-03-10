@@ -1,0 +1,7 @@
+F:\Downloads\CSAExamApril2018\FastFoodService\service\bin\Debug\service.dll.config
+F:\Downloads\CSAExamApril2018\FastFoodService\service\bin\Debug\service.dll
+F:\Downloads\CSAExamApril2018\FastFoodService\service\bin\Debug\service.pdb
+F:\Downloads\CSAExamApril2018\FastFoodService\service\obj\Debug\service.csproj.CoreCompileInputs.cache
+F:\Downloads\CSAExamApril2018\FastFoodService\service\obj\Debug\service.dll
+F:\Downloads\CSAExamApril2018\FastFoodService\service\obj\Debug\service.pdb
+F:\Downloads\CSAExamApril2018\FastFoodService\service\obj\Debug\service.csprojAssemblyReference.cache

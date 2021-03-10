@@ -1,0 +1,13 @@
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\bin\Release\client.exe.config
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\bin\Release\client.exe
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\bin\Release\client.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\bin\Release\contract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\bin\Release\contract.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.csprojAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.Form1.resources
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.csproj.GenerateResource.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.csproj.CopyComplete
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.exe
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\client\obj\Release\client.pdb

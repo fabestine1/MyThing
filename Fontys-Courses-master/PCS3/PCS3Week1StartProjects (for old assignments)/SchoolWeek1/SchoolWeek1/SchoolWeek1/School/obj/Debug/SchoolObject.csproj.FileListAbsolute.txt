@@ -1,0 +1,29 @@
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\School.Form1.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.csproj.GenerateResource.Cache
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\SchoolObject.exe.config
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\SchoolObject.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\SchoolObject.pdb
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.Properties.Resources.resources
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.pdb
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.csprojResolveAssemblyReference.cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\bin\Debug\SchoolObject.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\obj\Debug\SchoolObject.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\obj\Debug\SchoolObject.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\obj\Debug\School.Form1.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\obj\Debug\SchoolObject.Properties.Resources.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\obj\Debug\SchoolObject.csproj.GenerateResource.Cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\bin\Debug\SchoolObject.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolStart\School\bin\Debug\SchoolObject.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\Start Projects for Students\PCS3Week1StartProjects\SchoolStart\SchoolWeek1\School\bin\Debug\School.exe.config
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\bin\Debug\School.exe.config
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\bin\Debug\School.exe
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\bin\Debug\School.pdb
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\SchoolObject.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\School.Form1.resources
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\SchoolObject.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\SchoolObject.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\School.exe
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\School.pdb
+C:\Users\flamestar\Downloads\PCS3Week1StartProjects (for old assignments)\SchoolWeek1\SchoolWeek1\SchoolWeek1\School\obj\Debug\School.Form2.resources

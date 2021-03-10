@@ -1,0 +1,9 @@
+D:\Fontys\C#2\week3\3.4\bin\Debug\3.4.exe.config
+D:\Fontys\C#2\week3\3.4\bin\Debug\3.4.exe
+D:\Fontys\C#2\week3\3.4\bin\Debug\3.4.pdb
+D:\Fontys\C#2\week3\3.4\obj\Debug\3.4.csprojResolveAssemblyReference.cache
+D:\Fontys\C#2\week3\3.4\obj\Debug\_3._4.movement.resources
+D:\Fontys\C#2\week3\3.4\obj\Debug\_3._4.Properties.Resources.resources
+D:\Fontys\C#2\week3\3.4\obj\Debug\3.4.csproj.GenerateResource.Cache
+D:\Fontys\C#2\week3\3.4\obj\Debug\3.4.exe
+D:\Fontys\C#2\week3\3.4\obj\Debug\3.4.pdb

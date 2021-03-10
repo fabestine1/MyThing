@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Rankings.Web.Models.RankingViewModel>
+
+<h1>@ViewBag.Title</h1>
+<p>@Html.Raw(@ViewBag.Message)</p>
+
+<table class="table table-striped table-dark" style="table-layout: fixed;">
+    <thead>
+        <tr>
+            <th style="width: 20px;">
+                @Html.DisplayNameFor(model => model.Ranking)
+            </th>
+            <th style="width: 140px;">
+                @Html.DisplayNameFor(model => model.NamePlayer)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.Points)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.TimeNumberOne)
+            </th>
+            @* <th style="width: 20px;"> *@
+            @*     @Html.DisplayNameFor(model => model.Goat) *@
+            @* </th> *@
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.WinPercentage)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.SetWinPercentage)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.RecordWinningStreak)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.CurrentWinningStreak)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.RecordEloStreak)
+            </th>
+            <th style="width: 70px; text-align: right">
+                @Html.DisplayNameFor(model => model.CurrentEloStreak)
+            </th>
+            <th style="width: 150px; text-align: right">
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td style="width: 20px; text-align: right">
+                @Html.DisplayFor(modelItem => item.Ranking)
+            </td>
+            <td style="width: 140px;">
+                @Html.DisplayFor(modelItem => item.NamePlayer)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.Points)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.TimeNumberOne)
+            </td>
+            @* <td style="width: 80px; text-align: right"> *@
+            @*     @Html.DisplayFor(modelItem => item.Goat) *@
+            @* </td> *@
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.WinPercentage)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.SetWinPercentage)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.RecordWinningStreak)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.CurrentWinningStreak)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.RecordEloStreak)
+            </td>
+            <td style="width: 70px; text-align: right">
+                @Html.DisplayFor(modelItem => item.CurrentEloStreak)
+            </td>
+            <td style="width: 150px; text-align: right">
+                <ol class="results">
+                    @foreach (var result in item.History)
+                    {<li class="result"><div class="result--@result">@result</div></li>}
+            </ol>
+        </td>
+        </tr>
+}
+    </tbody>
+</table>

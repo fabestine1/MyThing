@@ -1,0 +1,7 @@
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\obj\Debug\webshopservice.csprojAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\obj\Debug\webshopservice.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\bin\Debug\MyWebShopContract.dll.config
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\bin\Debug\MyWebShopContract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\bin\Debug\MyWebShopContract.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\obj\Debug\MyWebShopContract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week3aWCFApp\webshopservice\obj\Debug\MyWebShopContract.pdb

@@ -1,0 +1,12 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\bin\Debug\project_3.6.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\bin\Debug\project_3.6.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\bin\Debug\project_3.6.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\CarApp.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\project_3._6.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\project_3._6.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\CarApp.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\CarApp.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\project_3.6.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\obj\Debug\project_3.6.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\bin\Debug\images\2018-Acura-RLX-101.jpg
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_3.6\project_3.6\bin\Debug\images\2018-Alfa-Romeo-Stelvio-Quadrifoglio-306.jpg

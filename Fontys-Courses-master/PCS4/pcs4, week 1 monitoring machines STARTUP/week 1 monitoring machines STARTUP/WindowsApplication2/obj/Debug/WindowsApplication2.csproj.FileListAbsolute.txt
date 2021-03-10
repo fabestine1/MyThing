@@ -1,0 +1,9 @@
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\bin\Debug\WindowsApplication2.exe
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\bin\Debug\WindowsApplication2.pdb
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.Form1.resources
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.exe
+C:\Users\flamestar\Downloads\pcs4, week 1 monitoring machines STARTUP\week 1 monitoring machines STARTUP\WindowsApplication2\obj\Debug\WindowsApplication2.pdb

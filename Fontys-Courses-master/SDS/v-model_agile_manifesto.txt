@@ -1,0 +1,16 @@
+Usually the testing stages consist of unit testing, integration testing, system testing, acceptance testing.
+A unique characteristic of V-Model is that during each design phase are being made which will be used in the corresponding testing phases.
+During the requirements stage acceptance tests are designed, which will be used later in the acceptance testing stage, system tests - in system design phase, integration test - in architecture design and unit tests in module design.
+The testing starts with unit testing, during which will usually takes the most time in order to eliminate potential bugs an issues later. More granular test will be done later on. Integration testing is meant to ensure that system function across all components and third-party integrations. After that system testing is performed mainly focused on performance and regression. Lastly, acceptance testing is done in order to ensure that the system is functional in a live environment with actual data and ready for deployment.
+
+V-Model can be benefficial especially for restricted projects because of the vast documentation and design specifications being made in complete stages as well as the neccessity to keep to a fairly tight schedule. With its multiple stages it is easier to create a timeline for the entire development life cycle.
+While V-model is a great method of system development for time management it may compromise on potential undiscovered bugs if the workflow is rushed. Futhermore, it lacks ability to adapt to neccessary changes over time thus leading to lost man-hours and costs. It is poorly suited for long-term projects which may require further updates and patches. Another point to mention is that it is easy to overlook software developments complexities as to meet a deadline. It is mostly beffiting managers and users rather than developers and designers.
+
+A client can be convinced to execute a project using V-Model for its good time management and thorough documentation and design specifications.
+
+The main assertion of the Agile Manifesto is that software development is a dynamic process and long-term planning is not effective and teams should be self-organized.
+According to it, interactions between the individuals is more valuable than processes and tools, is should be more focusing on working software than comrehensive documentation, working with the client than negotiating.
+
+According to the principles:
+A priority should be satisfying the costumer with early delivering of valuable software, welcoming new changes even late in development, delivering software frequently, constant communication between business people and developers, trust motivated individuals, face-to-face team conversation, sponsors, developers and users maintaining constant pace,
+paying attention to technical excellence and good design, simplicity, self-organizing teams, regular work reflections and tunes and adjustments.

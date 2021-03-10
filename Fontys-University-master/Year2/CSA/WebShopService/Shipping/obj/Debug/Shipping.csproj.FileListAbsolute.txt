@@ -1,0 +1,10 @@
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\bin\Debug\Shipping.exe.config
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\bin\Debug\Shipping.exe
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\bin\Debug\Shipping.pdb
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.Properties.Resources.resources
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.csproj.GenerateResource.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.csproj.CoreCompileInputs.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.exe
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.pdb
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.csprojAssemblyReference.cache
+C:\Users\koko\Desktop\Fontys University\Year 2\CSA\WebShopService\Shipping\obj\Debug\Shipping.Form1.resources

@@ -1,0 +1,7 @@
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\bin\Debug\2.17.exe.config
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\bin\Debug\2.17.exe
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\bin\Debug\2.17.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\obj\Debug\2.17.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\obj\Debug\2.17.exe
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\obj\Debug\2.17.pdb
+C:\Users\Lenovo\Documents\Visual Studio 2017\Projects\2.10\2.17\obj\Debug\2.17.csprojResolveAssemblyReference.cache

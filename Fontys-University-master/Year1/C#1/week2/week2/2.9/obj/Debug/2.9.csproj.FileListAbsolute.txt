@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week2\week2\2.9\bin\Debug\2.9.exe.config
+D:\Fontys\C#1\week2\week2\2.9\bin\Debug\2.9.exe
+D:\Fontys\C#1\week2\week2\2.9\bin\Debug\2.9.pdb
+D:\Fontys\C#1\week2\week2\2.9\obj\Debug\2.9.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week2\week2\2.9\obj\Debug\2.9.exe
+D:\Fontys\C#1\week2\week2\2.9\obj\Debug\2.9.pdb

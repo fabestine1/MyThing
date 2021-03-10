@@ -1,0 +1,56 @@
+1) - Correct
+select e.employee_id, e.last_name 
+from employees e
+where (12*salary)*(1+NVL(commission_pct,0)>100000;
+
+2) - Correct
+select d.department_name
+from departments d join employees e on d.manager_id=e.manager_id
+group by d.department_name
+having COUNT(*) >= 20;
+
+3) - InCorrect
+select count(decode(job_id,'AD_PRES',1,0))as numb_of_pres,
+		sum(decode(job_id,'AD_PRES',salary,0)) as sum_sal_pres,
+		count(decode(job_id,'AD_VP',1,0))as numb_of_vp,
+		sum(decode(job_id,'AD_VP',salary,0)) as sum_sal_vp,
+from employees;
+
+4) - InCorrect
+select e1.employee_id, e1.last_name, e1.salary
+from employees e1
+where salary = (select max(salary)
+				from employees e2
+				where e2.job_id = e1.job_id);
+			
+5) - Correct
+select e1.employee_id, e1.last_name
+from employees e1
+where e1.employee_id in (select e2.manager_id
+					   from employees e2
+					   group by e2.manager_id
+					   having COUNT(*)>=10);
+
+6) - Correct
+create view ex6
+as
+select e.employee_id, e.last_name, e.job_id, jh.job_id, jh.start_date, jh.end_date 
+from employees e left join job_history jh on e.employee_id = jh.employee_id;
+
+
+7) - InCorrect
+select e1.employee_id, e1.last_name
+from employees e1
+where e1.salary >=5000
+and e1.employee_id in (select jh.employee_id
+					   from job_history jh join jobs j on jh.job_id=j.job_id
+					   where jh.employee_id = e1.employee_id
+					   where j.man_salary >= 5000)
+					   
+8) - InCorrect
+select department_id
+from employees
+group by department_id
+having sum(salary) = (select max(sum(salary))
+					  from employees
+					  group by department_id);

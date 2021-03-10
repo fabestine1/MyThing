@@ -1,0 +1,9 @@
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\bin\Debug\DataCollectingApp.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\bin\Debug\DataCollectingApp.exe
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\bin\Debug\DataCollectingApp.pdb
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\obj\Debug\DataCollectingApp.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\obj\Debug\DataCollectingApp.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\obj\Debug\DataCollectingApp.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\obj\Debug\DataCollectingApp.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\obj\Debug\DataCollectingApp.exe
+C:\Users\flamestar\Documents\Practicals\PCS3\PopularFootballClubs\DataCollectingApp\obj\Debug\DataCollectingApp.pdb

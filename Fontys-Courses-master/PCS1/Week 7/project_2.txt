@@ -1,0 +1,22 @@
+DieThrower thrower = new DieThrower();
+
+char choice = '';
+
+while (choice != 'q'){
+Console.Write("Please give the number of throws: ");
+thrower.NumberOfThrows = Convert.ToInt32(Console.ReadLine());
+Console.Write("Please give the number of sides of your die: ");
+thrower.NoOfSides = Convert.ToInt32(Console.ReadLine());
+
+if(thrower.NumberOfThrows != 0){
+thrower.ThrowDieManyTimes();
+Console.WriteLine("Sum of throws: {0}", thrower.ThrowResult);
+}
+else {
+Console.Write("The number of dice is 0");
+}
+
+Console.Write("Press 'q' if you want to quit, press any other button to continue: ");
+choice = Convert.ToChar(Console.ReadLine());
+}
+Console.ReadKey();

@@ -1,0 +1,10 @@
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\bin\Debug\Race_Track_Solution.exe.config
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\bin\Debug\Race_Track_Solution.exe
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\bin\Debug\Race_Track_Solution.pdb
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Start.csprojResolveAssemblyReference.cache
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Solution.RaceForm.resources
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Solution.Properties.Resources.resources
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Start.csproj.GenerateResource.cache
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Start.csproj.CoreCompileInputs.cache
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Solution.exe
+D:\Fontys University\Fontys University\PCS\C#4\pcs4 exam 2017 june startup and solution\Race_Track_Start\Race_Track_Start\obj\Debug\Race_Track_Solution.pdb

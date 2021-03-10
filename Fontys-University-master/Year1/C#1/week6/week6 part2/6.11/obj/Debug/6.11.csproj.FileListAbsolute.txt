@@ -1,0 +1,5 @@
+D:\Fontys\C#1\week6\week6 part2\6.11\bin\Debug\6.11.exe.config
+D:\Fontys\C#1\week6\week6 part2\6.11\bin\Debug\6.11.exe
+D:\Fontys\C#1\week6\week6 part2\6.11\bin\Debug\6.11.pdb
+D:\Fontys\C#1\week6\week6 part2\6.11\obj\Debug\6.11.exe
+D:\Fontys\C#1\week6\week6 part2\6.11\obj\Debug\6.11.pdb

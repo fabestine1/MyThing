@@ -1,0 +1,51 @@
+1) - Correct
+select a.first_name, a.last_name, h.city, h.address, h.sold_price
+from Agent a join House h on a.agent_id = h.agent_id
+where position = 'junior' 
+order by a.last_name, sold_price desc;
+
+2) - Correct
+select h.address,h.sold_price-h.asked_price as difference, c.client_id, c.last_name
+from House h join Client c on c.client_id = h.client_id
+where h.size between 350 and 550 and 
+city = 'Eindhoven';
+
+3) - Correct
+select a.first_name
+from Agent a join House h on a.agent_id = h.agent_id
+where type = 'town' and sold_price is null;
+
+4) - Correct
+select c.last_name, h.city, h.address, h.size
+from House h join Client c on c.client_id = h.client_id
+where h.size > (select avg(ho.size)
+				from House ho
+				where h.type = ho.type);
+	
+5) - InCorrect
+select a.agent_id, a.last_name, SUM(h.sold_price)		
+from Agent a join House h on a.agent_id = h.agent_id
+where a.position = 'junior' 
+and sold_price is not null
+group by a.agent_id,a.last_name
+having count(*)>10	
+
+6) - Correct
+select h.type,sum(h.sold_price)
+from House h
+where h.size >= 150
+group by h.type
+having count(h.sold_price) >= 2
+
+7) - InCorrect
+create view vw_junior_agents
+as
+select a.first_name as fname, a.last_name as lname
+from Agent a
+where position = 'junior' 
+and 5 <= (select count(distinct h.client_id)
+	      from House h join Client c on h.client_id = c.client_id
+	      where h.agent_id=a.agent_id
+	      and c.city = 'Eindhoven'
+	      and h.sold_price is not null);
+				   

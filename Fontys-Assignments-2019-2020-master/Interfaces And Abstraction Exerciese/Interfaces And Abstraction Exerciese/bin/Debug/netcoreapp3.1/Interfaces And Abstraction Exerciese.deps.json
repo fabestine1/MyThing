@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Interfaces And Abstraction Exerciese/1.0.0": {
+        "runtime": {
+          "Interfaces And Abstraction Exerciese.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Interfaces And Abstraction Exerciese/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

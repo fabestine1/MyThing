@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week6\week6\6.7\bin\Debug\6.7.exe.config
+D:\Fontys\C#1\week6\week6\6.7\bin\Debug\6.7.exe
+D:\Fontys\C#1\week6\week6\6.7\bin\Debug\6.7.pdb
+D:\Fontys\C#1\week6\week6\6.7\obj\Debug\6.7.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week6\week6\6.7\obj\Debug\6.7.exe
+D:\Fontys\C#1\week6\week6\6.7\obj\Debug\6.7.pdb

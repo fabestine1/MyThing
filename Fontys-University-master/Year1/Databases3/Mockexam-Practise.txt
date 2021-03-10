@@ -1,0 +1,47 @@
+1) - Correct
+select pg.year, pg.term, pg.projname, p.mark
+from participation p join projectgroup pg on p.projgroupnr=pg.projgroupnr
+where p.studnr=1234
+order by pg.year,pg.term;
+
+2) - Correct
+select t.name, p.projname
+from Teacher t left join Project p on t.teachercode=p.responsibleteacher;
+
+3) - InCorrect
+select t.name, count(*)
+from project p join  teacher t on p.responsibleteacher=t.teachercode
+group by t.teachercode, t.name 
+
+4) - Correct
+select s.studnr, AVR(p.mark)
+from Student s join Participation p on s.studnr=p.studnr
+where s.cohort = '2006'
+group by s.studnr
+having Count(p.mark)>3
+
+5) - Correct
+select p.projname
+from Project p 
+where p.projname in (select c.projname
+                     from Course c
+					 where ect > 3);
+
+Give the projectnames of projects of which all courses have no previous course.
+
+6) - Correct
+select p.projname
+from Project p 
+where p.projname in (select c.projname
+                     from Course c
+					 where c.previouscourse is null);
+				
+Give the name(s) of the project(s) with the most courses.
+	 
+7) - InCorrect
+select projname
+from course
+group by projname
+having count(*)=(select max(count(*))
+                 from course
+                 group by projname)	

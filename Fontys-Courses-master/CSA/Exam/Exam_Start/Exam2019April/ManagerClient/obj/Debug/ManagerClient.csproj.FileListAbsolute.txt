@@ -1,0 +1,9 @@
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\bin\Debug\ManagerClient.exe.config
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\bin\Debug\ManagerClient.exe
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\bin\Debug\ManagerClient.pdb
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\obj\Debug\ManagerClient.Form1.resources
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\obj\Debug\ManagerClient.Properties.Resources.resources
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\obj\Debug\ManagerClient.csproj.GenerateResource.cache
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\obj\Debug\ManagerClient.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\obj\Debug\ManagerClient.exe
+C:\Users\flamestar\Desktop\Exam_Start\Exam2019April\ManagerClient\obj\Debug\ManagerClient.pdb

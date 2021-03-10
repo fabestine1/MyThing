@@ -1,0 +1,108 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(DBI)
+library(knitr)
+
+# connect to Game
+con <- DBI::dbConnect(RSQLite::SQLite(), "Game.db")
+
+# use the database connection for all SQL chunks in this notebook and hide the code by default
+knitr::opts_chunk$set(connection = "con", echo=FALSE)
+```
+
+The overview of the tables we have used can be seen in this database model:
+
+<img src = "images/Game.png" />
+
+The content of each dataset is listed below:
+
+
+```{sql connection=con}
+SELECT *
+FROM Order_List;
+```
+
+```{sql connection=con}
+SELECT *
+FROM Address;
+```
+
+```{sql connection=con}
+SELECT *
+FROM Orders;
+```
+
+```{sql connection=con}
+SELECT *
+FROM Parts;
+```
+
+```{sql connection=con}
+SELECT *
+FROM Available;
+```
+
+
+
+Given the Dataset from the business game can you:
+1. Get the address corresponding to the order number 103.
+
+```{sql connection=con}
+SELECT a.name, a.city, a.street FROM Address a
+INNER JOIN order_list o
+ON a.name = o.name
+WHERE o.number == 103
+```
+
+2. All order numbers for each city.
+
+```{sql connection=con}
+SELECT a.city, o.number FROM Address a
+INNER JOIN order_list o
+ON a.name = o.name
+
+```
+
+3. All parts for the order number 103.
+
+```{sql connection=con}
+SELECT o.Number , p.Part FROM Orders o
+INNER JOIN parts p
+ON o.item = p.Part
+where o.number == 103
+```
+
+4. The total number of parts required.
+
+```{sql connection=con}
+SELECT count(Part)
+from orders o, parts p
+where o.Number = 103
+```
+
+5. Check if all parts are in the warehouse.
+
+```{sql connection=con}
+
+
+```
+
+6. If some parts are missing, starting form 101, which order cannot be delivered. (manual)
+
+
+
+
+
+7. Show in a graph the total number of ordered items per city.
+
+```{sql connection=con}
+
+```

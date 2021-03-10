@@ -1,0 +1,8 @@
+D:\Fontys\C#2\week2\2.6\bin\Debug\2.6.exe.config
+D:\Fontys\C#2\week2\2.6\bin\Debug\2.6.exe
+D:\Fontys\C#2\week2\2.6\bin\Debug\2.6.pdb
+D:\Fontys\C#2\week2\2.6\obj\Debug\_2._6.Form1.resources
+D:\Fontys\C#2\week2\2.6\obj\Debug\_2._6.Properties.Resources.resources
+D:\Fontys\C#2\week2\2.6\obj\Debug\2.6.csproj.GenerateResource.Cache
+D:\Fontys\C#2\week2\2.6\obj\Debug\2.6.exe
+D:\Fontys\C#2\week2\2.6\obj\Debug\2.6.pdb

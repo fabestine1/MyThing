@@ -1,0 +1,33 @@
+<button class="btn btn-primary" (click)="goBack()">Go back</button>
+<div *ngIf="task">
+  <h3>{{task.name}} Details</h3>
+  <hr>
+  <span>Change the name of the task: </span>
+  <br>
+  <br>
+  <div>
+    <label>Id: </label> {{task.id}}
+  </div>
+  <div class="form-group">
+      <label>Name: </label>
+    <label>
+      <input  class="form-control" [(ngModel)]="task.name" placeholder="name"/>
+    </label>
+    <hr>
+    <div *ngIf="department">
+      <label>Department:</label>
+      <h3> {{department.name}}</h3>
+    </div>
+    <hr>
+    <div *ngIf="employees">
+        <label>Employees in this task: </label>
+        <br>
+        <br>
+      <ul *ngFor="let e of employees" class="list-group">
+        <li class="list-group-item" style="width: 15%;"> {{e.first_name}}</li>
+      </ul>
+    </div>
+  </div>
+  <button class="btn btn-success" (click)="onUpdate()" style="margin-right: 3px;">Update</button>
+  <button class="btn btn-danger" (click)="onRemove()">Remove</button>
+</div>

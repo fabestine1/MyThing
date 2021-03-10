@@ -1,0 +1,9 @@
+C:\Users\lenovo\Desktop\Movies\Movies\obj\Debug\Movies.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\Movies\Movies\obj\Debug\Movies.Form1.resources
+C:\Users\lenovo\Desktop\Movies\Movies\obj\Debug\Movies.Properties.Resources.resources
+C:\Users\lenovo\Desktop\Movies\Movies\obj\Debug\Movies.csproj.GenerateResource.Cache
+C:\Users\lenovo\Desktop\Movies\Movies\bin\Debug\Movies.exe.config
+C:\Users\lenovo\Desktop\Movies\Movies\bin\Debug\Movies.exe
+C:\Users\lenovo\Desktop\Movies\Movies\bin\Debug\Movies.pdb
+C:\Users\lenovo\Desktop\Movies\Movies\obj\Debug\Movies.exe
+C:\Users\lenovo\Desktop\Movies\Movies\obj\Debug\Movies.pdb

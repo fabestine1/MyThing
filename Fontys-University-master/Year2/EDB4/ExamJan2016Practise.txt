@@ -1,0 +1,75 @@
+Exam january 2016 - Practise
+
+--1
+Declare
+	cursor c_jobs is
+	select job_id, job_title
+	from Jobs
+	order by job_title;
+
+	cursor c_jobHist(p_job_id Jobs.job_id%type) is
+	select employee_id, start_date, end_date
+	from Job_History
+	where job_id = p_job_id
+	order by start_date;
+
+	v_last_name Employees.last_name%type;
+Begin
+
+	For r_jobs in c_jobs loop
+		pr(job_title);
+
+		For r_jobHist in c_jobHist(r_jobs.job_id) loop
+					Select last_name into v_last_name
+					From Employees
+					Where employee_id = r_jobHist.employee_id;
+
+					pr( ‘--‘ || v_last_name || ‘ from : ‘ || r_jobHist.start_date || ‘ until ‘ || r_jobHist.start_date );
+
+			End loop;
+
+	End loop;
+End;
+
+--2
+create or replace function job_of(jobid in jobs.job_id%type)
+return jobs.job_title%type
+is 
+    jobtitle jobs.job_title%type;
+begin
+
+select job_title
+into jobtitle
+from jobs
+where job_id = jobid;
+   
+   RETURN jobtitle;
+end job_of;
+
+--3
+create or replace trigger count_ST_MAN
+after insert or update of job_id on employees
+declare
+    countStMan number := 0;
+begin 
+    select COUNT(*) 
+    into countStMan
+    from employees
+    where upper(job_id) = 'ST_MAN';
+    
+    if countStMan > 5 then
+        raise_application_error(-20001, 'The salary is out of the range: ');
+    end if;
+end salary_constraint;
+
+--4
+create or replace trigger count_ST_MAN
+before update of job_id on employees
+for each row
+begin 
+    if upper(:new.job_id) = 'ST_REP' and upper(:old.job_id) <> 'ST_REP' then
+        update employees
+        set commission_pct = 0.5
+        Where employee_id = :new.employee_id;
+    end if;
+end salary_constraint;

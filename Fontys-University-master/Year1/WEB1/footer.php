@@ -1,0 +1,1 @@
+<footer style="width: 100%; text-align: center;">Copyright 2018</footer>

@@ -1,0 +1,12 @@
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\bin\Debug\School.exe.config
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\obj\Debug\School.csprojResolveAssemblyReference.cache
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\obj\Debug\School.Form1.resources
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\obj\Debug\School.Properties.Resources.resources
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\obj\Debug\School.csproj.GenerateResource.Cache
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\bin\Debug\School.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\bin\Debug\School.pdb
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\obj\Debug\School.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\School\School\obj\Debug\School.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\School.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\School.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\School.pdb

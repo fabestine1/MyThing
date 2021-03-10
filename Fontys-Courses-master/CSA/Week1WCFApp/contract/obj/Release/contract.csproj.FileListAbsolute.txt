@@ -1,0 +1,5 @@
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\bin\Release\contract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\bin\Release\contract.pdb
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Release\contract.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Release\contract.dll
+C:\Users\flamestar\Documents\Practicals\CSA\Week1WCFApp\contract\obj\Release\contract.pdb

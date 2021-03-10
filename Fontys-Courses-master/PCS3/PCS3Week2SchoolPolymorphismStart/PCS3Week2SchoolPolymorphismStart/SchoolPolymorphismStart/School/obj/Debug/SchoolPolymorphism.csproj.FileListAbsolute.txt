@@ -1,0 +1,16 @@
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPlymorphismStart\School\bin\Debug\School.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPlymorphismStart\School\obj\Debug\School.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPlymorphismStart\School\obj\Debug\School.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\bin\Debug\School.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\School.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\School.pdb
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\bin\Debug\School.exe.config
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\bin\Debug\School.exe
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\bin\Debug\School.pdb
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\SchoolPolymorphism.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\School.FormMyPerson.resources
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\School.Properties.Resources.resources
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\SchoolPolymorphism.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\SchoolPolymorphism.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\School.exe
+C:\Users\flamestar\Downloads\PCS3Week2SchoolPolymorphismStart\PCS3Week2SchoolPolymorphismStart\SchoolPolymorphismStart\School\obj\Debug\School.pdb

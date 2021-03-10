@@ -1,0 +1,27 @@
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\prakttest.Form1.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\prakttest.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\MasterMind.csproj.GenerateResource.Cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\bin\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\bin\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\prakttest\prakttest\obj\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\bin\Debug\prakttest.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\obj\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\obj\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\bin\Debug\prakttest.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\bin\Debug\prakttest.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\obj\Debug\MasterMind.csprojResolveAssemblyReference.cache
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\obj\Debug\Game.Form1.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\obj\Debug\Game.Properties.Resources.resources
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_4\practicum\Voor Sharepoint\week4\MasterMind\Game\Game\obj\Debug\MasterMind.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\bin\Debug\prakttest.exe.config
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\bin\Debug\prakttest.exe
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\bin\Debug\prakttest.pdb
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\MasterMind.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\Game.Form1.resources
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\Game.Properties.Resources.resources
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\MasterMind.csproj.GenerateResource.cache
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\prakttest.exe
+C:\Users\flamestar\Downloads\pcs4, week 4, MasterMind_START\MasterMind_START\Game\Game\obj\Debug\prakttest.pdb

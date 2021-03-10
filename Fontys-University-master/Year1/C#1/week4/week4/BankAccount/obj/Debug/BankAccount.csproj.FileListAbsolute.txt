@@ -1,0 +1,7 @@
+D:\Fontys\C#1\week4\week4\BankAccount\bin\Debug\BankAccount.exe.config
+D:\Fontys\C#1\week4\week4\BankAccount\bin\Debug\BankAccount.exe
+D:\Fontys\C#1\week4\week4\BankAccount\bin\Debug\BankAccount.pdb
+D:\Fontys\C#1\week4\week4\BankAccount\obj\Debug\BankAccount.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week4\week4\BankAccount\obj\Debug\BankAccount.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week4\week4\BankAccount\obj\Debug\BankAccount.exe
+D:\Fontys\C#1\week4\week4\BankAccount\obj\Debug\BankAccount.pdb

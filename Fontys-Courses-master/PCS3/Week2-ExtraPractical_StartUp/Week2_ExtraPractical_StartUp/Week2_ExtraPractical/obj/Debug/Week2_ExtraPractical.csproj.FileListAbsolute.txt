@@ -1,0 +1,37 @@
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe.config
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.pdb
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csprojResolveAssemblyReference.cache
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Form1.resources
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Properties.Resources.resources
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csproj.GenerateResource.Cache
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.exe
+C:\Users\874156\Desktop\Week2_ExtraPractical\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.pdb
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe.config
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.exe
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.pdb
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.pdb
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csprojResolveAssemblyReference.cache
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Form1.resources
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Properties.Resources.resources
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_Solution\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csproj.GenerateResource.Cache
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe.config
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.exe
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.pdb
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.pdb
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csprojResolveAssemblyReference.cache
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Form1.resources
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Properties.Resources.resources
+D:\Work files\Courses\PCS2\Extra practical\Week 2\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Form1.resources
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.Properties.Resources.resources
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.exe
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\obj\Debug\Week2_ExtraPractical.pdb
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe.config
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.exe
+C:\Users\flamestar\Downloads\Week2-ExtraPractical_StartUp\Week2_ExtraPractical_StartUp\Week2_ExtraPractical\bin\Debug\Week2_ExtraPractical.pdb

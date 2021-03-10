@@ -1,0 +1,175 @@
+series A;aggregate functions
+1.select max(pr_age)
+from pres_marriage
+where nr_children>=3
+2.select round(avg(nr_children))
+from pres_marriage
+where mar_year > 1930
+3.select round(avg(yrs_serv))
+from president
+4.select min(votes)
+from election
+where winner_loser_indic Like 'W' AND 
+election_year >= 1800 AND 
+election_year < 1900
+5.select sum(votes)
+from election
+where election_year>1950
+6.select count(election_year)
+from election
+where election_year>=1900 AND 
+election_year <=1999
+7.select DISTINCT(candidate)
+from election
+where winner_loser_indic ='L'
+8.select candidate
+from election
+where winner_loser_indic ='L'
+9.select COUNT(state_name)
+from state
+where year_entered >= 1875 and 
+year_entered <= 1925
+10.select count(distinct state_born)
+from president 
+where birth_yr <1900
+11.select round(avg(death_age))
+from president 
+where party  LIKE 'DEMOCRATIC' AND
+birth_yr <1880
+12.select count(mar_year)
+from pres_marriage
+where mar_year>1900
+13.select count(pres_name)
+from pres_marriage
+where mar_year IS NOT null
+14.select count(pres_name)
+from president
+where birth_yr<1950 and ((birth_yr+death_age>1950) or death_age is null)
+15.select count(pres_name)
+from pres_marriage
+where nr_children =1
+series c;grouping
+1.select election_year,count(candidate) AS CandidateNumber,min(VOTES)AS MinimumVotes
+from election
+where ELECTION_YEAR>1900 
+group by election_year
+having count(candidate) >=2 AND
+min(VOTES)>=20 
+2.select PRES_NAME,COUNT(HOBBY)
+from PRES_HOBBY
+GROUP BY PRES_NAME
+HAVING COUNT(HOBBY) >= 5
+3.select ELECTION_YEAR,COUNT(VOTES)
+from ELECTION
+GROUP BY ELECTION_YEAR
+HAVING COUNT(CANDIDATE) >= 3 AND
+ELECTION_YEAR >1900;
+4.select ELECTION_YEAR,COUNT(WINNER_LOSER_INDIC)
+from ELECTION
+WHERE WINNER_LOSER_INDIC = 'L' AND 
+ELECTION_YEAR > 1900
+GROUP BY ELECTION_YEAR
+5.select ELECTION_YEAR,COUNT(CANDIDATE)
+from ELECTION
+GROUP BY ELECTION_YEAR 
+HAVING ELECTION_YEAR >1900 AND
+COUNT(CANDIDATE)<=5
+6.select ELECTION_YEAR,COUNT(CANDIDATE),MAX(VOTES), SUM(VOTES)
+from ELECTION
+GROUP BY ELECTION_YEAR 
+HAVING ELECTION_YEAR >1850 AND
+COUNT(CANDIDATE)>=2 AND
+max(votes)>((0.6)*sum(votes));
+7.select PARTY,COUNT(PRES_NAME)
+from PRESIDENT
+WHERE BIRTH_YR >1875 
+GROUP BY PARTY
+8.select pres_name,(max(nr_children)-min(NR_CHILDREN)) as Difference
+from PRES_MARRIAGE
+group by PRES_NAME
+having count(MAR_YEAR)>1;
+9.select pres_name
+from PRES_MARRIAGE
+where PR_AGE>30
+group by pres_name
+having count(MAR_YEAR)=1 
+10.select pres_name,avg(nr_children)
+from PRES_MARRIAGE
+where PR_AGE<=30
+group by pres_name
+11.select m.PRES_NAME,sum(m.NR_CHILDREN) as TotalNumberChildren
+from PRES_MARRIAGE m ,PRESIDENT p
+where m.PRES_NAME=p.PRES_NAME
+and m.PR_AGE>30 
+and m.MAR_YEAR>(p.BIRTH_YR +30)
+group by m.PRES_NAME;
+12.select PRES_NAME
+from PRES_MARRIAGE
+where nr_children = 0 
+13.select DISTINCT(NR_CHILDREN),pres_name
+from PRES_MARRIAGE
+where NR_CHILDREN>2
+group by pres_name, (NR_CHILDREN)
+having count(MAR_YEAR)>1;
+14. ?????????????
+series B;computations
+1.select max(abs(pr_age-sp_age))
+from PRES_MARRIAGE
+where MAR_YEAR>1799 and
+MAR_YEAR<1899;
+2.select avg(abs(sp_age-pr_age))
+from PRES_MARRIAGE
+where NR_CHILDREN = 0;
+3.select avg(nr_children)
+from PRES_MARRIAGE
+where(abs(sp_age-pr_age))<=2;
+4.select max(nr_children)
+from PRES_MARRIAGE
+where(abs(sp_age-pr_age))>=2;
+5.select avg(abs(sp_age-pr_age))
+from PRES_MARRIAGE
+where pr_age>sp_age;
+6.select abs(MIN(NR_CHILDREN)- MAX(NR_CHILDREN)) AS DIFFERENCE
+from PRES_MARRIAGE
+where (abs(sp_age-pr_age))>=2;
+series D; join
+1. select pm.SPOUSE_NAME
+from PRES_MARRIAGE pm join PRESIDENT p on(pm.PRES_NAME = p.PRES_NAME)
+                       join STATE s on (s.STATE_NAME = p.STATE_BORN)
+where s.YEAR_ENTERED>1800;
+2.select p.PRES_NAME,e.WINNER_LOSER_INDIC
+from ELECTION e  join PRESIDENT p on(e.CANDIDATE = p.PRES_NAME)
+                       join STATE s on (s.STATE_NAME = p.STATE_BORN)
+where s.YEAR_ENTERED>1800 AND
+p.PARTY = 'DEMOCRATIC' AND
+e.ELECTION_YEAR>1900;
+3.select pm.PRES_NAME ,pm.SPOUSE_NAME,pm.NR_CHILDREN
+from PRES_MARRIAGE pm join PRESIDENT p on(pm.PRES_NAME = p.PRES_NAME)
+where p.PARTY = 'REPUBLICAN'
+AND NR_CHILDREN >= 2 
+AND pm.MAR_YEAR >1900;
+4.select p.PRES_NAME ,p.YRS_SERV,count(pm.MAR_YEAR), SUM(pm.NR_CHILDREN)
+from PRES_MARRIAGE pm join PRESIDENT p on(pm.PRES_NAME = p.PRES_NAME)
+where p.YRS_SERV>=8 
+group by p.PRES_NAME, p.YRS_SERV
+HAVING count(pm.MAR_YEAR)>=2
+5.select s.STATE_NAME,s.YEAR_ENTERED,p.PRES_NAME
+from STATE s join PRESIDENT p on(s.STATE_NAME = p.STATE_BORN)
+where p.YRS_SERV>=4 
+AND s.YEAR_ENTERED>1800;
+6.select p.PRES_NAME,p.BIRTH_YR,p.STATE_BORN,p.YRS_SERV,p.PARTY,p.DEATH_AGE,e.WINNER_LOSER_INDIC
+from ELECTION e join PRESIDENT p on(e.CANDIDATE = p.PRES_NAME)
+where e.ELECTION_YEAR>1900;
+7.select p.PRES_NAME,p.YRS_SERV,avg(e.VOTES)
+from ELECTION e join PRESIDENT p on(e.CANDIDATE = p.PRES_NAME)
+where p.STATE_BORN = 'TEXAS' 
+group by p.PRES_NAME, p.YRS_SERV;
+8.select p.PRES_NAME,p.YRS_SERV,e.ELECTION_YEAR,e.VOTES,pm.SPOUSE_NAME
+from ELECTION e join PRESIDENT p on(e.CANDIDATE = p.PRES_NAME)
+                 join PRES_MARRIAGE pm on (p.PRES_NAME = pm.PRES_NAME)
+where p.STATE_BORN = 'TEXAS' 
+9.select p.PRES_NAME,round(avg(e.VOTES)),p.YRS_SERV
+from ELECTION e join PRESIDENT p on(e.CANDIDATE = p.PRES_NAME)
+where p.YRS_SERV>=6 
+group by p.PRES_NAME, p.YRS_SERV 
+having count(e.ELECTION_YEAR)>=2;

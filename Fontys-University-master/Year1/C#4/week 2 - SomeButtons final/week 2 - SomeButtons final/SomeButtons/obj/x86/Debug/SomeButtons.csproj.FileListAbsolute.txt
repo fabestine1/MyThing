@@ -1,0 +1,8 @@
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\bin\Debug\SomeButtons.exe
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\bin\Debug\SomeButtons.pdb
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\obj\x86\Debug\SomeButtons.csprojResolveAssemblyReference.cache
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\obj\x86\Debug\SomeButtons.Form1.resources
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\obj\x86\Debug\SomeButtons.Properties.Resources.resources
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\obj\x86\Debug\SomeButtons.csproj.GenerateResource.Cache
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\obj\x86\Debug\SomeButtons.exe
+C:\Bert\pcs4\week 2\week 2 - SomeButtons final\SomeButtons\obj\x86\Debug\SomeButtons.pdb

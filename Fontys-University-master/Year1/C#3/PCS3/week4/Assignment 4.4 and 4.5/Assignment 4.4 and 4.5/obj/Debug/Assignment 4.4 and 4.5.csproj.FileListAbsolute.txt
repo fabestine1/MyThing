@@ -1,0 +1,10 @@
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\bin\Debug\Assignment 4.4 and 4.5.exe.config
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\bin\Debug\Assignment 4.4 and 4.5.exe
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\bin\Debug\Assignment 4.4 and 4.5.pdb
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment 4.4 and 4.5.csprojResolveAssemblyReference.cache
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment_4._4_and_4._5.Form1.resources
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment_4._4_and_4._5.Properties.Resources.resources
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment 4.4 and 4.5.csproj.GenerateResource.Cache
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment 4.4 and 4.5.csproj.CoreCompileInputs.cache
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment 4.4 and 4.5.exe
+E:\Uni\Programming\PCS3\week4\Assignment 4.4 and 4.5\Assignment 4.4 and 4.5\obj\Debug\Assignment 4.4 and 4.5.pdb

@@ -1,0 +1,40 @@
+.about-section {
+    padding: 4em 0;
+}
+.site-title  {
+    padding: 2em 0;
+}
+.site-title h3 {
+    font-size: 3.5em;
+    color: black;
+    font-family: 'Marvel-Regular';
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+.site-title p {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 2.8em;
+    margin-top: 0.5em;
+}
+
+.about-inner-column h4 {
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Marvel-Regular';
+}
+.about-inner-column p {
+    font-size: 1.1em;
+    color: #333333;
+    line-height: 1.8em;
+    margin: 1em 0 0;
+}
+
+.about-inner-column ul li a {
+    color: #333333;
+    font-size: 1.1em;
+    padding-left: 2em;
+}
+.about-right img {
+    width: 100%;
+}

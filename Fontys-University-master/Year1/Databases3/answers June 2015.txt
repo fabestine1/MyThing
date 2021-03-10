@@ -1,0 +1,62 @@
+possible answers:
+ex1.
+Select a.first_name,a.last_name,h.city,h.address,h.sold_price
+from Agent a join house h on a.agent_id=h.agent_id
+where a.position='junior'
+order by a.last_name, h.sold_price desc
+
+ex2.
+select h.address, h.sold_price-h.asked_price as difference,c.client_id,c.last_name
+from house h left join client c on h.client_id=c.client_id
+where h.size between 350 and 550
+and h.city = 'Eindhoven'
+
+ex3.
+select a.first_name,a.last_name
+from agent a
+where not exists (select 1
+                  from house h
+                  where h.agent_id=a.agent_id
+                  and h.type='town'
+                  and h.sold_price is not null)
+
+ex4.
+select c.last_name,h.city,h.address,h.size
+from house h join client c on h.client_id=c.client_id
+where h.size > (select avg(h2.size)
+                from house h2
+	        where h2.type=h.type)
+
+ex5.
+select a.agent_id,a.last_name,sum(h.sold_price) as totalsold
+from agent a join house h on a.agent_id=h.agent_id
+where a.position='junior'
+and sold_price is not null
+group by a.agent_id,a.last_name
+having count(*)>10
+
+ex6.
+select h.type,sum(h.sold_price)
+from house h
+where h.size > 150
+group by h.type
+having count(h.sold_price)>=2   (not count(*) because the house has to be sold)
+
+ex7.
+Create a view ‘vw_junior_agents’ that lists the first_name 
+and last_name of all junior agents that have sold a house 
+for at least 5 different clients in Eindhoven. Rename the 
+columns of the view  to ‘fname’ and ‘lname’
+
+create view vw_junior_agents
+as
+select a.first_name as fname,a.last_name as lname
+from agent a
+where a.position='junior'
+and 5 <= (select count(distinct h.client_id)
+          from house h join client c on h.client_id=c.client_id
+          where c.city='Eindhoven'
+          and h.agent_id=a.agent_id
+          and h.sold_price is not null)
+
+

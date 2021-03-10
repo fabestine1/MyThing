@@ -1,0 +1,11 @@
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\obj\Debug\netcoreapp3.1\Border Control.csprojAssemblyReference.cache
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\obj\Debug\netcoreapp3.1\Border Control.AssemblyInfoInputs.cache
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\obj\Debug\netcoreapp3.1\Border Control.AssemblyInfo.cs
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\bin\Debug\netcoreapp3.1\Border Control.exe
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\bin\Debug\netcoreapp3.1\Border Control.deps.json
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\bin\Debug\netcoreapp3.1\Border Control.runtimeconfig.json
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\bin\Debug\netcoreapp3.1\Border Control.runtimeconfig.dev.json
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\bin\Debug\netcoreapp3.1\Border Control.dll
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\bin\Debug\netcoreapp3.1\Border Control.pdb
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\obj\Debug\netcoreapp3.1\Border Control.dll
+C:\Users\nfaar\source\repos\Interfaces And Abstraction Exerciese\Border Control\obj\Debug\netcoreapp3.1\Border Control.pdb

@@ -1,0 +1,6 @@
+C:\Users\flamestar\Documents\Practicals\Week 2\project_11\project_11\bin\Debug\project_11.exe.config
+C:\Users\flamestar\Documents\Practicals\Week 2\project_11\project_11\bin\Debug\project_11.exe
+C:\Users\flamestar\Documents\Practicals\Week 2\project_11\project_11\bin\Debug\project_11.pdb
+C:\Users\flamestar\Documents\Practicals\Week 2\project_11\project_11\obj\Debug\project_11.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\Week 2\project_11\project_11\obj\Debug\project_11.exe
+C:\Users\flamestar\Documents\Practicals\Week 2\project_11\project_11\obj\Debug\project_11.pdb

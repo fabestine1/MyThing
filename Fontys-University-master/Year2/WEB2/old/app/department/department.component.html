@@ -1,0 +1,13 @@
+
+<h2>My Departments</h2>
+<button (click)="onClick()">Create</button>
+
+<ul class="departments">
+  <li *ngFor="let department of departments">
+    <a routerLink="/detail/{{department.id}}"> 
+      <span class="badge">{{department.id}}</span> {{department.name}}
+    </a>
+  </li>
+</ul>
+  
+

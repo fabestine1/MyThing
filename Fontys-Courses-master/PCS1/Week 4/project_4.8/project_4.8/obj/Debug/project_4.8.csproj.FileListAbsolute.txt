@@ -1,0 +1,7 @@
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\obj\Debug\project_4.8.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\obj\Debug\project_4.8.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\bin\Debug\project_4.8.exe.config
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\bin\Debug\project_4.8.exe
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\bin\Debug\project_4.8.pdb
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\obj\Debug\project_4.8.exe
+C:\Users\flamestar\Documents\Practicals\Week 4\project_4.8\project_4.8\obj\Debug\project_4.8.pdb

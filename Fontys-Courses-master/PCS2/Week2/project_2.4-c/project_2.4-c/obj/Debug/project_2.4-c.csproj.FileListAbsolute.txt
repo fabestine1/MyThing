@@ -1,0 +1,10 @@
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\bin\Debug\project_2.4-c.exe.config
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\bin\Debug\project_2.4-c.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\bin\Debug\project_2.4-c.pdb
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2.4-c.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2._4_c.Form1.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2._4_c.Properties.Resources.resources
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2.4-c.csproj.GenerateResource.Cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2.4-c.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2.4-c.exe
+C:\Users\flamestar\Documents\Practicals\PCS2\Week2\project_2.4-c\project_2.4-c\obj\Debug\project_2.4-c.pdb

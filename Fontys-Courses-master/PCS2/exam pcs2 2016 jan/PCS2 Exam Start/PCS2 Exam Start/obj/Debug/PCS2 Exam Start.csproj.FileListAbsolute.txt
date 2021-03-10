@@ -1,0 +1,10 @@
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\bin\Debug\PCS2 Exam Solution.exe.config
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\bin\Debug\PCS2 Exam Solution.exe
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\bin\Debug\PCS2 Exam Solution.pdb
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2 Exam Start.csprojResolveAssemblyReference.cache
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2_Exam_Start.Form1.resources
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2_Exam_Start.Properties.Resources.resources
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2 Exam Start.csproj.GenerateResource.Cache
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2 Exam Start.csproj.CoreCompileInputs.cache
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2 Exam Solution.exe
+C:\Users\flamestar\Downloads\exam pcs2 2016 jan\PCS2 Exam Start\PCS2 Exam Start\obj\Debug\PCS2 Exam Solution.pdb

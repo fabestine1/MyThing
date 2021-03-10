@@ -1,0 +1,26 @@
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\bin\Debug\SchoolPlymorphism.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\bin\Debug\SchoolPlymorphism.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\bin\Debug\SchoolPlymorphism.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolPolymorphism.Properties.Resources.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolPlymorphism.csproj.GenerateResource.Cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolPlymorphism.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolPlymorphism.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolPolymorphism.Form1.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\bin\Debug\SchoolPlymorphism.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolPlymorphism.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolDownCasting\School\obj\Debug\SchoolPlymorphism.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\bin\Debug\School.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\bin\Debug\School.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\bin\Debug\School.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\obj\Debug\SchoolPlymorphism.csprojResolveAssemblyReference.cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\obj\Debug\School.FormMyPerson.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\obj\Debug\School.Properties.Resources.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\obj\Debug\SchoolPlymorphism.csproj.GenerateResource.Cache
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\obj\Debug\School.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphismStart\School\obj\Debug\School.pdb
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\Start Projects for Students\PCS3Week2StartProjects\SchoolPlymorphismStart\School\bin\Debug\School.exe.config
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\Start Projects for Students\PCS3Week2StartProjects\SchoolPlymorphismStart\School\obj\Debug\School.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\Start Projects for Students\PCS3Week2StartProjects\SchoolPlymorphismStart\School\obj\Debug\School.pdb
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPlymorphismStart\School\bin\Debug\School.exe.config
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPlymorphismStart\School\obj\Debug\School.exe
+C:\Users\871294\Dropbox\agnes__school\PCS_nieuw\PCS_3\sharepoint\nieuw sept2014\WEEK2\PCS3Week2SchoolPolymorphismStart\SchoolPlymorphismStart\School\obj\Debug\School.pdb

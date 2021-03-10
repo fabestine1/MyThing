@@ -1,0 +1,9 @@
+D:\Fontys\C#2\week1\1,8\bin\Debug\1,8.exe.config
+D:\Fontys\C#2\week1\1,8\bin\Debug\1,8.exe
+D:\Fontys\C#2\week1\1,8\bin\Debug\1,8.pdb
+D:\Fontys\C#2\week1\1,8\obj\Debug\_1_8.Form1.resources
+D:\Fontys\C#2\week1\1,8\obj\Debug\_1_8.Properties.Resources.resources
+D:\Fontys\C#2\week1\1,8\obj\Debug\1.8.csproj.GenerateResource.Cache
+D:\Fontys\C#2\week1\1,8\obj\Debug\1,8.exe
+D:\Fontys\C#2\week1\1,8\obj\Debug\1,8.pdb
+D:\Fontys\C#2\week1\1,8\obj\Debug\1.8.csprojResolveAssemblyReference.cache

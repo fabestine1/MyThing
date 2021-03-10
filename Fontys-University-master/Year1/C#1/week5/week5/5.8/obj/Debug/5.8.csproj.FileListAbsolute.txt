@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week5\week5\5.8\obj\Debug\5.8.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week5\week5\5.8\bin\Debug\5.8.exe.config
+D:\Fontys\C#1\week5\week5\5.8\bin\Debug\5.8.exe
+D:\Fontys\C#1\week5\week5\5.8\bin\Debug\5.8.pdb
+D:\Fontys\C#1\week5\week5\5.8\obj\Debug\5.8.exe
+D:\Fontys\C#1\week5\week5\5.8\obj\Debug\5.8.pdb

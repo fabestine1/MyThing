@@ -1,0 +1,117 @@
+/*
+Nikolay Anatoliev Nikolaev
+3235106
+e-s32
+*/
+
+--Exercise 1
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+	CURSOR c_mannerofprep IS
+	SELECT MANNEROFPREP
+	FROM MEAL
+	WHERE MEALNAME = '&&name';
+	
+	CURSOR c_ingredients IS
+	SELECT PRODUCTNAME, QUANTITYPP, ORDEROFPREP
+	FROM INGREDIENT
+	WHERE MEALNAME = '&&name'
+	ORDER BY ORDEROFPREP;
+BEGIN
+	FOR M IN c_mannerofprep
+	LOOP
+		DBMS_OUTPUT.PUT_LINE(M.MANNEROFPREP);
+	END LOOP;
+	FOR I IN c_ingredients
+	LOOP
+		DBMS_OUTPUT.PUT_LINE(I.PRODUCTNAME || ' Quantity per person: ' || I.QUANTITYPP || ' Order: ' || I.ORDEROFPREP);
+	END LOOP;
+END;
+/
+
+Exercise 2a
+
+CREATE OR REPLACE PROCEDURE ADDINGR
+(
+p_meal IN INGREDIENT.MEALNAME%type,
+p_product IN INGREDIENT.PRODUCTNAME%type,
+p_quantity IN INGREDIENT.QUANTITYPP%type,
+p_order IN INGREDIENT.ORDEROFPREP%type,
+p_message OUT VARCHAR2
+)
+IS
+BEGIN
+
+	INSERT INTO INGREDIENT(MEALNAME, PRODUCTNAME, QUANTITYPP, ORDEROFPREP)
+	VALUES (p_meal, p_product, p_quantity, p_order);
+
+	p_message := 'OK: Ingredient added.';
+
+EXCEPTION
+    WHEN OTHERS THEN
+		IF SQLCODE = -02437 THEN
+			p_message := 'Problem: Ingredient is already present!';
+		END IF;
+		IF SQLCODE = -20001 THEN
+			p_message := 'Problem: Maximum number of ingredients reached!';
+		END IF;
+
+END ADDINGR;
+/
+
+Exercise 2b
+
+SET SERVEROUTPUT ON;
+
+DECLARE
+	p_message VARCHAR(255);
+BEGIN
+	ADDINGR('Banana split', 'BANANA', 1, 1, p_message);
+
+	DBMS_OUTPUT.PUT_LINE(p_message);
+END;
+/
+
+Exercise 3
+
+CREATE OR REPLACE TRIGGER MAX_INGREDIENTS_CHECK
+BEFORE INSERT OR UPDATE OF MEALNAME ON INGREDIENT
+FOR EACH ROW
+DECLARE
+    ingredients_count NUMBER(1);
+BEGIN
+    SELECT COUNT(*) INTO ingredients_count
+    FROM INGREDIENT
+    WHERE MEALNAME = :NEW.MEALNAME;
+    
+    IF ingredients_count > 6 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Maximum number of 7 ingredients reached!');
+    END IF;
+END MAX_INGREDIENTS_CHECK;
+/
+
+Exercise 4
+
+CREATE OR REPLACE TRIGGER CALCULATE_ENERGYPP
+BEFORE INSERT ON MEAL
+FOR EACH ROW
+DECLARE
+    energy_sum MEAL.ENERGYPP%type;
+    
+    CURSOR c_meal_ingredients IS
+    SELECT QUANTITYPP, ENERGYPU
+    FROM INGREDIENT i
+    JOIN PRODUCT p ON i.PRODUCTNAME = p.PRODUCTNAME
+    WHERE MEALNAME = :NEW.MEALNAME; 
+BEGIN
+    FOR I IN c_meal_ingredients
+    LOOP
+        energy_sum := energy_sum + (I.QUANTITYPP * I.ENERGYPU);
+    END LOOP;
+    
+    :NEW.ENERGYPP := energy_sum;
+
+END CALCULATE_ENERGYPP;
+/

@@ -1,0 +1,39 @@
+<div *ngIf="selectedUpdate">
+
+  <h2>{{selectedEmployee.name | uppercase}} Details</h2>
+  <div>
+    <label>id:
+      <input [(ngModel)]="selectedEmployee.id" placeholder="id">
+    </label>
+  </div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedEmployee.name" placeholder="name">
+    </label>
+  </div>
+  <div>
+    <label>age:
+      <input [(ngModel)]="selectedEmployee.age" placeholder="age">
+    </label>
+  </div>
+  <div>
+    <label>Years worked for company:
+      <input [(ngModel)]="selectedEmployee.yearsOfWorking" placeholder="yearsOfWorking">
+    </label>
+  </div>
+  <div>
+    <label>Date started:
+      <input [(ngModel)]="selectedEmployee.startDate" placeholder="startDate">
+    </label>
+  </div>
+  
+</div>
+
+<div *ngIf="selectedView">
+    <h2>{{selectedEmployee.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedEmployee.id}}</div>
+    <div><span>name: </span>{{selectedEmployee.name}}</div>
+    <div><span>age: </span>{{selectedEmployee.age}}</div>
+    <div><span>Years worked for company: </span>{{selectedEmployee.yearsOfWorking}}</div>
+    <div><span>Date started: </span>{{selectedEmployee.startDate | date: 'dd/MM/yyyy'}}</div>
+</div>

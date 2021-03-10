@@ -1,0 +1,10 @@
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\bin\Debug\TransportationDemo.exe.config
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\bin\Debug\TransportationDemo.exe
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\bin\Debug\TransportationDemo.pdb
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.csprojAssemblyReference.cache
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.Form1.resources
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.Properties.Resources.resources
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.csproj.GenerateResource.cache
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.csproj.CoreCompileInputs.cache
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.exe
+C:\Users\karin\Documents\GitHub\Second Semester\TransportationDemo\TransportationDemo\obj\Debug\TransportationDemo.pdb

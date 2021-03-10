@@ -1,0 +1,650 @@
+   1               		.file	"test_requestparser.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	tearDown
+  18               	tearDown:
+  19               	.LFB9:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 80E0      		ldi r24,lo8(__c.2069)
+  25 0002 90E0      		ldi r25,hi8(__c.2069)
+  26 0004 0E94 0000 		call writeNStringP
+  27               	/* epilogue start */
+  28               	.LM3:
+  29 0008 0895      		ret
+  30               	.LFE9:
+  32               	.global	setUp
+  34               	setUp:
+  35               	.LFB8:
+  36               	.LM4:
+  37               	/* prologue: function */
+  38               	/* frame size = 0 */
+  39               	.LM5:
+  40 000a 80E0      		ldi r24,lo8(__c.2064)
+  41 000c 90E0      		ldi r25,hi8(__c.2064)
+  42 000e 0E94 0000 		call writeNStringP
+  43               	/* epilogue start */
+  44               	.LM6:
+  45 0012 0895      		ret
+  46               	.LFE8:
+  48               		.data
+  49               	.LC0:
+  50 0000 7465 7374 		.string	"test_cmd0x01value0x02request"
+  50      5F63 6D64 
+  50      3078 3031 
+  50      7661 6C75 
+  50      6530 7830 
+  51               		.text
+  52               	.global	run_testCases
+  54               	run_testCases:
+  55               	.LFB15:
+  56               	.LM7:
+  57               	/* prologue: function */
+  58               	/* frame size = 0 */
+  59               	.LM8:
+  60 0014 80E0      		ldi r24,lo8(__c.2138)
+  61 0016 90E0      		ldi r25,hi8(__c.2138)
+  62 0018 0E94 0000 		call writeNStringP
+  63               	.LM9:
+  64 001c 0E94 0000 		call UnityBegin
+  65               	.LM10:
+  66 0020 80E0      		ldi r24,lo8(gs(test_cmd0x01value0x02request))
+  67 0022 90E0      		ldi r25,hi8(gs(test_cmd0x01value0x02request))
+  68 0024 60E0      		ldi r22,lo8(.LC0)
+  69 0026 70E0      		ldi r23,hi8(.LC0)
+  70 0028 45E0      		ldi r20,lo8(5)
+  71 002a 50E0      		ldi r21,hi8(5)
+  72 002c 0E94 0000 		call UnityDefaultTestRun
+  73               	.LM11:
+  74 0030 0E94 0000 		call UnityEnd
+  75               	.LM12:
+  76 0034 80E0      		ldi r24,lo8(__c.2140)
+  77 0036 90E0      		ldi r25,hi8(__c.2140)
+  78 0038 0E94 0000 		call writeNStringP
+  79               	/* epilogue start */
+  80               	.LM13:
+  81 003c 0895      		ret
+  82               	.LFE15:
+  84               		.data
+  85               	.LC1:
+  86 001d 636D 643D 		.string	"cmd=0x01;val=0x02"
+  86      3078 3031 
+  86      3B76 616C 
+  86      3D30 7830 
+  86      3200 
+  87               		.text
+  88               	.global	test_cmd0x01value0x02request
+  90               	test_cmd0x01value0x02request:
+  91               	.LFB14:
+  92               	.LM14:
+  93 003e 8F92      		push r8
+  94 0040 9F92      		push r9
+  95 0042 AF92      		push r10
+  96 0044 BF92      		push r11
+  97 0046 CF92      		push r12
+  98 0048 EF92      		push r14
+  99 004a 0F93      		push r16
+ 100 004c 1F93      		push r17
+ 101 004e DF93      		push r29
+ 102 0050 CF93      		push r28
+ 103 0052 00D0      		rcall .
+ 104 0054 00D0      		rcall .
+ 105 0056 CDB7      		in r28,__SP_L__
+ 106 0058 DEB7      		in r29,__SP_H__
+ 107               	/* prologue: function */
+ 108               	/* frame size = 4 */
+ 109               	.LM15:
+ 110 005a 1A82      		std Y+2,__zero_reg__
+ 111 005c 1982      		std Y+1,__zero_reg__
+ 112 005e 1C82      		std Y+4,__zero_reg__
+ 113 0060 1B82      		std Y+3,__zero_reg__
+ 114 0062 AA24      		clr r10
+ 115 0064 BB24      		clr r11
+ 116               	.LVL0:
+ 117               	.LBB2:
+ 118               	.LM16:
+ 119 0066 4E01      		movw r8,r28
+ 120 0068 0894      		sec
+ 121 006a 811C      		adc r8,__zero_reg__
+ 122 006c 911C      		adc r9,__zero_reg__
+ 123               	.L8:
+ 124 006e C401      		movw r24,r8
+ 125 0070 60E0      		ldi r22,lo8(.LC1)
+ 126 0072 70E0      		ldi r23,hi8(.LC1)
+ 127 0074 41E1      		ldi r20,lo8(17)
+ 128 0076 50E0      		ldi r21,hi8(17)
+ 129 0078 0E94 0000 		call parseRequest
+ 130               	.LM17:
+ 131 007c 2981      		ldd r18,Y+1
+ 132 007e 3A81      		ldd r19,Y+2
+ 133 0080 40E0      		ldi r20,lo8(0)
+ 134 0082 50E0      		ldi r21,hi8(0)
+ 135 0084 60E0      		ldi r22,lo8(0)
+ 136 0086 70E0      		ldi r23,hi8(0)
+ 137 0088 80E0      		ldi r24,hlo8(0)
+ 138 008a 90E0      		ldi r25,hhi8(0)
+ 139 008c 00E0      		ldi r16,lo8(0)
+ 140 008e 10E0      		ldi r17,hi8(0)
+ 141 0090 ACE4      		ldi r26,lo8(76)
+ 142 0092 EA2E      		mov r14,r26
+ 143 0094 F4E9      		ldi r31,lo8(-108)
+ 144 0096 CF2E      		mov r12,r31
+ 145 0098 0E94 0000 		call UnityAssertEqualNumber
+ 146               	.LM18:
+ 147 009c 2B81      		ldd r18,Y+3
+ 148 009e 3C81      		ldd r19,Y+4
+ 149 00a0 40E0      		ldi r20,lo8(0)
+ 150 00a2 50E0      		ldi r21,hi8(0)
+ 151 00a4 60E0      		ldi r22,lo8(0)
+ 152 00a6 70E0      		ldi r23,hi8(0)
+ 153 00a8 80E0      		ldi r24,hlo8(0)
+ 154 00aa 90E0      		ldi r25,hhi8(0)
+ 155 00ac EDE4      		ldi r30,lo8(77)
+ 156 00ae EE2E      		mov r14,r30
+ 157 00b0 0E94 0000 		call UnityAssertEqualNumber
+ 158               	.LM19:
+ 159 00b4 0894      		sec
+ 160 00b6 A11C      		adc r10,__zero_reg__
+ 161 00b8 B11C      		adc r11,__zero_reg__
+ 162 00ba 8AE0      		ldi r24,lo8(10)
+ 163 00bc A816      		cp r10,r24
+ 164 00be B104      		cpc r11,__zero_reg__
+ 165 00c0 01F4      		brne .L8
+ 166               	.LBE2:
+ 167               	.LM20:
+ 168 00c2 80E0      		ldi r24,lo8(__c.2129)
+ 169 00c4 90E0      		ldi r25,hi8(__c.2129)
+ 170 00c6 0E94 0000 		call writeNStringP
+ 171               	/* epilogue start */
+ 172               	.LM21:
+ 173 00ca 0F90      		pop __tmp_reg__
+ 174 00cc 0F90      		pop __tmp_reg__
+ 175 00ce 0F90      		pop __tmp_reg__
+ 176 00d0 0F90      		pop __tmp_reg__
+ 177 00d2 CF91      		pop r28
+ 178 00d4 DF91      		pop r29
+ 179 00d6 1F91      		pop r17
+ 180 00d8 0F91      		pop r16
+ 181 00da EF90      		pop r14
+ 182 00dc CF90      		pop r12
+ 183 00de BF90      		pop r11
+ 184 00e0 AF90      		pop r10
+ 185               	.LVL1:
+ 186 00e2 9F90      		pop r9
+ 187 00e4 8F90      		pop r8
+ 188 00e6 0895      		ret
+ 189               	.LFE14:
+ 191               		.data
+ 192               	.LC2:
+ 193 002f 636D 643D 		.string	"cmd=0x01;"
+ 193      3078 3031 
+ 193      3B00 
+ 194               		.text
+ 195               	.global	test_cmd0x01requestseparator
+ 197               	test_cmd0x01requestseparator:
+ 198               	.LFB13:
+ 199               	.LM22:
+ 200 00e8 8F92      		push r8
+ 201 00ea 9F92      		push r9
+ 202 00ec AF92      		push r10
+ 203 00ee BF92      		push r11
+ 204 00f0 CF92      		push r12
+ 205 00f2 EF92      		push r14
+ 206 00f4 0F93      		push r16
+ 207 00f6 1F93      		push r17
+ 208 00f8 DF93      		push r29
+ 209 00fa CF93      		push r28
+ 210 00fc 00D0      		rcall .
+ 211 00fe 00D0      		rcall .
+ 212 0100 CDB7      		in r28,__SP_L__
+ 213 0102 DEB7      		in r29,__SP_H__
+ 214               	/* prologue: function */
+ 215               	/* frame size = 4 */
+ 216               	.LM23:
+ 217 0104 1A82      		std Y+2,__zero_reg__
+ 218 0106 1982      		std Y+1,__zero_reg__
+ 219 0108 1C82      		std Y+4,__zero_reg__
+ 220 010a 1B82      		std Y+3,__zero_reg__
+ 221 010c AA24      		clr r10
+ 222 010e BB24      		clr r11
+ 223               	.LVL2:
+ 224               	.LBB3:
+ 225               	.LM24:
+ 226 0110 4E01      		movw r8,r28
+ 227 0112 0894      		sec
+ 228 0114 811C      		adc r8,__zero_reg__
+ 229 0116 911C      		adc r9,__zero_reg__
+ 230               	.L12:
+ 231 0118 C401      		movw r24,r8
+ 232 011a 60E0      		ldi r22,lo8(.LC2)
+ 233 011c 70E0      		ldi r23,hi8(.LC2)
+ 234 011e 49E0      		ldi r20,lo8(9)
+ 235 0120 50E0      		ldi r21,hi8(9)
+ 236 0122 0E94 0000 		call parseRequest
+ 237               	.LM25:
+ 238 0126 2981      		ldd r18,Y+1
+ 239 0128 3A81      		ldd r19,Y+2
+ 240 012a 40E0      		ldi r20,lo8(0)
+ 241 012c 50E0      		ldi r21,hi8(0)
+ 242 012e 61E0      		ldi r22,lo8(1)
+ 243 0130 70E0      		ldi r23,hi8(1)
+ 244 0132 80E0      		ldi r24,hlo8(1)
+ 245 0134 90E0      		ldi r25,hhi8(1)
+ 246 0136 00E0      		ldi r16,lo8(0)
+ 247 0138 10E0      		ldi r17,hi8(0)
+ 248 013a E1E4      		ldi r30,lo8(65)
+ 249 013c EE2E      		mov r14,r30
+ 250 013e B4E9      		ldi r27,lo8(-108)
+ 251 0140 CB2E      		mov r12,r27
+ 252 0142 0E94 0000 		call UnityAssertEqualNumber
+ 253               	.LM26:
+ 254 0146 0894      		sec
+ 255 0148 A11C      		adc r10,__zero_reg__
+ 256 014a B11C      		adc r11,__zero_reg__
+ 257 014c 8AE0      		ldi r24,lo8(10)
+ 258 014e A816      		cp r10,r24
+ 259 0150 B104      		cpc r11,__zero_reg__
+ 260 0152 01F4      		brne .L12
+ 261               	.LBE3:
+ 262               	.LM27:
+ 263 0154 80E0      		ldi r24,lo8(__c.2117)
+ 264 0156 90E0      		ldi r25,hi8(__c.2117)
+ 265 0158 0E94 0000 		call writeNStringP
+ 266               	/* epilogue start */
+ 267               	.LM28:
+ 268 015c 0F90      		pop __tmp_reg__
+ 269 015e 0F90      		pop __tmp_reg__
+ 270 0160 0F90      		pop __tmp_reg__
+ 271 0162 0F90      		pop __tmp_reg__
+ 272 0164 CF91      		pop r28
+ 273 0166 DF91      		pop r29
+ 274 0168 1F91      		pop r17
+ 275 016a 0F91      		pop r16
+ 276 016c EF90      		pop r14
+ 277 016e CF90      		pop r12
+ 278 0170 BF90      		pop r11
+ 279 0172 AF90      		pop r10
+ 280               	.LVL3:
+ 281 0174 9F90      		pop r9
+ 282 0176 8F90      		pop r8
+ 283 0178 0895      		ret
+ 284               	.LFE13:
+ 286               		.data
+ 287               	.LC3:
+ 288 0039 636D 643D 		.string	"cmd=0x01"
+ 288      3078 3031 
+ 288      00
+ 289               		.text
+ 290               	.global	test_cmd0x01request
+ 292               	test_cmd0x01request:
+ 293               	.LFB11:
+ 294               	.LM29:
+ 295 017a 8F92      		push r8
+ 296 017c 9F92      		push r9
+ 297 017e AF92      		push r10
+ 298 0180 BF92      		push r11
+ 299 0182 CF92      		push r12
+ 300 0184 EF92      		push r14
+ 301 0186 0F93      		push r16
+ 302 0188 1F93      		push r17
+ 303 018a DF93      		push r29
+ 304 018c CF93      		push r28
+ 305 018e 00D0      		rcall .
+ 306 0190 00D0      		rcall .
+ 307 0192 CDB7      		in r28,__SP_L__
+ 308 0194 DEB7      		in r29,__SP_H__
+ 309               	/* prologue: function */
+ 310               	/* frame size = 4 */
+ 311               	.LM30:
+ 312 0196 1A82      		std Y+2,__zero_reg__
+ 313 0198 1982      		std Y+1,__zero_reg__
+ 314 019a 1C82      		std Y+4,__zero_reg__
+ 315 019c 1B82      		std Y+3,__zero_reg__
+ 316 019e AA24      		clr r10
+ 317 01a0 BB24      		clr r11
+ 318               	.LVL4:
+ 319               	.LBB4:
+ 320               	.LM31:
+ 321 01a2 4E01      		movw r8,r28
+ 322 01a4 0894      		sec
+ 323 01a6 811C      		adc r8,__zero_reg__
+ 324 01a8 911C      		adc r9,__zero_reg__
+ 325               	.L16:
+ 326 01aa C401      		movw r24,r8
+ 327 01ac 60E0      		ldi r22,lo8(.LC3)
+ 328 01ae 70E0      		ldi r23,hi8(.LC3)
+ 329 01b0 48E0      		ldi r20,lo8(8)
+ 330 01b2 50E0      		ldi r21,hi8(8)
+ 331 01b4 0E94 0000 		call parseRequest
+ 332               	.LM32:
+ 333 01b8 2981      		ldd r18,Y+1
+ 334 01ba 3A81      		ldd r19,Y+2
+ 335 01bc 40E0      		ldi r20,lo8(0)
+ 336 01be 50E0      		ldi r21,hi8(0)
+ 337 01c0 61E0      		ldi r22,lo8(1)
+ 338 01c2 70E0      		ldi r23,hi8(1)
+ 339 01c4 80E0      		ldi r24,hlo8(1)
+ 340 01c6 90E0      		ldi r25,hhi8(1)
+ 341 01c8 00E0      		ldi r16,lo8(0)
+ 342 01ca 10E0      		ldi r17,hi8(0)
+ 343 01cc ACE2      		ldi r26,lo8(44)
+ 344 01ce EA2E      		mov r14,r26
+ 345 01d0 F4E9      		ldi r31,lo8(-108)
+ 346 01d2 CF2E      		mov r12,r31
+ 347 01d4 0E94 0000 		call UnityAssertEqualNumber
+ 348               	.LM33:
+ 349 01d8 0894      		sec
+ 350 01da A11C      		adc r10,__zero_reg__
+ 351 01dc B11C      		adc r11,__zero_reg__
+ 352 01de 8AE0      		ldi r24,lo8(10)
+ 353 01e0 A816      		cp r10,r24
+ 354 01e2 B104      		cpc r11,__zero_reg__
+ 355 01e4 01F4      		brne .L16
+ 356               	.LBE4:
+ 357               	.LM34:
+ 358 01e6 80E0      		ldi r24,lo8(__c.2093)
+ 359 01e8 90E0      		ldi r25,hi8(__c.2093)
+ 360 01ea 0E94 0000 		call writeNStringP
+ 361               	/* epilogue start */
+ 362               	.LM35:
+ 363 01ee 0F90      		pop __tmp_reg__
+ 364 01f0 0F90      		pop __tmp_reg__
+ 365 01f2 0F90      		pop __tmp_reg__
+ 366 01f4 0F90      		pop __tmp_reg__
+ 367 01f6 CF91      		pop r28
+ 368 01f8 DF91      		pop r29
+ 369 01fa 1F91      		pop r17
+ 370 01fc 0F91      		pop r16
+ 371 01fe EF90      		pop r14
+ 372 0200 CF90      		pop r12
+ 373 0202 BF90      		pop r11
+ 374 0204 AF90      		pop r10
+ 375               	.LVL5:
+ 376 0206 9F90      		pop r9
+ 377 0208 8F90      		pop r8
+ 378 020a 0895      		ret
+ 379               	.LFE11:
+ 381               	.global	test_empty_requestparser
+ 383               	test_empty_requestparser:
+ 384               	.LFB10:
+ 385               	.LM36:
+ 386 020c CF92      		push r12
+ 387 020e EF92      		push r14
+ 388 0210 0F93      		push r16
+ 389 0212 1F93      		push r17
+ 390 0214 CF93      		push r28
+ 391 0216 DF93      		push r29
+ 392               	/* prologue: function */
+ 393               	/* frame size = 0 */
+ 394               	.LM37:
+ 395 0218 C0E0      		ldi r28,lo8(0)
+ 396 021a D0E0      		ldi r29,hi8(0)
+ 397               	.LVL6:
+ 398               	.L20:
+ 399               	.LBB5:
+ 400               	.LBB6:
+ 401               	.LM38:
+ 402 021c 60E0      		ldi r22,lo8(0)
+ 403 021e 70E0      		ldi r23,hi8(0)
+ 404 0220 80E0      		ldi r24,hlo8(0)
+ 405 0222 90E0      		ldi r25,hhi8(0)
+ 406 0224 20E0      		ldi r18,lo8(0)
+ 407 0226 30E0      		ldi r19,hi8(0)
+ 408 0228 40E0      		ldi r20,hlo8(0)
+ 409 022a 50E0      		ldi r21,hhi8(0)
+ 410 022c 00E0      		ldi r16,lo8(0)
+ 411 022e 10E0      		ldi r17,hi8(0)
+ 412 0230 FFE1      		ldi r31,lo8(31)
+ 413 0232 EF2E      		mov r14,r31
+ 414 0234 E4E9      		ldi r30,lo8(-108)
+ 415 0236 CE2E      		mov r12,r30
+ 416 0238 0E94 0000 		call UnityAssertEqualNumber
+ 417               	.LM39:
+ 418 023c 60E0      		ldi r22,lo8(0)
+ 419 023e 70E0      		ldi r23,hi8(0)
+ 420 0240 80E0      		ldi r24,hlo8(0)
+ 421 0242 90E0      		ldi r25,hhi8(0)
+ 422 0244 20E0      		ldi r18,lo8(0)
+ 423 0246 30E0      		ldi r19,hi8(0)
+ 424 0248 40E0      		ldi r20,hlo8(0)
+ 425 024a 50E0      		ldi r21,hhi8(0)
+ 426 024c B0E2      		ldi r27,lo8(32)
+ 427 024e EB2E      		mov r14,r27
+ 428 0250 0E94 0000 		call UnityAssertEqualNumber
+ 429               	.LBE6:
+ 430               	.LM40:
+ 431 0254 2196      		adiw r28,1
+ 432 0256 CA30      		cpi r28,10
+ 433 0258 D105      		cpc r29,__zero_reg__
+ 434 025a 01F4      		brne .L20
+ 435               	.LBE5:
+ 436               	.LM41:
+ 437 025c 80E0      		ldi r24,lo8(__c.2079)
+ 438 025e 90E0      		ldi r25,hi8(__c.2079)
+ 439 0260 0E94 0000 		call writeNStringP
+ 440               	/* epilogue start */
+ 441               	.LM42:
+ 442 0264 DF91      		pop r29
+ 443 0266 CF91      		pop r28
+ 444               	.LVL7:
+ 445 0268 1F91      		pop r17
+ 446 026a 0F91      		pop r16
+ 447 026c EF90      		pop r14
+ 448 026e CF90      		pop r12
+ 449 0270 0895      		ret
+ 450               	.LFE10:
+ 452               		.data
+ 453               	.LC4:
+ 454 0042 7661 6C3D 		.string	"val=0x02"
+ 454      3078 3032 
+ 454      00
+ 455               		.text
+ 456               	.global	test_value0x01
+ 458               	test_value0x01:
+ 459               	.LFB12:
+ 460               	.LM43:
+ 461 0272 8F92      		push r8
+ 462 0274 9F92      		push r9
+ 463 0276 AF92      		push r10
+ 464 0278 BF92      		push r11
+ 465 027a CF92      		push r12
+ 466 027c EF92      		push r14
+ 467 027e 0F93      		push r16
+ 468 0280 1F93      		push r17
+ 469 0282 DF93      		push r29
+ 470 0284 CF93      		push r28
+ 471 0286 00D0      		rcall .
+ 472 0288 00D0      		rcall .
+ 473 028a CDB7      		in r28,__SP_L__
+ 474 028c DEB7      		in r29,__SP_H__
+ 475               	/* prologue: function */
+ 476               	/* frame size = 4 */
+ 477               	.LM44:
+ 478 028e 1A82      		std Y+2,__zero_reg__
+ 479 0290 1982      		std Y+1,__zero_reg__
+ 480 0292 1C82      		std Y+4,__zero_reg__
+ 481 0294 1B82      		std Y+3,__zero_reg__
+ 482 0296 AA24      		clr r10
+ 483 0298 BB24      		clr r11
+ 484               	.LVL8:
+ 485               	.LBB7:
+ 486               	.LM45:
+ 487 029a 4E01      		movw r8,r28
+ 488 029c 0894      		sec
+ 489 029e 811C      		adc r8,__zero_reg__
+ 490 02a0 911C      		adc r9,__zero_reg__
+ 491               	.L24:
+ 492 02a2 C401      		movw r24,r8
+ 493 02a4 60E0      		ldi r22,lo8(.LC4)
+ 494 02a6 70E0      		ldi r23,hi8(.LC4)
+ 495 02a8 43E0      		ldi r20,lo8(3)
+ 496 02aa 50E0      		ldi r21,hi8(3)
+ 497 02ac 20E0      		ldi r18,lo8(0)
+ 498 02ae 30E0      		ldi r19,hi8(0)
+ 499 02b0 08E0      		ldi r16,lo8(8)
+ 500 02b2 10E0      		ldi r17,hi8(8)
+ 501 02b4 0E94 0000 		call FilterRequestData
+ 502               	.LM46:
+ 503 02b8 2B81      		ldd r18,Y+3
+ 504 02ba 3C81      		ldd r19,Y+4
+ 505 02bc 40E0      		ldi r20,lo8(0)
+ 506 02be 50E0      		ldi r21,hi8(0)
+ 507 02c0 62E0      		ldi r22,lo8(2)
+ 508 02c2 70E0      		ldi r23,hi8(2)
+ 509 02c4 80E0      		ldi r24,hlo8(2)
+ 510 02c6 90E0      		ldi r25,hhi8(2)
+ 511 02c8 00E0      		ldi r16,lo8(0)
+ 512 02ca 10E0      		ldi r17,hi8(0)
+ 513 02cc B6E3      		ldi r27,lo8(54)
+ 514 02ce EB2E      		mov r14,r27
+ 515 02d0 A4E9      		ldi r26,lo8(-108)
+ 516 02d2 CA2E      		mov r12,r26
+ 517 02d4 0E94 0000 		call UnityAssertEqualNumber
+ 518               	.LM47:
+ 519 02d8 0894      		sec
+ 520 02da A11C      		adc r10,__zero_reg__
+ 521 02dc B11C      		adc r11,__zero_reg__
+ 522 02de 8AE0      		ldi r24,lo8(10)
+ 523 02e0 A816      		cp r10,r24
+ 524 02e2 B104      		cpc r11,__zero_reg__
+ 525 02e4 01F4      		brne .L24
+ 526               	.LBE7:
+ 527               	.LM48:
+ 528 02e6 80E0      		ldi r24,lo8(__c.2105)
+ 529 02e8 90E0      		ldi r25,hi8(__c.2105)
+ 530 02ea 0E94 0000 		call writeNStringP
+ 531               	/* epilogue start */
+ 532               	.LM49:
+ 533 02ee 0F90      		pop __tmp_reg__
+ 534 02f0 0F90      		pop __tmp_reg__
+ 535 02f2 0F90      		pop __tmp_reg__
+ 536 02f4 0F90      		pop __tmp_reg__
+ 537 02f6 CF91      		pop r28
+ 538 02f8 DF91      		pop r29
+ 539 02fa 1F91      		pop r17
+ 540 02fc 0F91      		pop r16
+ 541 02fe EF90      		pop r14
+ 542 0300 CF90      		pop r12
+ 543 0302 BF90      		pop r11
+ 544 0304 AF90      		pop r10
+ 545               	.LVL9:
+ 546 0306 9F90      		pop r9
+ 547 0308 8F90      		pop r8
+ 548 030a 0895      		ret
+ 549               	.LFE12:
+ 551               	.global	rp6_output_char_for_unity
+ 553               	rp6_output_char_for_unity:
+ 554               	.LFB7:
+ 555               	.LM50:
+ 556               	.LVL10:
+ 557               	/* prologue: function */
+ 558               	/* frame size = 0 */
+ 559               	.LM51:
+ 560 030c 0E94 0000 		call writeChar
+ 561               	.LVL11:
+ 562               	.LM52:
+ 563 0310 80E0      		ldi r24,lo8(0)
+ 564 0312 90E0      		ldi r25,hi8(0)
+ 565               	/* epilogue start */
+ 566 0314 0895      		ret
+ 567               	.LFE7:
+ 569               		.section	.progmem.data,"a",@progbits
+ 572               	__c.2140:
+ 573 0000 2E2E 2E64 		.string	"...done.\n"
+ 573      6F6E 652E 
+ 573      0A00 
+ 576               	__c.2138:
+ 577 000a 5374 6172 		.string	"Start running test cases:\n"
+ 577      7420 7275 
+ 577      6E6E 696E 
+ 577      6720 7465 
+ 577      7374 2063 
+ 580               	__c.2129:
+ 581 0025 5465 7374 		.string	"Test `test_cmd0x01value0x02request` passed\n"
+ 581      2060 7465 
+ 581      7374 5F63 
+ 581      6D64 3078 
+ 581      3031 7661 
+ 584               	__c.2117:
+ 585 0051 5465 7374 		.string	"Test `test_cmd0x01requestseparator` passed\n"
+ 585      2060 7465 
+ 585      7374 5F63 
+ 585      6D64 3078 
+ 585      3031 7265 
+ 588               	__c.2105:
+ 589 007d 5465 7374 		.string	"Test `test_value0x01` passed\n"
+ 589      2060 7465 
+ 589      7374 5F76 
+ 589      616C 7565 
+ 589      3078 3031 
+ 592               	__c.2093:
+ 593 009b 5465 7374 		.string	"Test `test_cmd0x01request` passed\n"
+ 593      2060 7465 
+ 593      7374 5F63 
+ 593      6D64 3078 
+ 593      3031 7265 
+ 596               	__c.2079:
+ 597 00be 5465 7374 		.string	"Test `test_empty_requestparser` passed\n"
+ 597      2060 7465 
+ 597      7374 5F65 
+ 597      6D70 7479 
+ 597      5F72 6571 
+ 600               	__c.2069:
+ 601 00e6 2E2E 2E63 		.string	"...cleaned up after test.\n"
+ 601      6C65 616E 
+ 601      6564 2075 
+ 601      7020 6166 
+ 601      7465 7220 
+ 604               	__c.2064:
+ 605 0101 0A53 6574 		.string	"\nSetup test..."
+ 605      7570 2074 
+ 605      6573 742E 
+ 605      2E2E 00
+ 606               		.comm timer,2,1
+ 695               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 test_requestparser.c
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:2      *ABS*:0000003f __SREG__
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:3      *ABS*:0000003e __SP_H__
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:4      *ABS*:0000003d __SP_L__
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:5      *ABS*:00000034 __CCP__
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:18     .text:00000000 tearDown
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:600    .progmem.data:000000e6 __c.2069
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:34     .text:0000000a setUp
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:604    .progmem.data:00000101 __c.2064
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:54     .text:00000014 run_testCases
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:576    .progmem.data:0000000a __c.2138
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:90     .text:0000003e test_cmd0x01value0x02request
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:572    .progmem.data:00000000 __c.2140
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:580    .progmem.data:00000025 __c.2129
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:197    .text:000000e8 test_cmd0x01requestseparator
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:584    .progmem.data:00000051 __c.2117
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:292    .text:0000017a test_cmd0x01request
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:592    .progmem.data:0000009b __c.2093
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:383    .text:0000020c test_empty_requestparser
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:596    .progmem.data:000000be __c.2079
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:458    .text:00000272 test_value0x01
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:588    .progmem.data:0000007d __c.2105
+C:\Users\Marco\AppData\Local\Temp/ccLCr9B6.s:553    .text:0000030c rp6_output_char_for_unity
+                            *COM*:00000002 timer
+
+UNDEFINED SYMBOLS
+writeNStringP
+UnityBegin
+UnityDefaultTestRun
+UnityEnd
+parseRequest
+UnityAssertEqualNumber
+FilterRequestData
+writeChar
+__do_copy_data
+__do_clear_bss

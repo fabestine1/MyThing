@@ -1,0 +1,43 @@
+<!--<div *ngIf="department">
+  <h2>{{department.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{department.id}}</div>
+  <div><span>name: </span>{{department.name}}</div>
+</div>
+-->
+
+<button class="btn btn-primary" (click)="goBack()">Go back</button>
+  <div>
+  <h3>{{department.name}} - Details</h3>
+  <hr>
+  <span>Change the name of the department: </span>
+  <br>
+  <br>
+  <div>
+    <label>Id: </label> {{department.id}}
+  </div>
+  <div>
+      <label>Name: </label>
+    <label>
+      <input  class="form-control" [(ngModel)]="department.name" placeholder="name"/>
+    </label>
+    <hr>
+    <div>
+      <label>Department building :</label>
+      <h3> {{department.building}}</h3>
+    </div>
+    <hr>
+    <div *ngIf="employees">
+        <label>Employees in this department: </label>
+        <br>
+        <br>
+      <ul *ngFor="let e of employees" class="list-group">
+        <li class="list-group-item" style="width: 15%;"> {{e.first_name}}</li>
+      </ul>
+    </div>
+  </div>
+  <button class="btn btn-success" (click)="onUpdate()" style="margin-right: 3px;">Update</button>
+  <button class="btn btn-danger" (click)="onRemove()">Remove</button>
+</div>
+
+  
+  

@@ -1,0 +1,11 @@
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\School.Form1.resources
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.csproj.GenerateResource.Cache
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\SchoolObject.exe.config
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\SchoolObject.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\bin\Debug\SchoolObject.pdb
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.Properties.Resources.resources
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.exe
+D:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolObject\School\obj\Debug\SchoolObject.pdb
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\bin\Debug\SchoolObject.exe.config
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolObject.exe
+d:\Documents\Dropbox\vakken\PCS All\PCS 3\practicum\Examples\SchoolPlymorphism\School\obj\Debug\SchoolObject.pdb

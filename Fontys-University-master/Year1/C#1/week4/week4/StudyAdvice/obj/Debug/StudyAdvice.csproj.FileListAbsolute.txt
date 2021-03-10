@@ -1,0 +1,6 @@
+D:\Fontys\C#1\week4\week4\StudyAdvice\obj\Debug\StudyAdvice.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week4\week4\StudyAdvice\bin\Debug\StudyAdvice.exe.config
+D:\Fontys\C#1\week4\week4\StudyAdvice\bin\Debug\StudyAdvice.exe
+D:\Fontys\C#1\week4\week4\StudyAdvice\bin\Debug\StudyAdvice.pdb
+D:\Fontys\C#1\week4\week4\StudyAdvice\obj\Debug\StudyAdvice.exe
+D:\Fontys\C#1\week4\week4\StudyAdvice\obj\Debug\StudyAdvice.pdb

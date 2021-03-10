@@ -1,0 +1,7 @@
+D:\Fontys\C#1\week3\week3\Shop\bin\Debug\Shop.exe.config
+D:\Fontys\C#1\week3\week3\Shop\bin\Debug\Shop.exe
+D:\Fontys\C#1\week3\week3\Shop\bin\Debug\Shop.pdb
+D:\Fontys\C#1\week3\week3\Shop\obj\Debug\Shop.csprojResolveAssemblyReference.cache
+D:\Fontys\C#1\week3\week3\Shop\obj\Debug\Shop.csproj.CoreCompileInputs.cache
+D:\Fontys\C#1\week3\week3\Shop\obj\Debug\Shop.exe
+D:\Fontys\C#1\week3\week3\Shop\obj\Debug\Shop.pdb
